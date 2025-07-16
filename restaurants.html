@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Restaurants - Knossos Palast | Authentische griechische Küche</title>
+    <meta name="description" content="Entdecken Sie unsere vier exklusiven Knossos Palast Restaurants in der Region. Jedes mit eigenem Charakter und authentischer griechischer Küche.">
+    <meta name="keywords" content="Knossos Palast, griechische Restaurants, Potsdam, Berlin, Brandenburg, Standorte, griechische Küche">
+    <meta name="author" content="Knossos Palast">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://knossos-palast.de/restaurants">
+    
+    <link rel="icon" type="image/x-icon" href="/images/Knossos Palast.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/restaurants.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Knossos Palast" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-container">
+            <div class="cookie-content">
+                <div class="cookie-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="cookie-text">
+                    <h4>Datenschutz & Cookies</h4>
+                    <p>Wir verwenden Cookies zur Optimierung Ihrer Nutzererfahrung und für Analysen.</p>
+                </div>
+                <div class="cookie-actions">
+                    <button id="cookie-essential" class="cookie-btn essential">
+                        <i class="fas fa-check"></i>
+                        <span>Erforderlich</span>
+                    </button>
+                    <button id="cookie-analytics" class="cookie-btn analytics">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Mit Analytics</span>
+                    </button>
+                    <button id="cookie-all" class="cookie-btn all">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>Alle akzeptieren</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <div class="mobile-nav-sidebar" id="mobile-nav-sidebar">
+        <div class="mobile-nav-header">
+            <div class="mobile-nav-logo">
+                <img onclick="window.location.href='/index.html'" src="/images/logo.png" alt="Knossos Palast Logo">
+            </div>
+            <button class="mobile-nav-close" id="mobile-nav-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">
+                    <i class="bx bx-home nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/menu.html" class="nav-link">
+                    <i class="bx bx-restaurant nav-icon"></i>
+                    <span class="nav-text">Speisekarte</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/restaurants.html" class="nav-link active">
+                    <i class="bx bx-map-alt nav-icon"></i>
+                    <span class="nav-text">Restaurants</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/gallery.html" class="nav-link">
+                    <i class="bx bx-camera nav-icon"></i>
+                    <span class="nav-text">Galerie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/contact.html" class="nav-link">
+                    <i class="bx bx-envelope nav-icon"></i>
+                    <span class="nav-text">Kontakt</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" id="logo">
+                    <img onclick="window.location.href='/index.html'" src="/images/logo.png" alt="Knossos Palast Logo">
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-home nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/menu.html" class="nav-link">
+                            <span class="nav-text">Speisekarte</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-restaurant nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/restaurants.html" class="nav-link active">
+                            <span class="nav-text">Restaurants</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-map-alt nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery.html" class="nav-link">
+                            <span class="nav-text">Galerie</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-camera nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">
+                            <span class="nav-text">Kontakt</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-envelope nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="reservation-btn" onclick="window.location.href='/contact.html'">
+                        <div class="btn-content">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Reservieren</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Unsere Restaurants</h1>
+                <p class="hero-subtitle">Entdecken Sie die Vielfalt der Knossos Palast Restaurants in der Region</p>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToSection('restaurants')">
+                        <div class="btn-content">
+                            <i class="fas fa-utensils"></i>
+                            <span>Restaurants entdecken</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="btn-secondary" onclick="window.location.href='/contact.html'">
+                        <div class="btn-content">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Tisch reservieren</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text fade-in-up">
+                    <div class="section-header">
+                        <h2 class="section-title">Willkommen in der Welt von Knossos Palast</h2>
+                        <div class="title-decoration">
+                            <span class="line"></span>
+                            <i class="fas fa-olive-branch"></i>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <p>Seit über einem Jahrzehnt bringen wir die authentische griechische Küche und Gastfreundschaft in die Region Berlin-Brandenburg. Mit vier einzigartigen Standorten bieten wir Ihnen die Möglichkeit, die kulinarische Vielfalt Griechenlands zu entdecken – jedes Restaurant mit eigenem Charakter, aber immer mit dem gleichen Anspruch an Qualität und Service.</p>
+                    <p>Unsere Restaurants verbinden traditionelle griechische Rezepte mit modernen Einflüssen und verwenden ausschließlich frische, hochwertige Zutaten. Viele davon werden direkt aus Griechenland importiert, um den authentischen Geschmack zu garantieren.</p>
+                    <p>Entdecken Sie unsere vier Standorte und lassen Sie sich von der mediterranen Atmosphäre verzaubern. Wir freuen uns auf Ihren Besuch!</p>
+                </div>
+                <div class="intro-stats fade-in-up">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Standorte</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">Gerichte</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Jahre Erfahrung</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-wine-glass-alt"></i>
+                        </div>
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Weine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurants" class="restaurants-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Unsere Standorte</h2>
+                <div class="title-decoration">
+                    <span class="line"></span>
+                    <i class="fas fa-olive-branch"></i>
+                    <span class="line"></span>
+                </div>
+                <p class="section-subtitle">Jedes Restaurant mit eigenem Charakter und Ambiente</p>
+            </div>
+
+            <div class="restaurant-item slide-in-left">
+                <div class="restaurant-image">
+                    <img src="/images/photo1.jpg" alt="Knossos Palast Potsdam" >
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Unser Flagship-Restaurant</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-content">
+                    <div class="restaurant-badge">Flagship</div>
+                    <h3 class="restaurant-name">Knossos Palast Potsdam</h3>
+                    <div class="restaurant-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-text">4.4/5</span>
+                    </div>
+                    <p class="restaurant-description">Unser erstes und größtes Restaurant im Herzen von Potsdam bietet ein elegantes Ambiente mit mediterranem Flair. Die großzügige Terrasse lädt in den Sommermonaten zum Verweilen ein. Hier genießen Sie die volle Bandbreite unserer griechischen Spezialitäten in einem stilvollen Rahmen.</p>
+                    <div class="restaurant-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>120 Sitzplätze</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-parking"></i>
+                            <span>Parkplätze vorhanden</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wheelchair"></i>
+                            <span>Barrierefrei</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <span>Terrasse</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Potsdamer Str. 37, 14469 Potsdam</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:03315506743">0331 550 67 43</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Täglich 12:00-23:00 (Di: Ruhetag)</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-actions">
+                        <a href="https://maps.app.goo.gl/f23E999YBLuSbUBb9" target="_blank" class="btn-secondary">
+                            <div class="btn-content">
+                                <i class="fas fa-directions"></i>
+                                <span>Route planen</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="/contact.html" class="btn-primary">
+                            <div class="btn-content">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Tisch reservieren</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-item slide-in-right">
+                <div class="restaurant-content">
+                    <div class="restaurant-badge">Rangsdorf</div>
+                    <h3 class="restaurant-name">Knossos Palast Rangsdorf</h3>
+                    <div class="restaurant-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-text">4.5/5</span>
+                    </div>
+                    <p class="restaurant-description">Besuchen Sie uns in unserem Restaurant am Rangsdorfer Bahnhof und genießen Sie ein kleines Stück Griechenland.</p>
+                    <div class="restaurant-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>80 Sitzplätze</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-subway"></i>
+                            <span>Catering</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wheelchair"></i>
+                            <span>Barrierefrei</span>
+                        </div>
+                        
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Goethestr. 1, 15834 Rangsdorf</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:033708932200">0337 08932200</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mo-So 11:30-24:00</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-actions">
+                        <a href="https://maps.app.goo.gl/zF2bNWbDUqYZ5dNAA" target="_blank" class="btn-secondary">
+                            <div class="btn-content">
+                                <i class="fas fa-directions"></i>
+                                <span>Route planen</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="https://www.knossos-rangsdorf.de/" class="btn-primary">
+                            <div class="btn-content">
+                                <i class="fas fa-globe"></i>
+                                <span>Restaurantwebsite</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="restaurant-image">
+                    <img src="/images/knossos-rangsdorf.jpg" alt="Knossos Palast Berlin Mitte" >
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-icon">
+                                <i class="fas fa-city"></i>
+                            </div>
+                            <h3>griechisch & modern</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-item slide-in-left">
+                <div class="restaurant-image">
+                    <img src="/images/knossos-see.jpg" alt="Knossos Palast Brandenburg" >
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Idyllisch & Gemütlich</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-content">
+                    <div class="restaurant-badge">Rustikal</div>
+                    <h3 class="restaurant-name">Knossos Palast Am See</h3>
+                    <div class="restaurant-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-text">4.4/5</span>
+                    </div>
+                    <p class="restaurant-description">Besuchen Sie uns in unserem Restaurant am Großen Wusterwitzer See und genießen Sie ein kleines Stück Griechenland.</p>
+                    <div class="restaurant-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>100 Sitzplätze</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-parking"></i>
+                            <span>Großer Parkplatz</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tree"></i>
+                            <span>Seeblick</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-baby"></i>
+                            <span>Kinderfreundlich</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>a. See 1, 14789 Wusterwitz</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:033839711380">033839 711380</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mo-So: 11:30 - 23:00</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-actions">
+                        <a href="https://maps.app.goo.gl/LR79HjHFxzSo1Fq48" target="_blank" class="btn-secondary">
+                            <div class="btn-content">
+                                <i class="fas fa-directions"></i>
+                                <span>Route planen</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="https://www.knossos-am-see-wusterwitz.de/" class="btn-primary">
+                            <div class="btn-content">
+                                <i class="fas fa-globe"></i>
+                                <span>Restaurantswebsite</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-item slide-in-right">
+                <div class="restaurant-content">
+                    <div class="restaurant-badge">Neu</div>
+                    <h3 class="restaurant-name">Spiti Mas Potsdam</h3>
+                    <div class="restaurant-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-text">4.5/5</span>
+                    </div>
+                    <p class="restaurant-description">„Spiti Mas“ bedeutet „Unser Zuhause“. Und damit Sie sich, bei uns ebenfalls ganz zuhause fühlen können, erfüllen wir Ihnen gern jeden Wunsch!</p>
+                    <div class="restaurant-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>90 Sitzplätze</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <span>enorme Auswahl</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wheelchair"></i>
+                            <span>Barrierefrei</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fish"></i>
+                            <span>Meeresfrüchte-Spezialitäten</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Zeppelinstraße 152, 14471 Potsdam</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0331974524">0331 974524</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Di-Sa 16:00-23:00 (Mo: Ruhetag)</span>
+                            <span>So 11:30 - 14:30 & 17:00 - 22:00</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-actions">
+                        <a href="https://maps.app.goo.gl/fu4SUwjKLmYyP3xa6" target="_blank" class="btn-secondary">
+                            <div class="btn-content">
+                                <i class="fas fa-directions"></i>
+                                <span>Route planen</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="https://www.spitimas-potsdam.de/" class="btn-primary">
+                            <div class="btn-content">
+                                <i class="fas fa-globe"></i>
+                                <span>Restaurantswebsite</span>
+                            </div>
+                            <div class="btn-glow"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="restaurant-image">
+                    <img src="/images/spiti-mas.jpg" alt="Knossos Palast Berlin-Spandau">
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-icon">
+                                <i class="fas fa-glass-cheers"></i>
+                            </div>
+                            <h3>Modern & Lebendig</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Was uns auszeichnet</h2>
+                <div class="title-decoration">
+                    <span class="line"></span>
+                    <i class="fas fa-olive-branch"></i>
+                    <span class="line"></span>
+                </div>
+                <p class="section-subtitle">In allen unseren Restaurants können Sie sich auf diese Qualitätsmerkmale verlassen</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Frische Zutaten</h3>
+                    <p>Wir verwenden ausschließlich frische, saisonale Zutaten von ausgewählten Lieferanten und importieren Spezialitäten direkt aus Griechenland.</p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Authentische Rezepte</h3>
+                    <p>Unsere Gerichte basieren auf traditionellen Familienrezepten, die seit Generationen weitergegeben und perfektioniert wurden.</p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3>Erlesene Weine</h3>
+                    <p>Unsere sorgfältig kuratierte Weinkarte umfasst exklusive griechische Weine sowie internationale Spezialitäten.</p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Herzlicher Service</h3>
+                    <p>Unser freundliches Team sorgt dafür, dass Sie sich wie zu Hause fühlen und einen unvergesslichen Abend erleben.</p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Familiäre Atmosphäre</h3>
+                    <p>Als Familienbetrieb legen wir großen Wert auf eine herzliche Atmosphäre, in der sich Gäste jeden Alters wohlfühlen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2>Besuchen Sie uns</h2>
+                <p>Erleben Sie die Vielfalt der griechischen Küche in einem unserer vier Restaurants. Wir freuen uns darauf, Sie begrüßen zu dürfen und Ihnen unvergessliche kulinarische Momente zu bereiten.</p>
+                <div class="cta-actions">
+                    <a href="/contact.html#reservation" class="btn-primary">
+                        <div class="btn-content">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Tisch reservieren</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="/menu.html" class="btn-secondary">
+                        <div class="btn-content">
+                            <i class="fas fa-utensils"></i>
+                            <span>Speisekarte ansehen</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="bg-pattern"></div>
+            <div class="bg-decoration"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="/images/logo.png" alt="Knossos Palast Logo" class="footer-logo">
+                    <div class="brand-content">
+                        <h3>Knossos Palast</h3>
+                        <p>Authentische griechische Küche seit 2012. Erleben Sie die Tradition und den Geschmack Griechenlands in unseren eleganten Restaurants mit über 25 Jahren Erfahrung.</p>
+                        
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/knossos.palast.potsdam/" class="social-link facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/knossos_palast_potsdam_/" class="social-link instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@knossos.palast_potsdam" class="social-link tiktok" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section contact-section">
+                    <div class="section-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Kontakt</h4>
+                    </div>
+                    <div class="section-content">
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="item-text">
+                                <span>Potsdamer Str. 37</span>
+                                <span>14469 Potsdam</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="item-text">
+                                <a href="tel:03315506743">0331 550 67 43</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="item-text">
+                                <a href="mailto:info@knossos-palast-potsdam.de">info@knossos-palast-potsdam.de</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section hours-section">
+                    <div class="section-header">
+                        <i class="fas fa-clock"></i>
+                        <h4>Öffnungszeiten</h4>
+                    </div>
+                    <div class="section-content">
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="days">Dienstag</span>
+                                <span class="time">Geschlossen</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="days">Sonst täglich</span>
+                                <span class="time">12:00 - 23:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section services-section">
+                    <div class="section-header">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h4>Services</h4>
+                    </div>
+                    <div class="section-content">
+                        <div class="service-links">
+                            <a href="/contact.html" class="service-link">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Reservierung</span>
+                            </a>
+                            <a href="/index.html#gutschein" class="service-link">
+                                <i class="fas fa-gift"></i>
+                                <span>Gutscheine</span>
+                            </a>
+                            <a href="/index.html#events" class="service-link">
+                                <i class="fas fa-glass-cheers"></i>
+                                <span>Veranstaltungen</span>
+                            </a>
+                            <a href="/menu.html" class="service-link">
+                                <i class="fas fa-utensils"></i>
+                                <span>Speisekarte</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="/imprint.html" class="legal-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Impressum</span>
+                    </a>
+                    <a href="/privacy.html" class="legal-link">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Datenschutzerklärung</span>
+                    </a>
+                    <a href="/cookies.html" id="cookie-settings" class="legal-link">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Cookie-Richtlinie</span>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <div class="copyright-text">
+                        <span>&copy; 2025 Knossos Palast Potsdam. Alle Rechte vorbehalten.</span>
+                    </div>
+                    <div class="copyright-decoration">
+                        <i class="fas fa-olive-branch"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/restaurants.js"></script>
+</body>
+</html>

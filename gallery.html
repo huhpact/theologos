@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Theo & Logos | Authentische griechische Küche</title>
+    <meta name="description" content="Entdecken Sie die Atmosphäre des Knossos Palast Restaurants. Bilder von unserem Restaurant, unseren Gerichten und besonderen Momenten.">
+    <meta name="keywords" content="Galerie, Knossos Palast, griechisches Restaurant, Atmosphäre, Gerichte, Bilder">
+    <meta name="author" content="Theo & Logos">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://knossos-palast.de/gallery">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Theo & Logos" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-container">
+            <div class="cookie-content">
+                <div class="cookie-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="cookie-text">
+                    <h4>Datenschutz & Cookies</h4>
+                    <p>Wir verwenden Cookies zur Optimierung Ihrer Nutzererfahrung und für Analysen.</p>
+                </div>
+                <div class="cookie-actions">
+                    <button id="cookie-essential" class="cookie-btn essential">
+                        <i class="fas fa-check"></i>
+                        <span>Erforderlich</span>
+                    </button>
+                    <button id="cookie-analytics" class="cookie-btn analytics">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Mit Analytics</span>
+                    </button>
+                    <button id="cookie-all" class="cookie-btn all">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>Alle akzeptieren</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <div class="mobile-nav-sidebar" id="mobile-nav-sidebar">
+        <div class="mobile-nav-header">
+            <div class="mobile-nav-logo">
+                <img onclick="window.location.href='/index.html'" src="/images/theo-logos.png" alt="Theo & Logos Logo">
+            </div>
+            <button class="mobile-nav-close" id="mobile-nav-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">
+                    <i class="bx bx-home nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/menu.html" class="nav-link">
+                    <i class="bx bx-restaurant nav-icon"></i>
+                    <span class="nav-text">Speisekarte</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/gallery.html" class="nav-link active">
+                    <i class="bx bx-camera nav-icon"></i>
+                    <span class="nav-text">Galerie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/contact.html" class="nav-link">
+                    <i class="bx bx-envelope nav-icon"></i>
+                    <span class="nav-text">Kontakt</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" id="logo">
+                    <img onclick="window.location.href='/index.html'" src="/images/theo-logos.png" alt="Knossos Palast Logo">
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-home nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/menu.html" class="nav-link">
+                            <span class="nav-text">Speisekarte</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-restaurant nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery.html" class="nav-link active">
+                            <span class="nav-text">Galerie</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-camera nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">
+                            <span class="nav-text">Kontakt</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="bx bx-envelope nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="reservation-btn" onclick="window.location.href='/contact.html#reservation'">
+                        <div class="btn-content">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Reservieren</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="gallery-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="gallery-title">Galerie</h1>
+                <p class="gallery-subtitle">Entdecken Sie die einzigartige Atmosphäre von Theo & Logos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">
+                    <i class="fas fa-th-large"></i>
+                    <span>Alle Bilder</span>
+                </button>
+                <button class="filter-tab" data-filter="restaurant">
+                    <i class="fas fa-building"></i>
+                    <span>Restaurant</span>
+                </button>
+                <button class="filter-tab" data-filter="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>Kulinarik</span>
+                </button>
+                <button class="filter-tab" data-filter="atmosphere">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <span>Atmosphäre</span>
+                </button>
+                <button class="filter-tab" data-filter="events">
+                    <i class="fas fa-glass-cheers"></i>
+                    <span>Events</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" data-category="restaurant">
+                    <div class="image-container">
+                        <img src="/images/photo1.jpg" alt="Elegantes Restaurant Interior" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Elegantes Ambiente</h3>
+                                <p>Stilvolle Einrichtung mit griechischem Flair</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="image-container">
+                        <img src="/images/photo3.jpg" alt="Griechische Spezialitäten">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Griechische Köstlichkeiten</h3>
+                                <p>Authentische Gerichte aus frischesten Zutaten</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="atmosphere">
+                    <div class="image-container">
+                        <img src="/images/photo2.jpg" alt="Romantische Atmosphäre">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Romantische Stimmung</h3>
+                                <p>Perfekt für unvergessliche Momente zu zweit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="image-container">
+                        <img src="/images/photo4.jpg" alt="Mezze Platte">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Mezze Vielfalt</h3>
+                                <p>Traditionelle Vorspeisen zum gemeinsamen Genießen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <div class="image-container">
+                        <img src="/images/photo5.jpg" alt="Hauptsaal">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Großzügiger Hauptsaal</h3>
+                                <p>Ideal für Familienfeiern und große Gesellschaften</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="image-container">
+                        <img src="/images/photo6.jpg" alt="Gegrillter Fisch" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Frischer Fisch vom Grill</h3>
+                                <p>Täglich frisch und perfekt zubereitet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="image-container">
+                        <img src="/images/photo7.jpg" alt="Festliche Veranstaltung">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Festliche Veranstaltungen</h3>
+                                <p>Unvergessliche Feiern in stilvollem Ambiente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="atmosphere">
+                    <div class="image-container">
+                        <img src="/images/photo8.jpg" alt="Gemütliche Terrasse" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Sonnige Terrasse</h3>
+                                <p>Entspannen Sie im Freien bei mediterranem Flair</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="image-container">
+                        <img src="/images/photo9.jpg" alt="Griechische Desserts" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Süße Verführungen</h3>
+                                <p>Hausgemachte griechische Desserts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <div class="image-container">
+                        <img src="/images/photo10.avif" alt="Elegante Bar">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Stilvolle Bar</h3>
+                                <p>Erlesene Weine und exquisite Spirituosen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="image-container">
+                        <img src="/images/photo11.jpg" alt="Grill Spezialitäten" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Grill Meisterwerke</h3>
+                                <p>Perfekt gegrilltes Fleisch nach griechischer Art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="image-container">
+                        <img src="/images/photo12.jpg" alt="Live Musik Abend" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Live Musik Abende</h3>
+                                <p>Griechische Musik und Tanz für alle Sinne</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="image-container">
+                        <img src="/images/photo13.jpg" alt="Griechischer Bauernsalat" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Griechischer Bauernsalat</h3>
+                                <p>Frisch, authentisch und voller Geschmack</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="atmosphere">
+                    <div class="image-container">
+                        <img src="/images/photo14.jpg" alt="Abendstimmung" >
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <h3>Magische Abendstimmung</h3>
+                                <p>Warmes Licht und gemütliche Atmosphäre</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="load-more-container">
+                <button class="load-more-btn" id="load-more">
+                    <div class="btn-content">
+                        <i class="fas fa-images"></i>
+                        <span>Weitere Bilder laden</span>
+                    </div>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Erleben Sie es selbst</h2>
+                <p>Lassen Sie sich von der einzigartigen Atmosphäre von Theo & Logos verzaubern. Besuchen Sie uns und genießen Sie authentische griechische Küche in einem der schönsten Restaurants der Stadt.</p>
+                <div class="cta-actions">
+                    <button class="btn-primary" onclick="window.location.href='/contact.html#reservation'">
+                        <div class="btn-content">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Tisch reservieren</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="btn-secondary" onclick="window.location.href='/menu.html'">
+                        <div class="btn-content">
+                            <i class="fas fa-utensils"></i>
+                            <span>Speisekarte entdecken</span>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="bg-pattern"></div>
+            <div class="bg-decoration"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="/images/theologoslogo.png" alt="Knossos Palast Logo" class="footer-logo">
+                    <div class="brand-content">
+                        <h3>Theo & Logos</h3>
+                        <p>Authentische griechische Küche seit 2012. Erleben Sie die Tradition und den Geschmack Griechenlands in unserem eleganten Restaurant mit über 25 Jahren Erfahrung.</p>
+                        
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/knossos.palast.potsdam/" class="social-link facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/knossos_palast_potsdam_/" class="social-link instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@knossos.palast_potsdam" class="social-link tiktok" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section contact-section">
+                    <div class="section-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Kontakt</h4>
+                    </div>
+                    <div class="section-content">
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="item-text">
+                                <span>Potsdamer Str. 37</span>
+                                <span>14469 Potsdam</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="item-text">
+                                <a href="tel:03315506743">0331 550 67 43</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="item-text">
+                                <a href="mailto:info@knossos-palast-potsdam.de">info@knossos-palast-potsdam.de</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section hours-section">
+                    <div class="section-header">
+                        <i class="fas fa-clock"></i>
+                        <h4>Öffnungszeiten</h4>
+                    </div>
+                    <div class="section-content">
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="days">Dienstag</span>
+                                <span class="time">Geschlossen</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="days">Sonst täglich</span>
+                                <span class="time">12:00 - 23:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section services-section">
+                    <div class="section-header">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h4>Services</h4>
+                    </div>
+                    <div class="section-content">
+                        <div class="service-links">
+                            <a href="/contact.html" class="service-link">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Reservierung</span>
+                            </a>
+                            <a href="/index.html#gutschein" class="service-link">
+                                <i class="fas fa-gift"></i>
+                                <span>Gutscheine</span>
+                            </a>
+                            <a href="/index.html#events" class="service-link">
+                                <i class="fas fa-glass-cheers"></i>
+                                <span>Veranstaltungen</span>
+                            </a>
+                            <a href="/menu.html" class="service-link">
+                                <i class="fas fa-utensils"></i>
+                                <span>Speisekarte</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="/imprint.html" class="legal-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Impressum</span>
+                    </a>
+                    <a href="/privacy.html" class="legal-link">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Datenschutzerklärung</span>
+                    </a>
+                    <a href="/cookies.html" id="cookie-settings" class="legal-link">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Cookie-Richtlinie</span>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <div class="copyright-text">
+                        <span>&copy; 2025 Knossos Palast Potsdam. Alle Rechte vorbehalten.</span>
+                        <p class="credit">Réalisé par 
+                        <a href="https://huhpact.dev?utm_source=theologos&utm_medium=webbrowser&utm_campaign=theologos">
+                        <img class="img__credit" src="https://huhpact.dev/s/logo-huhpact.png" alt="huh(pact)">
+                    </a>
+                </p>
+                    </div>
+                    <div class="copyright-decoration">
+                        <i class="fas fa-olive-branch"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <div class="lightbox-modal" id="lightbox-modal">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-prev" id="lightbox-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-next" id="lightbox-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-content">
+                <img src="" alt="" id="lightbox-image">
+                <div class="lightbox-info">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/gallery.js"></script>
+</body>
+</html>
