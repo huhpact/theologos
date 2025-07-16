@@ -1174,3 +1174,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "F12") {
+    e.preventDefault();
+  }
+
+  if (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key.toUpperCase())) {
+    e.preventDefault();
+  }
+
+  if (e.ctrlKey && ["U", "S", "P"].includes(e.key.toUpperCase())) {
+    e.preventDefault();
+  }
+});
