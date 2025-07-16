@@ -659,6 +659,7 @@
     font-family: var(--font-heading);
     margin-bottom: var(--space-sm);
     font-size: 1.25rem;
+    color: white;
     font-weight: 600;
 }
 

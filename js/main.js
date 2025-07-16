@@ -664,9 +664,9 @@ class PerformanceOptimizer {
 
     preloadCriticalImages() {
         const criticalImages = [
-            'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1920',
-            'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1920',
-            'https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=1920'
+            '/images/main-slide1.jpg',
+            '/images/main-slide2.jpg',
+            '/images/main-slide3.jpg'
         ];
         
         criticalImages.forEach(src => {

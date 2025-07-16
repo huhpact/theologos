@@ -418,16 +418,16 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 2rem;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     z-index: 1001;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     transition: all 0.3s ease;
 }
 
 .header.scrolled .logo {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
 }
 
 .logo img {
@@ -438,6 +438,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background: var(--white);
     padding: 8px;
+    background-color: #F4EEE7;
     transition: all 0.3s ease;
 }
 
@@ -1638,7 +1639,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(27, 54, 93, 0.8), rgba(184, 134, 11, 0.8));
+    background: linear-gradient(135deg, var(--deep-blue), rgba(184, 134, 11, 0.8));
     color: var(--white);
     display: flex;
     align-items: center;
