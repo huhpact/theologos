@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speisekarte - Theo & Logos | Authentische griechische Küche</title>
     <meta name="description" content="Entdecken Sie unsere vielfältige Speisekarte mit authentischen griechischen Spezialitäten, Kinderkarte, Eiskarte und besonderen Highlights.">
-    <meta name="keywords" content="Speisekarte, griechische Küche, Knossos Palast, Theo & Logos, Hauptspeisen, Kinderkarte, Eiskarte, Highlights">
-    <meta name="author" content="Theo & Logos">
+    <meta name="keywords" content="Speisekarte, griechische Küche, Knossos Palast, Hauptspeisen, Kinderkarte, Eiskarte, Highlights">
+    <meta name="author" content="Knossos Palast">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://knossos-palast.de/menu">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
-    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Theo & Logos" />
-    <link rel="manifest" href="/images/site.webmanifest" />
+    
+    <link rel="icon" type="image/x-icon" href="/images/Knossos Palast.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
@@ -26,7 +21,7 @@
     <link rel="stylesheet" href="/css/menu.css">
 </head>
 <body>
-     <div id="cookie-banner" class="cookie-banner">
+      <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-container">
             <div class="cookie-content">
                 <div class="cookie-icon">
@@ -144,7 +139,7 @@
                 </ul>
                 
                 <div class="nav-actions">
-                    <button class="reservation-btn" onclick="window.location.href='/contact.html'">
+                    <button class="reservation-btn" onclick="openReservation()">
                         <div class="btn-content">
                             <i class="fas fa-calendar-check"></i>
                             <span>Reservieren</span>
@@ -161,6 +156,7 @@
         </nav>
     </header>
 
+    <!-- Menu Navigation -->
     <section class="menu-nav-section">
         <div class="container">
             <div class="menu-nav-header">
@@ -173,22 +169,49 @@
                     <i class="fas fa-utensils"></i>
                     <span>Hauptspeisekarte</span>
                 </button>
-                <button class="menu-tab" data-menu="kinderkarte">
-                    <i class="fas fa-child"></i>
-                    <span>Kinderkarte</span>
-                </button>
-                <button class="menu-tab" data-menu="eiskarte">
-                    <i class="fas fa-ice-cream"></i>
-                    <span>Eiskarte</span>
-                </button>
-                <button class="menu-tab" data-menu="highlightkarte">
-                    <i class="fas fa-star"></i>
+                <button class="menu-tab" data-menu="spezialkarte">
+                    <i class="fas fa-crown"></i>
                     <span>Spezialkarte</span>
+                </button>
+                <button class="menu-tab" data-menu="tageskarte">
+                    <i class="fas fa-calendar-day"></i>
+                    <span>Tageskarte</span>
                 </button>
             </div>
         </div>
     </section>
 
+    <!-- Tageskarte Info Banner -->
+    <section class="tageskarte-info-banner" id="tageskarte-banner" style="display: none;">
+        <div class="container">
+            <div class="info-banner">
+                <div class="banner-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="banner-content">
+                    <h3>Tageskarte</h3>
+                    <p>Verfügbar täglich von <strong>12:00 - 16:00 Uhr</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mixed Salad Info Banner -->
+    <section class="mixed-salad-banner">
+        <div class="container">
+            <div class="salad-info-box">
+                <div class="salad-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="salad-content">
+                    <h3>Gemischter Salat als Beilage</h3>
+                    <p>Zu jedem Hauptgericht können Sie einen frischen gemischten Salat für nur <span class="price-highlight">4,00€</span> dazu bestellen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Filters -->
     <section class="menu-filters-section">
         <div class="container">
             <div class="menu-filters">
@@ -214,174 +237,118 @@
         </div>
     </section>
 
+    <!-- Menu Content -->
     <main class="menu-content">
         <div class="container">
+            <!-- Hauptspeisekarte -->
             <section id="hauptspeisekarte" class="menu-section active">
                 <div class="menu-categories" id="hauptspeisekarte-content">
+                    <!-- Categories will be populated by JavaScript -->
                 </div>
             </section>
 
-            <section id="kinderkarte" class="menu-section">
-                <div class="menu-categories" id="kinderkarte-content">
+            <!-- Spezialkarte -->
+            <section id="spezialkarte" class="menu-section">
+                <div class="menu-categories" id="spezialkarte-content">
+                    <!-- Categories will be populated by JavaScript -->
                 </div>
             </section>
 
-            <section id="eiskarte" class="menu-section">
-                <div class="menu-categories" id="eiskarte-content">
-                </div>
-            </section>
-
-            <section id="highlightkarte" class="menu-section">
-                <div class="menu-categories" id="highlightkarte-content">
+            <!-- Tageskarte -->
+            <section id="tageskarte" class="menu-section">
+                <div class="menu-categories" id="tageskarte-content">
+                    <!-- Categories will be populated by JavaScript -->
                 </div>
             </section>
         </div>
     </main>
 
+    <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </button>
 
-     <footer class="footer">
-        <div class="footer-bg">
-            <div class="bg-pattern"></div>
-            <div class="bg-decoration"></div>
+    <script src="/script.js"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>
+                    <i class="fas fa-star"></i>
+                    <span>Highlights</span>
+                </button>
+            </div>
         </div>
-        
+    </section>
+
+    <!-- Menu Filters -->
+    <section class="menu-filters-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="/images/logo.png" alt="Theo & Logos Logo" class="footer-logo">
-                    <div class="brand-content">
-                        <h3>Theo & Logos</h3>
-                        <p>Authentische griechische Küche seit 2012. Erleben Sie die Tradition und den Geschmack Griechenlands in unserem eleganten Restaurant mit über 25 Jahren Erfahrung.</p>
-                        
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/knossos.palast.potsdam/" class="social-link facebook" aria-label="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com/knossos_palast_potsdam_/" class="social-link instagram" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@knossos.palast_potsdam" class="social-link tiktok" aria-label="TikTok">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                        </div>
-                    </div>
+            <div class="menu-filters">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-list"></i>
+                        <span>Alle</span>
+                    </button>
+                    <button class="filter-btn" data-filter="vegetarian">
+                        <i class="fas fa-leaf"></i>
+                        <span>Vegetarisch</span>
+                    </button>
+                    <button class="filter-btn" data-filter="vegan">
+                        <i class="fas fa-seedling"></i>
+                        <span>Vegan</span>
+                    </button>
                 </div>
-                
-                <div class="footer-section contact-section">
-                    <div class="section-header">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Kontakt</h4>
-                    </div>
-                    <div class="section-content">
-                        <div class="contact-item">
-                            <div class="item-icon">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <div class="item-text">
-                                <span>Potsdamer Str. 37</span>
-                                <span>14469 Potsdam</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="item-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="item-text">
-                                <a href="tel:03315506743">0331 550 67 43</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="item-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="item-text">
-                                <a href="mailto:info@knossos-palast-potsdam.de">info@knossos-palast-potsdam.de</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer-section hours-section">
-                    <div class="section-header">
-                        <i class="fas fa-clock"></i>
-                        <h4>Öffnungszeiten</h4>
-                    </div>
-                    <div class="section-content">
-                        <div class="hours-list">
-                            <div class="hours-item">
-                                <span class="days">Dienstag</span>
-                                <span class="time">Geschlossen</span>
-                            </div>
-                            <div class="hours-item">
-                                <span class="days">Sonst täglich</span>
-                                <span class="time">12:00 - 23:00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer-section services-section">
-                    <div class="section-header">
-                        <i class="fas fa-concierge-bell"></i>
-                        <h4>Services</h4>
-                    </div>
-                    <div class="section-content">
-                        <div class="service-links">
-                            <a href="/contact.html" class="service-link">
-                                <i class="fas fa-calendar-check"></i>
-                                <span>Reservierung</span>
-                            </a>
-                            <a href="/index.html#gutschein" class="service-link">
-                                <i class="fas fa-gift"></i>
-                                <span>Gutscheine</span>
-                            </a>
-                            <a href="/index.html#events" class="service-link">
-                                <i class="fas fa-glass-cheers"></i>
-                                <span>Veranstaltungen</span>
-                            </a>
-                            <a href="/menu.html" class="service-link">
-                                <i class="fas fa-utensils"></i>
-                                <span>Speisekarte</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-legal">
-                    <a href="/imprint.html" class="legal-link">
-                        <i class="fas fa-info-circle"></i>
-                        <span>Impressum</span>
-                    </a>
-                    <a href="/privacy.html" class="legal-link">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Datenschutzerklärung</span>
-                    </a>
-                    <a href="/cookies.html" id="cookie-settings" class="legal-link">
-                        <i class="fas fa-cookie-bite"></i>
-                        <span>Cookie-Richtlinie</span>
-                    </a>
-                </div>
-                <div class="footer-copyright">
-                    <div class="copyright-text">
-                        <span>&copy; 2025 Theo & Logos. Alle Rechte vorbehalten.</span>
-                        <p class="credit">Réalisé par 
-                        <a href="https://huhpact.dev?utm_source=theologos&utm_medium=webbrowser&utm_campaign=theologos">
-                        <img class="img__credit" src="https://huhpact.dev/s/logo-huhpact.png" alt="huh(pact)">
-                    </a>
-                </p>
-                    </div>
-                    <div class="copyright-decoration">
-                        <i class="fas fa-olive-branch"></i>
-                    </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="menu-search" placeholder="Gericht suchen...">
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Menu Content -->
+    <main class="menu-content">
+        <div class="container">
+            <!-- Hauptspeisekarte -->
+            <section id="hauptspeisekarte" class="menu-section active">
+                <div class="menu-categories" id="hauptspeisekarte-content">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Kinderkarte -->
+            <section id="kinderkarte" class="menu-section">
+                <div class="menu-categories" id="kinderkarte-content">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Eiskarte -->
+            <section id="eiskarte" class="menu-section">
+                <div class="menu-categories" id="eiskarte-content">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Spezialkarte -->
+            <section id="spezialkarte" class="menu-section">
+                <div class="menu-categories" id="spezialkarte-content">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Tageskarte -->
+            <section id="tageskarte" class="menu-section">
+                <div class="menu-categories" id="tageskarte-content">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="/js/main.js"></script>
     <script src="/js/menu.js"></script>

@@ -1,3 +1,62 @@
+/* Menu Page Specific Styles */
+
+:root {
+    --primary-gold: #B8860B;
+    --dark-gold: #8B6914;
+    --light-gold: #DAA520;
+    --accent-gold: #F4D03F;
+    
+    --primary-wine: #5C0F14;
+    --dark-wine: #400A0D;
+    --royal-blue: #8B1C23;
+    --light-blue: #B22222;
+    
+    --charcoal: #2D3748;
+    --dark-gray: #4A5568;
+    --medium-gray: #718096;
+    --light-gray: #E2E8F0;
+    --cream: #F7FAFC;
+    --white: #FFFFFF;
+    --black: #1A202C;
+ 
+    --success: #38A169;
+    --warning: #D69E2E;
+    --error: #E53E3E;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+    --space-4xl: 8rem;
+
+    --font-primary: 'Montserrat', sans-serif;
+    --font-heading: 'Skranji', cursive;
+ 
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+    --transition-fast: all 0.15s ease;
+    --transition-normal: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+}
+
+
+/* Menu Navigation Section */
 .menu-nav-section {
     padding: 120px 0 var(--space-xl);
     background: linear-gradient(135deg, var(--cream), var(--white));
@@ -12,7 +71,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(circle at 2px 2px, var(--primary-gold) 1px, transparent 0);
+    background-image: radial-gradient(circle at 2px 2px, var(--primary-wine) 1px, transparent 0);
     background-size: 40px 40px;
     opacity: 0.03;
     z-index: -1;
@@ -26,7 +85,7 @@
 .menu-title {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 5vw, 3.5rem);
-    color: var(--deep-blue);
+    color: var(--primary-wine);
     margin-bottom: var(--space-sm);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -42,7 +101,7 @@
 .menu-nav-tabs {
     display: flex;
     justify-content: center;
-    gap: var(--space-sm);
+    gap: var(--space-md);
     max-width: 900px;
     margin: 0 auto;
     background: var(--white);
@@ -87,7 +146,7 @@
 
 .menu-tab:hover,
 .menu-tab.active {
-    background: var(--primary-gold);
+    background: var(--primary-wine);
     color: var(--white);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -98,6 +157,144 @@
     color: var(--white);
 }
 
+/* Tageskarte Info Banner */
+.tageskarte-info-banner {
+    padding: var(--space-lg) 0;
+    background: linear-gradient(135deg, var(--primary-wine), var(--dark-wine));
+    position: relative;
+    overflow: hidden;
+}
+
+.tageskarte-info-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+    background-size: 30px 30px;
+    opacity: 0.3;
+}
+
+.info-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg) var(--space-xl);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.banner-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.banner-content {
+    text-align: center;
+    color: var(--white);
+}
+
+.banner-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+    font-weight: 700;
+    color: white;
+}
+
+.banner-content p {
+    font-size: 1.125rem;
+    margin: 0;
+    opacity: 0.95;
+}
+
+.banner-content strong {
+    color: var(--primary-gold);
+    font-weight: 700;
+}
+
+/* Mixed Salad Banner */
+.mixed-salad-banner {
+    padding: var(--space-lg) 0;
+    background: var(--cream);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.salad-info-box {
+    background: var(--white);
+    border: 2px solid var(--primary-wine);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(92, 15, 20, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.salad-info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-wine), var(--dark-wine));
+}
+
+.salad-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-gold), var(--dark-wine));
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto var(--space-md);
+    box-shadow: 0 8px 20px rgba(92, 15, 20, 0.3);
+}
+
+.salad-content h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-wine);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+}
+
+.salad-content p {
+    color: var(--charcoal);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.price-highlight {
+    color: var(--primary-wine);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+/* Menu Filters Section */
 .menu-filters-section {
     padding: var(--space-lg) 0;
     background: var(--white);
@@ -140,8 +337,8 @@
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: var(--primary-gold);
-    border-color: var(--primary-gold);
+    background: var(--primary-wine);
+    border-color: var(--primary-wine);
     color: var(--white);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -175,10 +372,11 @@
 
 .search-box input:focus {
     outline: none;
-    border-color: var(--primary-gold);
-    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+    border-color: var(--primary-wine);
+    box-shadow: 0 0 0 3px rgba(92, 15, 20, 0.1);
 }
 
+/* Menu Content */
 .menu-content {
     padding: var(--space-2xl) 0;
     background: var(--cream);
@@ -224,7 +422,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-gold), var(--dark-gold));
+    background: linear-gradient(90deg, var(--primary-wine), var(--dark-wine));
 }
 
 .category-header {
@@ -239,7 +437,7 @@
 .category-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+    background: linear-gradient(135deg, var(--primary-gold), var(--primary-gold));
     color: var(--white);
     border-radius: var(--radius-lg);
     display: flex;
@@ -253,7 +451,7 @@
 .category-title {
     font-family: var(--font-heading);
     font-size: 1.5rem;
-    color: var(--deep-blue);
+    color: var(--primary-wine);
     margin: 0;
 }
 
@@ -298,7 +496,7 @@
     flex: 1;
 }
 
-.item-number {
+.item-icon {
     background: var(--primary-gold);
     color: var(--white);
     width: 35px;
@@ -307,9 +505,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     flex-shrink: 0;
+    transition: var(--transition-fast);
+}
+
+.menu-item:hover .item-icon {
+    background: var(--primary-gold);
+    transform: scale(1.1);
 }
 
 .item-details {
@@ -319,7 +522,7 @@
 .item-name {
     font-family: var(--font-heading);
     font-size: 1.125rem;
-    color: var(--deep-blue);
+    color: var(--primary-wine);
     margin-bottom: var(--space-xs);
     display: flex;
     align-items: center;
@@ -353,7 +556,7 @@
 .item-price {
     font-family: var(--font-heading);
     font-size: 1.25rem;
-    color: var(--primary-gold);
+    color: var(--primary-wine);
     font-weight: 700;
     margin-right: var(--space-md);
 }
@@ -366,7 +569,7 @@
 
 .menu-item.expanded .expand-icon {
     transform: rotate(180deg);
-    color: var(--primary-gold);
+    color: var(--primary-wine);
 }
 
 .menu-item-content {
@@ -452,13 +655,14 @@
     transform: scale(1.05);
 }
 
+/* Back to Top Button */
 .back-to-top {
     position: fixed;
     bottom: var(--space-xl);
     right: var(--space-xl);
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+    background: linear-gradient(135deg, var(--primary-wine), var(--dark-wine));
     color: var(--white);
     border: none;
     border-radius: var(--radius-full);
@@ -483,6 +687,7 @@
     box-shadow: var(--shadow-lg);
 }
 
+/* Responsive Design */
 @media (max-width: 1200px) {
     .item-content-inner {
         grid-template-columns: 1fr 220px;
@@ -517,6 +722,64 @@
 @media (max-width: 768px) {
     .menu-nav-section {
         padding: 100px 0 var(--space-lg);
+    }
+    
+    /* Special info box for mixed salad */
+    .mixed-salad-info {
+        background: linear-gradient(135deg, var(--cream), var(--white));
+        border: 2px solid var(--primary-wine);
+        border-radius: var(--radius-xl);
+        padding: var(--space-xl);
+        margin: var(--space-xl) 0;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(92, 15, 20, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .mixed-salad-info::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary-wine), var(--dark-wine));
+    }
+    
+    .mixed-salad-info .info-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--primary-wine), var(--dark-wine));
+        color: var(--white);
+        border-radius: var(--radius-full);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin: 0 auto var(--space-md);
+        box-shadow: 0 8px 20px rgba(92, 15, 20, 0.3);
+    }
+    
+    .mixed-salad-info h3 {
+        font-family: var(--font-heading);
+        color: var(--primary-wine);
+        font-size: 1.25rem;
+        margin-bottom: var(--space-sm);
+        font-weight: 600;
+    }
+    
+    .mixed-salad-info p {
+        color: var(--charcoal);
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+    
+    .mixed-salad-info .price-highlight {
+        color: var(--primary-wine);
+        font-weight: 700;
+        font-size: 1.125rem;
     }
     
     .menu-nav-tabs {
@@ -594,6 +857,12 @@
         text-align: center;
         gap: var(--space-sm);
         width: 100%;
+    }
+    
+    .item-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
     }
     
     .item-details {
