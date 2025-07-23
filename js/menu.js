@@ -1,5 +1,3 @@
-// Menu Page JavaScript
-
 class MenuManager {
     constructor() {
         this.currentMenu = 'hauptspeisekarte';
@@ -27,7 +25,7 @@ class MenuManager {
                         name: 'Ouzo Spritz',
                         price: '8',
                         description: 'Ouzo, Tonie & Zitrone',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/ouzo-spritz.jpeg',
                         labels: ['Konservierungsstoffe', 'Süßungsmittel', 'Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -36,7 +34,7 @@ class MenuManager {
                         name: 'Aperol Spritz',
                         price: '8',
                         description: 'Aperol, Prosecco & Mineralwasser',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/aperol.png',
                         labels: ['Farbstoffe', 'Süßungsmittel', 'Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -45,7 +43,7 @@ class MenuManager {
                         name: 'Hugo',
                         price: '8',
                         description: 'Holunderblütensirup, Prosecco & Mineralwasser',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/hugo.png',
                         labels: ['Farbstoffe', 'Süßungsmittel', 'Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -54,7 +52,7 @@ class MenuManager {
                         name: 'Lillet Wild Berry',
                         price: '9',
                         description: 'Lillet Blanc, Wildberry-Limonade & frische Beeren',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/lillet-wild-berry.jpeg',
                         labels: ['Farbstoffe', 'Süßungsmittel', 'Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -63,7 +61,7 @@ class MenuManager {
                         name: 'Hausgemachte Limonade',
                         price: '7',
                         description: 'Sprite, frische Limes & Minze',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/limo.jpeg',
                         labels: ['Farbstoffe', 'Konservierungsstoffe', 'Süßungsmittel'],
                         vegetarian: true,
                         vegan: true
@@ -72,7 +70,7 @@ class MenuManager {
                         name: 'Rhabarber Spritz',
                         price: '8',
                         description: 'Aperol, Rhabarbernektar, Prosecco & Mineralwasser',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/rhabarber-spritz.jpeg',
                         labels: ['Farbstoffe', 'Schwefeldioxide', 'Süßungsmittel'],
                         vegetarian: true,
                         vegan: true
@@ -81,7 +79,7 @@ class MenuManager {
                         name: 'Prosecco',
                         price: '6',
                         description: '',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/prosecco.png',
                         labels: ['Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -92,7 +90,7 @@ class MenuManager {
                         name: 'Tzatziki nach Hausrezept',
                         price: '6',
                         description: 'Griechischer Joghurt mit Knoblauch, Gurke, Kräutern & bestem Olivenöl.',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/zaziki.png',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -101,7 +99,7 @@ class MenuManager {
                         name: 'Dip-Trio',
                         price: '10',
                         description: 'Tzatziki, Feta-Creme & Taramas (feine Creme aus Fischrogen)',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/dip-trio.png',
                         labels: ['Konservierungsstoffe', 'aufgetaute Fischprodukte', 'glutenhaltig', 'Soja', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -110,7 +108,7 @@ class MenuManager {
                         name: 'Kalamata Oliven & Peperoni',
                         price: '9',
                         description: 'Oliven & Eingelegte Peperoni mit Zwiebeln und Kräutern',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/kalamata.png',
                         labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Eisen-II-gluconat & -lactat', 'Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -119,7 +117,7 @@ class MenuManager {
                         name: 'Meze-Platte "Olympos"',
                         price: '20',
                         description: 'Ein Auszug klassischer Mezedes - zum Teilen und Genießen. Mit Dips, Oliven, Käse & Gemüsevariationen',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/olympos.png',
                         labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Eisen-II-gluconat & -lactat', 'aufgetaute Fischprodukte', 'glutenhaltig', 'Soja', 'Milch', 'Schwefeldioxid'],
                         vegetarian: false,
                         vegan: false
@@ -130,7 +128,7 @@ class MenuManager {
                         name: 'Heiße Peperoni vom Rost',
                         price: '9',
                         description: 'Knackig gegrillt, leicht pikant & mit hausgemachter Knoblauchsauce',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/pep-gegrillt.png',
                         labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Schwefeldioxid'],
                         vegetarian: true,
                         vegan: false
@@ -139,7 +137,7 @@ class MenuManager {
                         name: 'Pita Duett',
                         price: '13',
                         description: 'Griechische Teigtaschen mit Feta & Spinat - serviert mit Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/pita.jpg',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -1064,20 +1062,11 @@ class MenuManager {
             spezialkarte: {
                 'Special Menu / Spezialkarte': [
                     {
-                        name: 'Chef\'s Special Platter / Chefkoch Spezialität',
-                        price: '28.90',
+                        name: 'Soon available / Bald verfügbar',
+                        price: '/',
                         description: 'Exquisite selection of our finest dishes / Exquisite Auswahl unserer besten Gerichte',
                         image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Milch', 'Fisch', 'Fleisch'],
-                        vegetarian: false,
-                        vegan: false
-                    },
-                    {
-                        name: 'Seafood Deluxe / Meeresfrüchte Deluxe',
-                        price: '32.90',
-                        description: 'Fresh seafood platter with lobster and prawns / Frische Meeresfrüchte mit Hummer und Garnelen',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Meeresfrüchte', 'Krebstiere'],
+                        labels: [],
                         vegetarian: false,
                         vegan: false
                     }
@@ -1086,23 +1075,33 @@ class MenuManager {
             tageskarte: {
                 'Tageskarte (12:00 - 16:00 Uhr)': [
                     {
-                        name: 'Tagesfisch',
-                        price: '19.90',
-                        description: 'Frischer Fisch des Tages, je nach Verfügbarkeit',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Fisch'],
+                        name: 'Steak-Pause',
+                        price: '14',
+                        description: 'Nackensteak mit Pommes & Metaxasauce',
+                        image: '/images/nackensteak.jpg',
+                        labels: ['glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
                     },
                     {
-                        name: 'Mittagsmenü',
-                        price: '14.90',
-                        description: 'Wechselndes 3-Gang-Menü mit Suppe, Hauptgang und Dessert',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Variiert täglich'],
+                        name: 'Hähnchen-Bowl',
+                        price: '15',
+                        description: 'Hähnchenbrustfilet mit Gemüse & Kritharaki',
+                        image: '/images/haehnchen-bowl.jpg',
+                        labels: ['glutenhaltig'],
                         vegetarian: false,
                         vegan: false
-                    }
+                    },
+                    {
+                        name: 'Salad-Bowl',
+                        price: '13',
+                        description: 'Blattsalat mit Tomaten, Gurken, Paprika, Oliven & Fetawürfel, dazu Pita',
+                        image: '/images/salad-bowl.webp',
+                        labels: ['glutenhaltig'],
+                        vegetarian: true,
+                        vegan: false
+                    },
+                
                 ]
             },
         };
@@ -1169,14 +1168,12 @@ class MenuManager {
             });
         }, observerOptions);
 
-        // Observe categories as they're created
         this.observeCategories = (categories) => {
             categories.forEach(category => observer.observe(category));
         };
     }
 
     switchMenu(menuType) {
-        // Show/hide tageskarte info banner
         const banner = document.getElementById('tageskarte-banner');
         if (menuType === 'tageskarte') {
             banner.style.display = 'block';
@@ -1184,13 +1181,11 @@ class MenuManager {
             banner.style.display = 'none';
         }
         
-        // Update active tab
         document.querySelectorAll('.menu-tab').forEach(tab => {
             tab.classList.remove('active');
         });
         document.querySelector(`[data-menu="${menuType}"]`).classList.add('active');
 
-        // Update active section
         document.querySelectorAll('.menu-section').forEach(section => {
             section.classList.remove('active');
         });
@@ -1201,7 +1196,6 @@ class MenuManager {
     }
 
     setFilter(filter) {
-        // Update active filter button
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.classList.remove('active');
         });
@@ -1222,11 +1216,9 @@ class MenuManager {
             container.appendChild(categoryElement);
         });
 
-        // Setup scroll animations for new categories
         const categories = container.querySelectorAll('.menu-category');
         this.observeCategories(categories);
 
-        // Setup item interactions
         this.setupItemInteractions();
         this.filterItems();
     }
@@ -1236,31 +1228,37 @@ class MenuManager {
         category.className = 'menu-category';
         
         const iconMap = {
-            'Aperitif': 'fas fa-wine-glass',
+            'Signature Drinks': 'fas fa-martini-glass',
             'Kalte Vorspeisen': 'fas fa-snowflake',
-            'Warme Vorspeisen': 'fas fa-fire',
+            'Warme Meze': 'fas fa-fire',
             'Käse Spezialitäten': 'fas fa-cheese',
-            'Vorspeisen aus dem Meer': 'fas fa-fish',
-            'Suppen': 'fas fa-bowl-hot',
-            'Salate': 'fas fa-leaf',
+            'Maritime Vorspeisen': 'fas fa-fish',
+            'Etwas zum Tunken': 'fa-solid fa-bread-slice',
+            'Suppen': 'fa-solid fa-bowl-food',
+            'Garden of Greece': 'fas fa-leaf',
+            'Vegetarisch': 'fas fa-leaf',
+            'Fleisch': 'fa-solid fa-bacon',
             'Gyros und Grillspezialitäten': 'fas fa-fire-flame-curved',
             'Gemischte Fleischplatten vom grill': 'fas fa-drumstick-bite',
             'Schnitzel': 'fas fa-cutlery',
-            'Traditionelle griechische Küche': 'fas fa-home',
+            'Authentische griechische Küche': 'fas fa-home',
             'Pfännchen-Spezialitäten': 'fas fa-pot',
             'Überbackenes': 'fas fa-cheese',
-            'Fischspezialitäten': 'fas fa-fish',
+            'Für unsere kleinen Helden': 'fa-solid fa-child-reaching',
+            'Fische': 'fas fa-fish',
+            'Eisbecher': 'fa-solid fa-ice-cream',
+            'Burger-Laune': 'fa-solid fa-burger',
             'Beilagen': 'fas fa-plate-wheat',
             'Saucen': 'fas fa-bottle-droplet',
             'Desserts': 'fas fa-cake-candles',
-            'Weissweine': 'fas fa-wine-bottle',
+            'Wein': 'fas fa-wine-bottle',
             'Roséweine': 'fas fa-wine-bottle',
             'Rotweine': 'fas fa-wine-bottle',
-            'Kaffee und Tee': 'fas fa-mug-hot',
-            'Alkoholfreie Getränke': 'fas fa-glass-water',
+            'Kaffee & Tee': 'fas fa-mug-hot',
+            'Alkoholfrei': 'fas fa-glass-water',
             'Säfte': 'fas fa-glass-citrus',
             'Fassbier': 'fas fa-beer-mug-empty',
-            'Flaschenbier': 'fas fa-beer',
+            'Bier': 'fas fa-beer',
             'Longdrinks': 'fas fa-martini-glass',
             'Spirituosen': 'fas fa-whiskey-glass',
             'Schorlen': 'fas fa-glass-water-droplet',
@@ -1356,12 +1354,10 @@ class MenuManager {
     toggleItem(item) {
         const isExpanded = item.classList.contains('expanded');
         
-        // Close currently expanded item
         if (this.expandedItem && this.expandedItem !== item) {
             this.expandedItem.classList.remove('expanded');
         }
 
-        // Toggle current item
         if (isExpanded) {
             item.classList.remove('expanded');
             this.expandedItem = null;
@@ -1381,14 +1377,12 @@ class MenuManager {
             
             let showItem = true;
 
-            // Filter by dietary preference
             if (this.currentFilter === 'vegetarian' && !isVegetarian) {
                 showItem = false;
             } else if (this.currentFilter === 'vegan' && !isVegan) {
                 showItem = false;
             }
 
-            // Filter by search term
             if (this.searchTerm && !itemName.includes(this.searchTerm)) {
                 showItem = false;
             }
@@ -1408,7 +1402,6 @@ class MenuManager {
     }
 }
 
-// Initialize menu manager when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new MenuManager();
 });

@@ -1,5 +1,3 @@
-/* Menu Page Specific Styles */
-
 :root {
     --primary-gold: #B8860B;
     --dark-gold: #8B6914;
@@ -56,7 +54,6 @@
 }
 
 
-/* Menu Navigation Section */
 .menu-nav-section {
     padding: 120px 0 var(--space-xl);
     background: linear-gradient(135deg, var(--cream), var(--white));
@@ -157,7 +154,6 @@
     color: var(--white);
 }
 
-/* Tageskarte Info Banner */
 .tageskarte-info-banner {
     padding: var(--space-lg) 0;
     background: linear-gradient(135deg, var(--primary-wine), var(--dark-wine));
@@ -376,7 +372,6 @@
     box-shadow: 0 0 0 3px rgba(92, 15, 20, 0.1);
 }
 
-/* Menu Content */
 .menu-content {
     padding: var(--space-2xl) 0;
     background: var(--cream);
@@ -655,7 +650,6 @@
     transform: scale(1.05);
 }
 
-/* Back to Top Button */
 .back-to-top {
     position: fixed;
     bottom: var(--space-xl);
@@ -687,7 +681,6 @@
     box-shadow: var(--shadow-lg);
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .item-content-inner {
         grid-template-columns: 1fr 220px;
@@ -724,7 +717,6 @@
         padding: 100px 0 var(--space-lg);
     }
     
-    /* Special info box for mixed salad */
     .mixed-salad-info {
         background: linear-gradient(135deg, var(--cream), var(--white));
         border: 2px solid var(--primary-wine);
