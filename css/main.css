@@ -313,12 +313,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-logo img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     border-radius: 50%;
     background: var(--white);
-    padding: 8px;
 }
 
 .mobile-nav-close {
@@ -423,10 +422,10 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 2rem;
     top: 50%;
-    transform: translateY(-40%);
+    transform: translateY(-20%);
     z-index: 1001;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     transition: all 0.3s ease;
 }
 
@@ -442,7 +441,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background: var(--white);
-    padding: 8px;
     background-color: #F4EEE7;
     transition: all 0.3s ease;
 }
@@ -3260,13 +3258,13 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         left: 0;
         transform: none;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     
     .header.scrolled .logo {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
     
     .nav-actions {
