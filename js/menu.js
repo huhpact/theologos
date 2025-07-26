@@ -85,7 +85,7 @@ class MenuManager {
                         vegan: true
                     }
                 ],
-                'Kalte Vorspeisen': [
+                'Kalte & Warme Meze': [
                     {
                         name: 'Tzatziki nach Hausrezept',
                         price: '6',
@@ -104,41 +104,12 @@ class MenuManager {
                         vegetarian: true,
                         vegan: false
                     },
-                    {
-                        name: 'Kalamata Oliven & Peperoni',
-                        price: '9',
-                        description: 'Oliven & Eingelegte Peperoni mit Zwiebeln und Kräutern',
-                        image: '/images/kalamata.png',
-                        labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Eisen-II-gluconat & -lactat', 'Schwefeldioxid'],
-                        vegetarian: true,
-                        vegan: true
-                    },
-                    {
-                        name: 'Meze-Platte "Olympos"',
-                        price: '20',
-                        description: 'Ein Auszug klassischer Mezedes - zum Teilen und Genießen. Mit Dips, Oliven, Käse & Gemüsevariationen',
-                        image: '/images/olympos.png',
-                        labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Eisen-II-gluconat & -lactat', 'aufgetaute Fischprodukte', 'glutenhaltig', 'Soja', 'Milch', 'Schwefeldioxid'],
-                        vegetarian: false,
-                        vegan: false
-                    }
-                ],
-                'Warme Meze': [
-                    {
+                     {
                         name: 'Heiße Peperoni vom Rost',
                         price: '9',
                         description: 'Knackig gegrillt, leicht pikant & mit hausgemachter Knoblauchsauce',
                         image: '/images/pep-gegrillt.png',
                         labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Schwefeldioxid'],
-                        vegetarian: true,
-                        vegan: false
-                    },
-                    {
-                        name: 'Pita Duett',
-                        price: '13',
-                        description: 'Griechische Teigtaschen mit Feta & Spinat - serviert mit Tzatziki',
-                        image: '/images/pita.jpg',
-                        labels: ['glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
                     },
@@ -151,7 +122,7 @@ class MenuManager {
                         vegetarian: true,
                         vegan: false
                     },
-                    {
+                     {
                         name: 'Feta Fournou',
                         price: '14',
                         description: 'Im Ofen überbackener Feta mit frischen Kräutern & Oregano.',
@@ -161,15 +132,24 @@ class MenuManager {
                         vegan: false
                     },
                     {
-                        name: 'Ziegenkäse',
+                        name: 'Calamari-Ringe',
                         price: '14',
-                        description: 'Im Blätterteig, mit Honig & Sesam',
+                        description: 'Zart & knusprig - frisch zubereitete Calamari-Ringe und Tzatziki dazu',
                         image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'glutenhaltig', 'Schwefeldioxid'],
-                        vegetarian: true,
+                        labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Schalenfrüchte', 'Milch'],
+                        vegetarian: false,
                         vegan: false
                     },
                      {
+                        name: "Poseidon's Liebling",
+                        price: '21',
+                        description: 'Gegrillter Oktopus, serviert mit Wildkräutersalat & feinstem Olivenöl',
+                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        labels: ['aufgetaute Fischprodukte', 'Weichtiere'],
+                        vegetarian: false,
+                        vegan: false
+                    },
+                    {
                         name: 'Helios Genussrunde',
                         price: '22',
                         description: 'Unsere Vorspeisen-Klassiker bunt auf einem Teller',
@@ -179,6 +159,7 @@ class MenuManager {
                         vegan: false
                     }
                 ],
+               
                 'Etwas zum Tunken': [
                     {
                         name: 'Pitabrot',
@@ -206,26 +187,6 @@ class MenuManager {
                         labels: ['glutenhaltig'],
                         vegetarian: true,
                         vegan: true
-                    }
-                ],
-                'Maritime Vorspeisen': [
-                    {
-                        name: 'Calamari-Ringe',
-                        price: '14',
-                        description: 'Zart & knusprig - frisch zubereitete Calamari-Ringe und Tzatziki dazu',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Schalenfrüchte', 'Milch'],
-                        vegetarian: false,
-                        vegan: false
-                    },
-                    {
-                        name: "Poseidon's Liebling",
-                        price: '21',
-                        description: 'Gegrillter Oktopus, serviert mit Wildkräutersalat & feinstem Olivenöl',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['aufgetaute Fischprodukte', 'Weichtiere'],
-                        vegetarian: false,
-                        vegan: false
                     }
                 ],
                 'Suppen': [
@@ -275,15 +236,6 @@ class MenuManager {
                         labels: ['aromatisierte Kräuter', 'aufgetaute Fleischprodukte', 'glutenhaltig', 'Sesamsamen', 'Milch'],
                         vegetarian: false,
                         vegan: false
-                    },
-                     {
-                        name: 'Lachs-Iraklio Bowl',
-                        price: '24',
-                        description: 'Frischer Saisonsalat mit gegrilltem Lachsfilet',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Konservierungsstoffe', 'Süßungsmittel', 'glutenhaltig', 'Senf'],
-                        vegetarian: false,
-                        vegan: false
                     }
                 ],
                 'Vegetarisch': [
@@ -326,15 +278,6 @@ class MenuManager {
                         vegan: false
                     },
                     {
-                        name: 'Lammfilet',
-                        price: '35',
-                        description: 'Erleben Sie puren Genuss: Unser zartes Lammfilet, perfekt auf den Punkt gegrillt, serviert mit duftenden Rosmarinkartoffeln und unserel hausgemachten, cremigen Tzatziki. Eine harmonische Komposition aus frischen Aromen und höchster Qualität',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['aufgetaute Fleischprodukte', 'glutenhaltig', 'Milch'],
-                        vegetarian: false,
-                        vegan: false
-                    },
-                    {
                         name: 'Mousaka',
                         price: '22',
                         description: 'Hausgemachter Auflauf mit Auberginen, Kartoffeln und Hackfleisch, bedeckt mit Béchamelsauce und Käse',
@@ -345,15 +288,7 @@ class MenuManager {
                     }
                 ],
                 'Fische': [
-                    {
-                        name: 'Lachsfilet',
-                        price: '27',
-                        description: 'Erleben Sie die Reinheit Norwegens: Unser saftiges Lachsfilet, sorgfältig zubereitet, begleitet von knackigem Saisongemüse und aromatischen Rosmarinkartoffeln. Ein mediterranes Geschmackserlebnis von höchster Güte',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Fisch', 'Schalenfrüchte'],
-                        vegetarian: false,
-                        vegan: false
-                    },
+                    
                     {
                         name: 'Zanderfilet',
                         price: '22',
@@ -371,7 +306,17 @@ class MenuManager {
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Weichtiere'],
                         vegetarian: false,
                         vegan: false
-                    }
+                    },
+                     {
+                        name: 'Meeresgenuss à la Theo',
+                        price: '32',
+                        description: 'Calamari, Zander & Garnelen - gegrillt und liebevoll angerichtet. Ideal zum Teilen.',
+                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Weichtiere'],
+                        vegetarian: false,
+                        vegan: false
+                    },
+
                 ],
                 'Burger-Laune': [
                     {
@@ -379,7 +324,7 @@ class MenuManager {
                         price: '19',
                         description: 'Saftiges Hähnchen in knuspriger Panko-Panade, dazu knuspriger Bacon, feine Burgersauce und knackiger Salat im Brioche-Mehrkornbrot. Serviert mit Pommes Frites, Mayo und Ketchup',
                         image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Farbstoffe', 'Konservierungsstoffe', 'Antioxidationsmittel', 'Geschmacksverstärker', 'Phosphate', 'Pflanzenöle', 'glutenhaltig', 'Eier', 'Milch', 'Senf', 'Sellerie', 'Soja'],
+                        labels: ['glutenhaltig', 'Eier', 'Milch'],
                         vegetarian: false,
                         vegan: false
                     },
@@ -388,7 +333,7 @@ class MenuManager {
                         price: '18',
                         description: 'Gegrillter Halloumi, knackiger Salat, feine Burgersauce im Brioche-Mehrkornbrot. Dazu Pommes mit Mayo & Ketchup',
                         image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
-                        labels: ['Farbstoffe', 'Konservierungsstoffe', 'Antioxidationsmittel', 'Geschmacksverstärker', 'Phosphate', 'Pflanzenöle', 'glutenhaltig', 'Eier', 'Milch', 'Senf', 'Sellerie', 'Soja'],
+                        labels: ['glutenhaltig', 'Eier', 'Milch'],
                         vegetarian: false,
                         vegan: false
                     }
@@ -708,7 +653,7 @@ class MenuManager {
                     {
                         name: 'Lykrarakis',
                         price: '32',
-                        description: '(weiß/ rot) - 0.75l',
+                        description: 'Authentische Weine aus Seltenen Rebsorten, frisch und ausdrucksstark - direkt aus dem Herzen Kretas (weiß/ rot) - 0.75l',
                         image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
@@ -1089,6 +1034,15 @@ class MenuManager {
                         description: 'Hähnchenbrustfilet mit Gemüse & Kritharaki',
                         image: '/images/haehnchen-bowl.jpg',
                         labels: ['glutenhaltig'],
+                        vegetarian: false,
+                        vegan: false
+                    },
+                    {
+                        name: 'Zanderfilet',
+                        price: '16',
+                        description: 'mit Rosmarinkartoffeln',
+                        image: '/images/zanderfilet.jpg',
+                        labels: ['aufgetaute Fischprodukte', 'glutenhaltig'],
                         vegetarian: false,
                         vegan: false
                     },
