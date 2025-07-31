@@ -90,7 +90,7 @@ function initPhoneCallHandlers() {
     const reservationBtns = document.querySelectorAll('.reservation-btn');
     reservationBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            window.location.href = 'tel:+49331123456778';
+            window.location.href = 'tel:03315506743';
         });
     });
 }

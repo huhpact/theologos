@@ -1849,7 +1849,6 @@
 }
 
 
-        /* Gallery Header Styles */
         .gallery-hero {
             position: relative;
             height: 70vh;
@@ -1913,7 +1912,6 @@
             margin: 0 auto;
         }
 
-        /* Navigation Bar */
         .gallery-nav {
             background: rgba(247, 250, 252, 0.95);
             backdrop-filter: blur(20px);
@@ -1954,7 +1952,6 @@
             font-size: 1rem;
         }
 
-        /* Gallery Section Styles */
         .gallery-section {
             padding: var(--space-4xl) 0;
             position: relative;
@@ -2010,7 +2007,6 @@
             line-height: 1.7;
         }
 
-        /* Gallery Grid Styles */
         .gallery-grid {
             display: grid;
             gap: var(--space-lg);
@@ -2124,7 +2120,6 @@
             max-width: 200px;
         }
 
-        /* Lightbox Styles */
         .gallery-lightbox {
             position: fixed;
             top: 0;
@@ -2203,7 +2198,6 @@
             transform: scale(1.1);
         }
 
-        /* Animation Classes */
         .gallery-fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -2248,7 +2242,6 @@
             transform: scale(1);
         }
 
-        /* Back to Top Button */
         .gallery-back-to-top {
             position: fixed;
             bottom: var(--space-xl);
@@ -2278,7 +2271,6 @@
             box-shadow: var(--shadow-2xl);
         }
 
-        /* Responsive Design */
         @media (max-width: 1024px) {
             .gallery-grid.ambiente {
                 grid-template-columns: 1fr 1fr;

@@ -370,3 +370,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('📞 Contact page initialized with modern enhancements');
 });
+
+function initPhoneCallHandlers() {
+    const reservationBtns = document.querySelectorAll('.reservation-btn');
+    reservationBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            window.location.href = 'tel:03315506743';
+        });
+    });
+}

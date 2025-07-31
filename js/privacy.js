@@ -78,6 +78,8 @@ class PrivacyPageManager {
         });
     }
 
+    
+
     setupSmoothScrolling() {
         document.documentElement.style.scrollBehavior = 'smooth';
         
@@ -105,3 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('🛡️ Privacy page initialized successfully');
 });
+
+function initPhoneCallHandlers() {
+    const reservationBtns = document.querySelectorAll('.reservation-btn');
+    reservationBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            window.location.href = 'tel:03315506743';
+        });
+    });
+}
