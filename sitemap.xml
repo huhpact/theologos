@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://theologosgmbh.de/</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/index.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/menu.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/gallery.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/jobs.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/contact.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/privacy.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/imprint.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://theologosgmbh.de/cookies.html</loc>
+  <lastmod>2025-07-31T22:28:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
