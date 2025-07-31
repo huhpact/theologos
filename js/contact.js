@@ -212,16 +212,6 @@ class ContactPageManager {
         }
     }
 
-    showSocialNotification(platform) {
-        const messages = {
-            Facebook: `${platform}-Seite wird bald verfügbar sein!`,
-            Instagram: `${platform}-Profil wird bald verfügbar sein!`,
-            Google: `${platform}-Bewertungen werden bald verfügbar sein!`,
-            TripAdvisor: `${platform}-Bewertungen werden bald verfügbar sein!`
-        };
-
-        this.showNotification(messages[platform] || `${platform} wird bald verfügbar sein!`, 'info');
-    }
 
     showSuccessMessage() {
         this.showNotification('Reservierung erfolgreich! Sie erhalten eine Bestätigung per E-Mail.', 'success');

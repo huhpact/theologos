@@ -1287,13 +1287,15 @@ class MenuManager {
                             <div class="item-labels">${labels}</div>
                         </div>
                         <div class="item-image">
-                            <img src="${item.image}" alt="${item.name}" loading="lazy">
+                            <p>Fotos sind bald verfügbar </p>
                         </div>
                     </div>
                 </div>
             </div>
         `;
     }
+
+    //                             <img src="${item.image}" alt="${item.name}" loading="lazy">
 
     setupItemInteractions() {
         const items = document.querySelectorAll('.menu-item');

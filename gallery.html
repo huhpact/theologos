@@ -21,8 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/gallery.css">
 </head>
 <body>
@@ -79,9 +77,15 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="/gallery.html" class="nav-link active">
+                <a href="/gallery.html" class="nav-link">
                     <i class="bx bx-camera nav-icon"></i>
                     <span class="nav-text">Galerie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/jobs.html" class="nav-link">
+                    <i class="fa-solid fa-briefcase nav-icon"></i>
+                    <span class="nav-text">Jobs</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -97,7 +101,7 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo" id="logo">
-                    <img onclick="window.location.href='/index.html'" src="/images/logo.png" alt="Knossos Palast Logo">
+                    <img onclick="window.location.href='/index.html'" src="/images/logo.png" alt="Theo & Logos Logo">
                 </div>
                 
                 <ul class="nav-menu" id="nav-menu">
@@ -122,11 +126,21 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/gallery.html" class="nav-link active">
+                        <a href="/gallery.html" class="nav-link">
                             <span class="nav-text">Galerie</span>
                             <div class="nav-underline">
                                 <div class="underline-left"></div>
                                 <i class="bx bx-camera nav-icon"></i>
+                                <div class="underline-right"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="/jobs.html" class="nav-link">
+                            <span class="nav-text">Jobs</span>
+                            <div class="nav-underline">
+                                <div class="underline-left"></div>
+                                <i class="fa-solid fa-briefcase nav-icon"></i>
                                 <div class="underline-right"></div>
                             </div>
                         </a>
@@ -144,7 +158,7 @@
                 </ul>
                 
                 <div class="nav-actions">
-                    <button class="reservation-btn" onclick="window.location.href='/contact.html#reservation'">
+                    <button class="reservation-btn" onclick="openReservation()">
                         <div class="btn-content">
                             <i class="fas fa-calendar-check"></i>
                             <span>Reservieren</span>
@@ -170,282 +184,411 @@
         </div>
     </section>
 
-    <section class="gallery-filter">
+    <section id="ambiente" class="gallery-section">
         <div class="container">
-            <div class="filter-tabs">
-                <button class="filter-tab active" data-filter="all">
-                    <i class="fas fa-th-large"></i>
-                    <span>Alle Bilder</span>
-                </button>
-                <button class="filter-tab" data-filter="restaurant">
-                    <i class="fas fa-building"></i>
-                    <span>Restaurant</span>
-                </button>
-                <button class="filter-tab" data-filter="food">
-                    <i class="fas fa-utensils"></i>
-                    <span>Kulinarik</span>
-                </button>
-                <button class="filter-tab" data-filter="atmosphere">
-                    <i class="fas fa-wine-glass-alt"></i>
-                    <span>Atmosphäre</span>
-                </button>
-                <button class="filter-tab" data-filter="events">
-                    <i class="fas fa-glass-cheers"></i>
-                    <span>Events</span>
-                </button>
+            <div class="gallery-section-header gallery-fade-in">
+                <div class="gallery-section-icon gallery-scale-in">
+                    <i class="fas fa-wine-glass"></i>
+                </div>
+                <h2 class="gallery-section-title">Stilvolles Ambiente</h2>
+                <div class="gallery-section-divider"></div>
+                <p class="gallery-section-description">
+                    Erleben Sie die warme und einladende Atmosphäre unseres Restaurants, 
+                    wo Tradition auf Moderne trifft und jeder Moment unvergesslich wird.
+                </p>
             </div>
-        </div>
-    </section>
-
-    <section class="gallery-section">
-        <div class="container">
-            <div class="gallery-grid" id="gallery-grid">
-                <div class="gallery-item" data-category="restaurant">
-                    <div class="image-container">
-                        <img src="/images/gal-1.jpg" alt="Elegantes Restaurant Interior" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Elegantes Ambiente</h3>
-                                <p>Stilvolle Einrichtung mit griechischem Flair</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="food">
-                    <div class="image-container">
-                        <img src="/images/photo3.jpg" alt="Griechische Spezialitäten">
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Griechische Köstlichkeiten</h3>
-                                <p>Authentische Gerichte aus frischesten Zutaten</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="atmosphere">
-                    <div class="image-container">
-                        <img src="/images/gal-2.jpg" alt="Romantische Atmosphäre">
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Romantische Stimmung</h3>
-                                <p>Perfekt für unvergessliche Momente zu zweit</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="food">
-                    <div class="image-container">
-                        <img src="/images/lasithi.jpg" alt="Mezze Platte">
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Mezze Vielfalt</h3>
-                                <p>Traditionelle Vorspeisen zum gemeinsamen Genießen</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="restaurant">
-                    <div class="image-container">
-                        <img src="/images/events2.jpg" alt="Hauptsaal">
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Großzügiger Saal</h3>
-                                <p>Ideal für Familienfeiern und große Gesellschaften</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="food">
-                    <div class="image-container">
-                        <img src="/images/lachsfilet.jpg" alt="Gegrillter Fisch" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Frischer Fisch vom Grill</h3>
-                                <p>Täglich frisch und perfekt zubereitet</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="events">
-                    <div class="image-container">
-                        <img src="/images/gal-3.jpg" alt="Festliche Veranstaltung">
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Festliche Veranstaltungen</h3>
-                                <p>Unvergessliche Feiern in stilvollem Ambiente</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="atmosphere">
-                    <div class="image-container">
-                        <img src="/images/gal-4.jpg" alt="Gemütliche Terrasse" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Sonnige Terrasse</h3>
-                                <p>Entspannen Sie im Freien bei mediterranem Flair</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="food">
-                    <div class="image-container">
-                        <img src="/images/gal-5.jpg" alt="Griechische Desserts" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Süße Verführungen</h3>
-                                <p>Hausgemachte griechische Desserts</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="restaurant">
-                    <div class="image-container">
-                        <img src="/images/gal-6.jpg" alt="Elegante Bar">
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Stilvolle Bar</h3>
-                                <p>Erlesene Weine und exquisite Spirituosen</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="food">
-                    <div class="image-container">
-                        <img src="/images/photo12.jpg" alt="Grill Spezialitäten" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Grill Meisterwerke</h3>
-                                <p>Perfekt gegrilltes Fleisch nach griechischer Art</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="restaurant">
-                    <div class="image-container">
-                        <img src="/images/gal-7.jpg" alt="direkter Parkplatz" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Direkter Parkplatz</h3>
-                                <p>Direkte Verbindung zu unserem Parkplatz</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="food">
-                    <div class="image-container">
-                        <img src="/images/salat-haus.jpg" alt="Griechischer Bauernsalat" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Griechischer Bauernsalat</h3>
-                                <p>Frisch, authentisch und voller Geschmack</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="atmosphere">
-                    <div class="image-container">
-                        <img src="/images/photo14.jpg" alt="Abendstimmung" >
-                        <div class="image-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                                <h3>Magische Abendstimmung</h3>
-                                <p>Warmes Licht und gemütliche Atmosphäre</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="load-more-container">
-                <button class="load-more-btn" id="load-more">
-                    <div class="btn-content">
-                        <i class="fas fa-images"></i>
-                        <span>Weitere Bilder laden</span>
-                    </div>
-                    <div class="btn-glow"></div>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="gallery-cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Erleben Sie es selbst</h2>
-                <p>Lassen Sie sich von der einzigartigen Atmosphäre von Theo & Logos verzaubern. Besuchen Sie uns und genießen Sie authentische griechische Küche in einem der schönsten Restaurants der Stadt.</p>
-                <div class="cta-actions">
-                    <button class="btn-primary" onclick="window.location.href='/contact.html#reservation'">
-                        <div class="btn-content">
-                            <i class="fas fa-calendar-check"></i>
-                            <span>Tisch reservieren</span>
-                        </div>
-                        <div class="btn-glow"></div>
-                    </button>
-                    <button class="btn-secondary" onclick="window.location.href='/menu.html'">
-                        <div class="btn-content">
+            
+            <div class="gallery-grid ambiente">
+                <div class="gallery-item featured gallery-slide-left" data-title="Hauptdining-Bereich" data-description="Unser eleganter Hauptsaal mit warmer Beleuchtung">
+                    <img src="/images/gal1.jpg" alt="Restaurant Innenbereich" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
                             <i class="fas fa-utensils"></i>
-                            <span>Speisekarte entdecken</span>
                         </div>
-                        <div class="btn-glow"></div>
-                    </button>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-fade-in" data-title="Bar-Bereich" data-description="Stilvolle Bar mit exquisiten Getränken">
+                    <img src="/images/gal2.jpg" alt="Bar Bereich" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-slide-right" data-title="Intime Ecke" data-description="Gemütliche Sitzecke für private Gespräche">
+                    <img src="/images/gal3.jpg" alt="Gemütliche Ecke" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-fade-in" data-title="Küchenblick" data-description="Einblick in unsere professionelle Küche">
+                    <img src="/images/gal4.jpg" alt="Küche" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                       <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-scale-in" data-title="Weinregal" data-description="Ausgewählte Weine aus aller Welt">
+                    <img src="/images/gal5.jpg" alt="Weinregal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                       <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-scale-in" data-title="Weinregal" data-description="Ausgewählte Weine aus aller Welt">
+                    <img src="/images/gal6.jpg" alt="Weinregal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                       <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-scale-in" data-title="Weinregal" data-description="Ausgewählte Weine aus aller Welt">
+                    <img src="/images/gal7.jpg" alt="Weinregal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                       <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-scale-in" data-title="Weinregal" data-description="Ausgewählte Weine aus aller Welt">
+                    <img src="/images/gal8.jpg" alt="Weinregal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                       <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-scale-in" data-title="Weinregal" data-description="Ausgewählte Weine aus aller Welt">
+                    <img src="/images/gal9.jpg" alt="Weinregal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                       <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Stilvolles Ambiente</h3>
+                        <p class="gallery-item-overlay-description">Unser elegantes Ambiente mit warmer Beleuchtung</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Terrasse Section -->
+    <section id="terrasse" class="gallery-section">
+        <div class="container">
+            <div class="gallery-section-header gallery-fade-in">
+                <div class="gallery-section-icon gallery-scale-in">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h2 class="gallery-section-title">Terrasse</h2>
+                <div class="gallery-section-divider"></div>
+                <p class="gallery-section-description">
+                    Genießen Sie Ihre Mahlzeit unter freiem Himmel auf unserer wunderschönen Terrasse, 
+                    umgeben von mediterraner Atmosphäre und entspannender Ruhe.
+                </p>
+            </div>
+            
+            <div class="gallery-grid terrasse">
+                <div class="gallery-item wide gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal11.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item wide gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal12.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal13.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal14.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item wide gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal15.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal16.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                <div class="gallery-item wide gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal17.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal18.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-slide-left" data-title="Hauptterrasse" data-description="Unsere großzügige Außenanlage mit Blick ins Grüne">
+                    <img src="/images/gal19.jpg" alt="Hauptterrasse" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Unsere Terrasse</h3>
+                        <p class="gallery-item-overlay-description">Unsere großzügige Außenanlage mit entspannender Atmosphäre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saal Section -->
+    <section id="saal" class="gallery-section">
+        <div class="container">
+            <div class="gallery-section-header gallery-fade-in">
+                <div class="gallery-section-icon gallery-scale-in">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h2 class="gallery-section-title">Saal</h2>
+                <div class="gallery-section-divider"></div>
+                <p class="gallery-section-description">
+                    Unser eleganter Veranstaltungssaal bietet den perfekten Rahmen für Ihre besonderen Anlässe, 
+                    von intimen Feiern bis hin zu großen Festlichkeiten.
+                </p>
+            </div>
+            
+            <div class="gallery-grid saal">
+                <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal20.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal21.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal22.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal23.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal24.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal25.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal26.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal27.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+                 <div class="gallery-item tall gallery-slide-left" data-title="Großer Saal" data-description="Unser Hauptsaal für große Veranstaltungen">
+                    <img src="/images/gal28.jpg" alt="Großer Saal" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Großer Saal</h3>
+                        <p class="gallery-item-overlay-description">Unser Hauptsaal für große Veranstaltungen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parkplatz Section -->
+    <section id="parkplatz" class="gallery-section">
+        <div class="container">
+            <div class="gallery-section-header gallery-fade-in">
+                <div class="gallery-section-icon gallery-scale-in">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h2 class="gallery-section-title">Parkplatz</h2>
+                <div class="gallery-section-divider"></div>
+                <p class="gallery-section-description">
+                    Bequeme und sichere Parkmöglichkeiten direkt vor unserem Restaurant 
+                    für einen sorgenfreien Besuch bei uns.
+                </p>
+            </div>
+            
+            <div class="gallery-grid parkplatz">
+                <div class="gallery-item gallery-slide-left" data-title="Hauptparkplatz" data-description="Großzügige Parkfläche vor dem Restaurant">
+                    <img src="/images/gal29.jpg" alt="Hauptparkplatz" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Parkplatz</h3>
+                        <p class="gallery-item-overlay-description">Großzügige Parkfläche vor dem Restaurant</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-slide-left" data-title="Hauptparkplatz" data-description="Großzügige Parkfläche vor dem Restaurant">
+                    <img src="/images/gal30.jpg" alt="Hauptparkplatz" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Parkplatz</h3>
+                        <p class="gallery-item-overlay-description">Großzügige Parkfläche vor dem Restaurant</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item wide gallery-slide-left" data-title="Hauptparkplatz" data-description="Großzügige Parkfläche vor dem Restaurant">
+                    <img src="/images/gal31.jpg" alt="Hauptparkplatz" class="gallery-item-image">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-overlay-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <h3 class="gallery-item-overlay-title">Parkplatz</h3>
+                        <p class="gallery-item-overlay-description">Großzügige Parkfläche vor dem Restaurant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="gallery-lightbox" id="lightbox">
+        <div class="gallery-lightbox-content">
+            <button class="gallery-lightbox-close" id="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" class="gallery-lightbox-image" id="lightbox-image">
+            <div class="gallery-lightbox-info">
+                <h3 class="gallery-lightbox-title" id="lightbox-title"></h3>
+                <p class="gallery-lightbox-description" id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-bg">
@@ -459,7 +602,7 @@
                     <img src="/images/logo.png" alt="Knossos Palast Logo" class="footer-logo">
                     <div class="brand-content">
                         <h3>Theo & Logos</h3>
-                        <p>Authentische griechische Küche seit 2012. Erleben Sie die Tradition und den Geschmack Griechenlands in unserem eleganten Restaurant mit über 25 Jahren Erfahrung.</p>
+                        <p>Authentische griechische Küche seit 2005. Erleben Sie die Tradition und den Geschmack Griechenlands in unserem eleganten Restaurant mit über 20 Jahren Erfahrung.</p>
                         
                         <div class="social-links">
                             <a href="https://www.facebook.com/knossos.palast.potsdam/" class="social-link facebook" aria-label="Facebook">
@@ -522,7 +665,7 @@
                             </div>
                             <div class="hours-item">
                                 <span class="days">Sonst täglich</span>
-                                <span class="time">12:00 - 23:00</span>
+                                <span class="time">12:00 - 22:00</span>
                             </div>
                         </div>
                     </div>
@@ -587,33 +730,6 @@
             </div>
         </div>
     </footer>
-
-    <button class="back-to-top" id="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <div class="lightbox-modal" id="lightbox-modal">
-        <div class="lightbox-overlay"></div>
-        <div class="lightbox-container">
-            <button class="lightbox-close" id="lightbox-close">
-                <i class="fas fa-times"></i>
-            </button>
-            <button class="lightbox-prev" id="lightbox-prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="lightbox-next" id="lightbox-next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            <div class="lightbox-content">
-                <img src="" alt="" id="lightbox-image">
-                <div class="lightbox-info">
-                    <h3 id="lightbox-title"></h3>
-                    <p id="lightbox-description"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="/js/main.js"></script>
     <script src="/js/gallery.js"></script>
 </body>
