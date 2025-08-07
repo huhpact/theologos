@@ -2859,7 +2859,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
-    height: 150px;
+    height: 100px;
     border-radius: var(--radius-full);
     background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
     display: flex;
