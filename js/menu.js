@@ -291,7 +291,7 @@ class MenuManager {
                     
                     {
                         name: 'Zanderfilet',
-                        price: '22',
+                        price: '26',
                         description: 'Feines Zanderfilet, frisch gebraten, dazu Gemüse und Rosmarinkartoffeln',
                         image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Schalenfrüchte'],
@@ -300,7 +300,7 @@ class MenuManager {
                     },
                     {
                         name: 'Calamari',
-                        price: '22',
+                        price: '23',
                         description: 'Gebratene Kalamari, dazu Rosmarinkartoffeln und Gemüse',
                         image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Weichtiere'],
