@@ -99,7 +99,7 @@ class MenuManager {
                         name: 'Dip-Trio',
                         price: '10',
                         description: 'Tzatziki, Feta-Creme & Taramas (feine Creme aus Fischrogen)',
-                        image: '/images/dip-trio.png',
+                        image: 'images/af431a4f-688b-47e4-b6d3-61f59b5daaea 2.JPG',
                         labels: ['Konservierungsstoffe', 'aufgetaute Fischprodukte', 'glutenhaltig', 'Soja', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -108,7 +108,7 @@ class MenuManager {
                         name: 'Heiße Peperoni vom Rost',
                         price: '9',
                         description: 'Knackig gegrillt, leicht pikant & mit hausgemachter Knoblauchsauce',
-                        image: '/images/pep-gegrillt.png',
+                        image: 'images/0f42c33c-d72d-47da-bc42-aed38f331fa9 2.JPG',
                         labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Schwefeldioxid'],
                         vegetarian: true,
                         vegan: false
@@ -117,7 +117,7 @@ class MenuManager {
                         name: 'Melitzanes & Kolokithia',
                         price: '11',
                         description: 'Zart gebratene Auberginen und Zucchini, serviert mit Knoblauchdip und hausgemachtem Tzatziki - leicht und aromatisch.',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['glutenhaltig', 'Milch', 'Schalenfrüchte'],
                         vegetarian: true,
                         vegan: false
@@ -126,7 +126,7 @@ class MenuManager {
                         name: 'Feta Fournou',
                         price: '14',
                         description: 'Im Ofen überbackener Feta mit frischen Kräutern & Oregano.',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/0f806abf-c087-4fe1-87de-5d1b2a7d399c 2.JPG',
                         labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Schwefeldioxid'],
                         vegetarian: true,
                         vegan: false
@@ -135,7 +135,7 @@ class MenuManager {
                         name: 'Calamari-Ringe',
                         price: '14',
                         description: 'Zart & knusprig - frisch zubereitete Calamari-Ringe und Tzatziki dazu',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/80e3c1e7-a335-494c-bbe4-cbcbf052596f 4.JPG',
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Schalenfrüchte', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -144,7 +144,7 @@ class MenuManager {
                         name: "Poseidon's Liebling",
                         price: '21',
                         description: 'Gegrillter Oktopus, serviert mit Wildkräutersalat & feinstem Olivenöl',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['aufgetaute Fischprodukte', 'Weichtiere'],
                         vegetarian: false,
                         vegan: false
@@ -153,7 +153,7 @@ class MenuManager {
                         name: 'Helios Genussrunde',
                         price: '22',
                         description: 'Unsere Vorspeisen-Klassiker bunt auf einem Teller',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/9c802f0a-6bc6-413f-adb5-5eeaa9fe95f5 2.JPG',
                         labels: ['Konservierungsstoffe', 'Antioxidationsmittel', 'Süßungsmittel', 'glutenhaltig', 'Soja', 'Milch', 'Schwefeldioxid'],
                         vegetarian: true,
                         vegan: false
@@ -165,7 +165,7 @@ class MenuManager {
                         name: 'Pitabrot',
                         price: '4',
                         description: 'Warm, weich & perfekt zum Dippen',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/438260c4-9928-475e-acc8-7b203fe2ef36 2.JPG',
                         labels: ['glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -174,7 +174,7 @@ class MenuManager {
                         name: 'Pita mit Feta',
                         price: '7',
                         description: 'Belegt mit zartem Fetakäse',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -183,7 +183,7 @@ class MenuManager {
                         name: 'Knoblauchbrot',
                         price: '5',
                         description: 'Knusprig, buttrig, unwiderstehlich - mit griechischem Herz gebacken.',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/ee0084eb-891f-4dba-904a-7a45dd88863a 2.jpg',
                         labels: ['glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -194,7 +194,7 @@ class MenuManager {
                         name: 'Tomatensuppe',
                         price: '7',
                         description: 'Mit mediterranen Kräutern',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Konservierungsstoffe', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -203,7 +203,7 @@ class MenuManager {
                         name: 'Fasolada',
                         price: '7',
                         description: 'Traditionelle griechische Bohnensuppe',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Antioxidationsmittel', 'glutenhaltig', 'Soja'],
                         vegetarian: true,
                         vegan: true
@@ -214,7 +214,7 @@ class MenuManager {
                         name: 'Choriatiki',
                         price: '16',
                         description: 'Klassischer Bauernsalat mit Tomaten, Gurken, Paprika, Zwiebeln, Kalamataoliven & Feta',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Farbstoffe', 'Konservierungsstoffe', 'Süßungsmittel', 'glutenhaltig', 'Milch', 'Schwefeldioxid'],
                         vegetarian: true,
                         vegan: false
@@ -223,7 +223,7 @@ class MenuManager {
                         name: 'Rote Bete Salat',
                         price: '19',
                         description: 'Frische Rote-Bete und Wildkräutersalat mit gebackenem Feta',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/9d908d20-702b-4fd0-9d38-48917efcfe87 2.JPG',
                         labels: ['aromatisierte Kräuter', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -232,7 +232,7 @@ class MenuManager {
                         name: 'Aegean Salat',
                         price: '25',
                         description: 'Blattsalat mit gegrilltem Lammspieß & Ziegenkäse im knusprigen Blätterteig, mit Honig & Sesam',
-                        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/84914bc8-5196-45de-9fb0-1b4adfe4cfd4.JPG',
                         labels: ['aromatisierte Kräuter', 'aufgetaute Fleischprodukte', 'glutenhaltig', 'Sesamsamen', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -243,7 +243,7 @@ class MenuManager {
                         name: 'Gemüse-Kritharaki-Bowl',
                         price: '18',
                         description: 'Herzhafter Gemüseeintopf mit Kritharaki in Tomatensauce & Feta',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Konservierungsstoffe', 'glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -252,7 +252,7 @@ class MenuManager {
                         name: 'Bauernpfanne Griechenlands',
                         price: '19',
                         description: 'Bunte Gemüsepfanne mit Gigantes Bohnen, Auberginen, Zucchini, Pilzen und Feta - wie bei Yiayia zu Hause',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Farbstoffe', 'glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -263,7 +263,7 @@ class MenuManager {
                         name: 'Stifado',
                         price: '29',
                         description: 'Zartes Lammfleisch, langsam im eigenen Saft geschmort, mit aromatischen Zwiebeln & feinen Rosmarinkartoffeln',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/fa38dce6-89a7-41af-8ec1-2a9534ebf404 2.JPG',
                         labels: ['Konservierungsstoffe', 'aufgetaute Fleischprodukte'],
                         vegetarian: false,
                         vegan: false
@@ -272,7 +272,7 @@ class MenuManager {
                         name: 'Lammkarree',
                         price: '29',
                         description: 'Ein exquisires Highlight unserer Küche: Drei Stück Lammkrone aus Neuseeland, wo die Lämmer auf weitläufigen Weiden grasen. Serviert mit aromatischen Rosmarinkartoffeln. Ein unvergleichlicher Genuss für anspruchsvolle Gaumen. Tzatziki dazu. (Jedes weitere Stück 8 EUR)',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['aufgetaute Fleischprodukte', 'glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -281,7 +281,7 @@ class MenuManager {
                         name: 'Mousaka',
                         price: '22',
                         description: 'Hausgemachter Auflauf mit Auberginen, Kartoffeln und Hackfleisch, bedeckt mit Béchamelsauce und Käse',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/ec56c2ff-58ef-4ac4-a2e1-e34cb3f1a735 2.JPG',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -293,7 +293,7 @@ class MenuManager {
                         name: 'Zanderfilet',
                         price: '26',
                         description: 'Feines Zanderfilet, frisch gebraten, dazu Gemüse und Rosmarinkartoffeln',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/ce10f992-094f-4b65-b9d3-950e489c3eca 2.JPG',
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Schalenfrüchte'],
                         vegetarian: false,
                         vegan: false
@@ -302,7 +302,7 @@ class MenuManager {
                         name: 'Calamari',
                         price: '23',
                         description: 'Gebratene Kalamari, dazu Rosmarinkartoffeln und Gemüse',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Weichtiere'],
                         vegetarian: false,
                         vegan: false
@@ -311,7 +311,7 @@ class MenuManager {
                         name: 'Meeresgenuss à la Theo',
                         price: '32',
                         description: 'Calamari, Zander & Garnelen - gegrillt und liebevoll angerichtet. Ideal zum Teilen.',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/42921674-7bc6-4cf5-aea7-30579cbe607a 3.JPG',
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig', 'Fisch', 'Weichtiere'],
                         vegetarian: false,
                         vegan: false
@@ -323,7 +323,7 @@ class MenuManager {
                         name: 'Crunchy Chicken Burger',
                         price: '19',
                         description: 'Saftiges Hähnchen in knuspriger Panko-Panade, dazu knuspriger Bacon, feine Burgersauce und knackiger Salat im Brioche-Mehrkornbrot. Serviert mit Pommes Frites, Mayo und Ketchup',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/23eaca78-4b6b-462e-a4a6-281d00c4c067 2.JPG',
                         labels: ['glutenhaltig', 'Eier', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -332,7 +332,7 @@ class MenuManager {
                         name: 'Chaloumi Burger',
                         price: '18',
                         description: 'Gegrillter Halloumi, knackiger Salat, feine Burgersauce im Brioche-Mehrkornbrot. Dazu Pommes mit Mayo & Ketchup',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['glutenhaltig', 'Eier', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -343,7 +343,7 @@ class MenuManager {
                         name: 'Gyros',
                         price: '20',
                         description: 'Mit Knoblauchkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/2eeb6b3f-8dc5-4454-8c0a-63ffca0db8f4 2.JPG',
                         labels: ['Milch'],
                         vegetarian: false,
                         vegan: false
@@ -352,7 +352,7 @@ class MenuManager {
                         name: 'Gyros - kleine Portion',
                         price: '17',
                         description: 'Mit Knoblauchkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/aa53f225-ac5b-499b-9305-dc52f9699416 2.JPG',
                         labels: [],
                         vegetarian: false,
                         vegan: false
@@ -361,7 +361,7 @@ class MenuManager {
                         name: 'Bifteki',
                         price: '21',
                         description: 'Mit Rosmarinkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/6997dc7a-959e-4b2c-a844-c00b31a49f11 2.JPG',
                         labels: ['Milch'],
                         vegetarian: false,
                         vegan: false
@@ -370,7 +370,7 @@ class MenuManager {
                         name: 'Bifteki - kleine Portion',
                         price: '17',
                         description: 'Mit Rosmarinkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/6997dc7a-959e-4b2c-a844-c00b31a49f11 2.JPG',
                         labels: ['Milch'],
                         vegetarian: false,
                         vegan: false
@@ -379,7 +379,7 @@ class MenuManager {
                         name: 'Souvlaki',
                         price: '21',
                         description: 'Mit Knoblauchkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/fb341c14-2307-495c-a1d4-783a9299b85b 2.JPG',
                         labels: ['Milch'],
                         vegetarian: false,
                         vegan: false
@@ -388,7 +388,7 @@ class MenuManager {
                         name: 'Souvlaki - kleine Portion',
                         price: '16',
                         description: 'Mit Knoblauchkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/dc0ffb14-ed8b-48f2-b2bb-1a95f0f6ec91 2.JPG',
                         labels: ['Milch'],
                         vegetarian: false,
                         vegan: false
@@ -397,7 +397,7 @@ class MenuManager {
                         name: 'Hähnchenbrustfilet',
                         price: '23',
                         description: 'Mit Kritharaki, Tzatziki und Käuterbutter',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/5ccda447-a8d9-4e24-9806-9ddaa36dfa31 2.JPG',
                         labels: ['glutenhaltig','Milch'],
                         vegetarian: false,
                         vegan: false
@@ -408,7 +408,7 @@ class MenuManager {
                         name: 'Chasapis Piato',
                         price: '24',
                         description: 'Gyros und Bifteki gefüllt mit Fetakäse, dazu Kritharaki und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/8f60024e-bc63-4d51-8279-3a546c95299d.JPG',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -417,7 +417,7 @@ class MenuManager {
                         name: 'Pyrà Piato',
                         price: '25',
                         description: 'Gyros, Souvlaki & Sutzukakia, dazu Knoblauchkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/ec3f12e6-808c-45e9-a061-8053a71c44ea 2.JPG',
                         labels: ['Milch'],
                         vegetarian: false,
                         vegan: false
@@ -426,7 +426,7 @@ class MenuManager {
                         name: 'Potsdamer Piato',
                         price: '23',
                         description: 'Gyros, Lammsteak und Hähnchenbrustfilet, dazu Knoblauchkartoffeln und Tzatziki',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/b55305dc-75d8-4b75-8857-2f029b3338d2.JPG',
                         labels: ['Milch'],
                         vegetarian: false,
                         vegan: false
@@ -437,7 +437,7 @@ class MenuManager {
                         name: 'Gyros',
                         price: '24',
                         description: 'Jedes Gericht wird überzogen mit Metaxasauce und Edamer und serviert mit Knoblauchkartofeln.',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/fd8e7711-60c6-41a3-9d8b-30cdb4153698 2.JPG',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -446,7 +446,7 @@ class MenuManager {
                         name: 'Bifteki',
                         price: '25',
                         description: 'Jedes Gericht wird überzogen mit Metaxasauce und Edamer und serviert mit Knoblauchkartofeln.',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/ecfa28b5-5e1f-4bba-8879-f5c7fb8186a0 2.JPG',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -455,7 +455,7 @@ class MenuManager {
                         name: 'Hähnchenbrustfilet',
                         price: '25',
                         description: 'Jedes Gericht wird überzogen mit Metaxasauce und Edamer und serviert mit Knoblauchkartofeln.',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/6f799aaf-9b88-4a5f-9851-88f2ce082aca 2.JPG',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -466,7 +466,7 @@ class MenuManager {
                         name: 'Pommes Frites',
                         price: '5',
                         description: '',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/bc3c664e-746f-46b0-8be7-c4feab1299a2 2.jpg',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -475,7 +475,7 @@ class MenuManager {
                         name: 'Knoblauchkartoffeln',
                         price: '6',
                         description: '',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/26d57071-e65f-4969-8027-4c4d3342b4a1 2.JPG',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -484,7 +484,7 @@ class MenuManager {
                         name: 'Rosmarinkartoffeln',
                         price: '6',
                         description: '',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -493,7 +493,7 @@ class MenuManager {
                         name: 'Griechische Reisnudeln',
                         price: '6',
                         description: '',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -502,7 +502,7 @@ class MenuManager {
                         name: 'Metaxasauce',
                         price: '4',
                         description: '',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -513,7 +513,7 @@ class MenuManager {
                         name: 'Mini Gyros',
                         price: '9',
                         description: 'Mit Pommes',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: false,
                         vegan: false
@@ -522,7 +522,7 @@ class MenuManager {
                         name: 'Chicken Nuggets',
                         price: '9',
                         description: 'Frisch und hausgemacht. Mit Pommes',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/0f6dfb26-cc18-49d0-9bdb-4afd86e2defa 2.JPG',
                         labels: ['glutenhaltig'],
                         vegetarian: false,
                         vegan: false
@@ -531,7 +531,7 @@ class MenuManager {
                         name: 'Grillhähnchen',
                         price: '9',
                         description: 'Mit Pommes',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: false,
                         vegan: false
@@ -542,7 +542,7 @@ class MenuManager {
                         name: 'Galaktoboureko',
                         price: '9',
                         description: 'Griechischer Grießauflauf im Filoteig, goldbraun gebacken, mit feinem Zimtsirup',
-                        image: 'https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/b367447f-1b9d-4992-a507-3a661866786d 2.JPG',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -551,7 +551,7 @@ class MenuManager {
                         name: 'Joghurt & Honig',
                         price: '8',
                         description: 'Cremiger griechischer Joghurt mit Honig, knackigen Walnüssen & frischen Früchten',
-                        image: 'https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Milch', 'Walnuss'],
                         vegetarian: true,
                         vegan: false
@@ -562,7 +562,7 @@ class MenuManager {
                         name: 'Gemischtes Eis',
                         price: '6',
                         description: 'Drei Kugeln nach Wahl. Mit Sahne (+1 EUR)',
-                        image: 'https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Farbstoffe', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -571,7 +571,7 @@ class MenuManager {
                         name: 'Himbeer-Cup',
                         price: '9',
                         description: 'Drei Kugeln mit heißen Himbeeren & Sahne',
-                        image: 'https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '/images/3c6074a6-ca6b-4d80-ad82-bba5484a1579 2.JPG',
                         labels: ['Farbstoffe', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -580,7 +580,7 @@ class MenuManager {
                         name: 'Früchtebecher',
                         price: '9',
                         description: 'Eisvariation mit frischen Früchten der Saison & Sahne',
-                        image: 'https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Farbstoffe', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -589,7 +589,7 @@ class MenuManager {
                         name: 'Pinocchio-Eis',
                         price: '6',
                         description: 'Zwei Kugeln Eis mit Smarties & Schokoüberraschung',
-                        image: 'https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Farbstoffe', 'Milch'],
                         vegetarian: true,
                         vegan: false
@@ -600,7 +600,7 @@ class MenuManager {
                         name: 'Hauswein',
                         price: '7',
                         description: '(weiß/ rosé/ rot) - 0.2l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -609,7 +609,7 @@ class MenuManager {
                         name: 'Hauswein',
                         price: '24',
                         description: '(weiß/ rosé/ rot) - 0.75l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -618,7 +618,7 @@ class MenuManager {
                         name: 'Imiglykos',
                         price: '8',
                         description: '(weiß/ rot) - 0.2l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -627,7 +627,7 @@ class MenuManager {
                         name: 'Imiglykos',
                         price: '25',
                         description: '(weiß/ rot) - 0.75l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -636,7 +636,7 @@ class MenuManager {
                         name: 'Retsina',
                         price: '7',
                         description: '(geharzt) - 0.2l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -645,7 +645,7 @@ class MenuManager {
                         name: 'Retsina',
                         price: '15',
                         description: '(geharzt) - 0.5l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -654,7 +654,7 @@ class MenuManager {
                         name: 'Lykrarakis',
                         price: '32',
                         description: 'Authentische Weine aus Seltenen Rebsorten, frisch und ausdrucksstark - direkt aus dem Herzen Kretas (weiß/ rot) - 0.75l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -663,7 +663,7 @@ class MenuManager {
                         name: 'Kotsifali',
                         price: '28',
                         description: 'Typisch kretischer Rotwein mit feiner Frucht, milder Säure und mediterranem Charakter - 0.75l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -672,7 +672,7 @@ class MenuManager {
                         name: 'Chardonnay',
                         price: '28',
                         description: 'Ein internationaler Weißwein-Klassiker mit feiner Frucht, lebendiger Säure und cremiger Textur - 0.75l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -683,7 +683,7 @@ class MenuManager {
                         name: 'Wasser',
                         price: '3',
                         description: 'Sprudel- oder Still - 0.25l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -692,7 +692,7 @@ class MenuManager {
                         name: 'Wasser',
                         price: '7',
                         description: 'Sprudel- oder Still - 0.75l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -701,7 +701,7 @@ class MenuManager {
                         name: 'Cola / Cola Zero',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Süßungsmittel', 'Aspartam', 'koffeinhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -710,7 +710,7 @@ class MenuManager {
                         name: 'Fanta',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Farbstoffe', 'Konservierungsstoffe', 'Süßungsmittel'],
                         vegetarian: true,
                         vegan: true
@@ -719,7 +719,7 @@ class MenuManager {
                         name: 'Sprite',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Farbstoffe', 'Konservierungsstoffe', 'Süßungsmittel'],
                         vegetarian: true,
                         vegan: true
@@ -728,7 +728,7 @@ class MenuManager {
                         name: 'Apfelsaft',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -737,7 +737,7 @@ class MenuManager {
                         name: 'Johannisbeersaft',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -746,7 +746,7 @@ class MenuManager {
                         name: 'Rhabarbersaft',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -755,7 +755,7 @@ class MenuManager {
                         name: 'KiBa',
                         price: '4.80',
                         description: 'Kirschnektar & Bananennektar 0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -764,7 +764,7 @@ class MenuManager {
                         name: 'Apfelschorle',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -773,7 +773,7 @@ class MenuManager {
                         name: 'Johannisbeerschorle',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -782,7 +782,7 @@ class MenuManager {
                         name: 'Rhabarberschorle',
                         price: '4.80',
                         description: '0.3l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: true,
                         vegan: true
@@ -793,7 +793,7 @@ class MenuManager {
                         name: 'Pils vom Fass',
                         price: '5',
                         description: '0.4l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -802,7 +802,7 @@ class MenuManager {
                         name: 'Radler',
                         price: '5',
                         description: '0.4l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Konservierungsstoffe','Schwefeldioxid', 'Süßungsmittel', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -811,7 +811,7 @@ class MenuManager {
                         name: 'Helles vom Fass',
                         price: '6',
                         description: '0.4l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -820,7 +820,7 @@ class MenuManager {
                         name: 'Weizenbier vom Fass',
                         price: '6',
                         description: '0.5l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -829,7 +829,7 @@ class MenuManager {
                         name: 'Dunkelweizen Flasche',
                         price: '6',
                         description: '0.5l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -838,7 +838,7 @@ class MenuManager {
                         name: 'Kristallweizen Flasche',
                         price: '6',
                         description: '0.5l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -847,7 +847,7 @@ class MenuManager {
                         name: 'Alkoholfreiweizen Flasche',
                         price: '6',
                         description: '0.5l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -856,7 +856,7 @@ class MenuManager {
                         name: 'Alkoholfrei Pils',
                         price: '5',
                         description: '0.33l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid', 'glutenhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -867,7 +867,7 @@ class MenuManager {
                         name: 'Espresso',
                         price: '3',
                         description: '',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['koffeinhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -876,7 +876,7 @@ class MenuManager {
                         name: 'Tasse Kaffee',
                         price: '3.5',
                         description: '',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['koffeinhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -885,7 +885,7 @@ class MenuManager {
                         name: 'Cappuccino',
                         price: '4',
                         description: '',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Milch', 'koffeinhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -894,7 +894,7 @@ class MenuManager {
                         name: 'Ellinikos (Mocca)',
                         price: '3',
                         description: '',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['koffeinhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -903,7 +903,7 @@ class MenuManager {
                         name: 'Tee',
                         price: '3',
                         description: 'verschiedene Sorten',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['koffeinhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -914,7 +914,7 @@ class MenuManager {
                         name: 'Ouzo on the rocks',
                         price: '4',
                         description: '4cl',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -923,7 +923,7 @@ class MenuManager {
                         name: 'Tsipouro',
                         price: '6',
                         description: '4cl',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -932,7 +932,7 @@ class MenuManager {
                         name: 'Masticha',
                         price: '7',
                         description: '4cl',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -941,7 +941,7 @@ class MenuManager {
                         name: 'Metaxa',
                         price: '8',
                         description: "Grande Fine - Collector's Edition - 2cl",
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -950,7 +950,7 @@ class MenuManager {
                         name: 'Amareo Mediterraneo',
                         price: '6',
                         description: '4cl',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -959,7 +959,7 @@ class MenuManager {
                         name: 'Ouzo Plomari',
                         price: '13',
                         description: '0.2l',
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxide'],
                         vegetarian: true,
                         vegan: true
@@ -970,7 +970,7 @@ class MenuManager {
                         name: 'Gin Tonic',
                         price: '12',
                         description: "Hendrick's & Tonic - 0.3l",
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Konservierungsstoffe', 'Süßungsmittel'],
                         vegetarian: true,
                         vegan: true
@@ -979,7 +979,7 @@ class MenuManager {
                         name: 'Cuba Libre',
                         price: '9',
                         description: "0.3l",
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [ 'Farbstoffe','Konservierungsstoffe', 'Antioxidationsmittel', 'Geschmacksverstärker', 'Süßungsmittel', 'koffeinhaltig'],
                         vegetarian: true,
                         vegan: true
@@ -988,7 +988,7 @@ class MenuManager {
                         name: 'Ouzo Lemon',
                         price: '8',
                         description: "0.3l",
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Schwefeldioxid'],
                         vegetarian: true,
                         vegan: true
@@ -997,7 +997,7 @@ class MenuManager {
                         name: 'Vodka Orange',
                         price: '4.8',
                         description: "0.3l",
-                        image: 'https://images.pexels.com/photos/5946080/pexels-photo-5946080.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: ['Süßungsmittel'],
                         vegetarian: true,
                         vegan: true
@@ -1010,7 +1010,7 @@ class MenuManager {
                         name: 'Soon available / Bald verfügbar',
                         price: '/',
                         description: 'Exquisite selection of our finest dishes / Exquisite Auswahl unserer besten Gerichte',
-                        image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400',
+                        image: '',
                         labels: [],
                         vegetarian: false,
                         vegan: false
@@ -1023,7 +1023,7 @@ class MenuManager {
                         name: 'Steak-Pause',
                         price: '14',
                         description: 'Nackensteak mit Pommes & Metaxasauce',
-                        image: '/images/nackensteak.jpg',
+                        image: '',
                         labels: ['glutenhaltig', 'Milch'],
                         vegetarian: false,
                         vegan: false
@@ -1032,7 +1032,7 @@ class MenuManager {
                         name: 'Hähnchen-Bowl',
                         price: '15',
                         description: 'Hähnchenbrustfilet mit Gemüse & Kritharaki',
-                        image: '/images/haehnchen-bowl.jpg',
+                        image: '',
                         labels: ['glutenhaltig'],
                         vegetarian: false,
                         vegan: false
@@ -1041,7 +1041,7 @@ class MenuManager {
                         name: 'Zanderfilet',
                         price: '16',
                         description: 'mit Rosmarinkartoffeln',
-                        image: '/images/zanderfilet.jpg',
+                        image: '/images/ce10f992-094f-4b65-b9d3-950e489c3eca 2.JPG',
                         labels: ['aufgetaute Fischprodukte', 'glutenhaltig'],
                         vegetarian: false,
                         vegan: false
@@ -1050,7 +1050,7 @@ class MenuManager {
                         name: 'Salad-Bowl',
                         price: '13',
                         description: 'Blattsalat mit Tomaten, Gurken, Paprika, Oliven & Fetawürfel, dazu Pita',
-                        image: '/images/salad-bowl.webp',
+                        image: '',
                         labels: ['glutenhaltig'],
                         vegetarian: true,
                         vegan: false
@@ -1287,7 +1287,7 @@ class MenuManager {
                             <div class="item-labels">${labels}</div>
                         </div>
                         <div class="item-image">
-                            <p>Fotos sind bald verfügbar </p>
+                             <img src="${item.image}" alt="${item.name}" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -1295,7 +1295,7 @@ class MenuManager {
         `;
     }
 
-    //                             <img src="${item.image}" alt="${item.name}" loading="lazy">
+    //                            
 
     setupItemInteractions() {
         const items = document.querySelectorAll('.menu-item');
