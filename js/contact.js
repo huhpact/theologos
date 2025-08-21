@@ -117,14 +117,6 @@ class ContactPageManager {
             });
         });
 
-        const socialLinks = document.querySelectorAll('.social-link, .social-icon');
-        socialLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const platform = this.getSocialPlatform(link);
-                this.showSocialNotification(platform);
-            });
-        });
 
         const mapLinks = document.querySelectorAll('a[href*="maps.google.com"]');
         mapLinks.forEach(link => {
