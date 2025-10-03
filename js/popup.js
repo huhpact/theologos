@@ -138,7 +138,7 @@ class GreekEveningPopup {
                 margin: 0 auto var(--space-xl);
                 box-shadow: 0 15px 30px rgba(92, 15, 20, 0.3);
                 position: relative;
-                animation: pulse 2s infinite;
+                
             }
 
             @keyframes pulse {
