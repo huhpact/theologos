@@ -239,6 +239,34 @@ class GreekEveningPopup {
             .popup-cta:hover .btn-glow {
                 transform: translateX(100%);
             }
+
+            @media (min-width: 1200px) {
+                .popup-container {
+                    max-width: 500px;
+                    padding: var(--space-xl);
+                }
+
+                .popup-title {
+                    font-size: 1.6rem;
+                }
+
+                .popup-description {
+                    font-size: 0.95rem;
+                }
+
+                .popup-cta {
+                    font-size: 1rem;
+                    padding: var(--space-md) var(--space-lg);
+                }
+
+                .popup-badge {
+                    width: 65px;
+                    height: 65px;
+                    font-size: 1.6rem;
+                    margin-bottom: var(--space-lg);
+                }
+            }
+
         `;
         document.head.appendChild(style);
 
