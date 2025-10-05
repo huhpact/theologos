@@ -98,7 +98,7 @@
 }
 
 .hero-actions .btn-primary:hover {
-    background: linear-gradient(135deg, #0F2847 0%, #1B365D 100%);
+    background: linear-gradient(135deg, #8B1C23 0%, #5C0F14 100%);
     transform: translateY(-4px);
     box-shadow: 0 15px 35px rgba(27, 54, 93, 0.4);
 }

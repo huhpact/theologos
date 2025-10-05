@@ -1,4 +1,3 @@
-// Contact Page JavaScript - Modern Implementation
 
 class ContactPageManager {
     constructor() {
