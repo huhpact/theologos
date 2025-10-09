@@ -8,8 +8,12 @@
     <meta name="keywords" content="Speisekarte, griechische Küche, Knossos Palast, Hauptspeisen, Kinderkarte, Eiskarte, Highlights">
     <meta name="author" content="Theo & Logos">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://theologosgmbh.de/menu">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
      <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <link rel="icon" href="/images/logo.png" type="image/x-icon">
@@ -17,17 +21,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Theo & Logos" />
     <link rel="manifest" href="/images/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-      <div id="cookie-banner" class="cookie-banner">
+    <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-container">
             <div class="cookie-content">
                 <div class="cookie-icon">
@@ -55,7 +54,7 @@
         </div>
     </div>
 
-   <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
 
     <div class="mobile-nav-sidebar" id="mobile-nav-sidebar">
         <div class="mobile-nav-header">
@@ -104,7 +103,7 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo" id="logo">
-                    <img onclick="window.location.href='https://theologosgmbh.de/'" src="/images/logo.png" alt="Theo & Logos Logo">
+                    <img onclick="window.location.href='/index.html'" src="/images/logo.png" alt="Theo & Logos Logo">
                 </div>
                 
                 <ul class="nav-menu" id="nav-menu">
@@ -161,7 +160,7 @@
                 </ul>
                 
                 <div class="nav-actions">
-                    <button class="reservation-btn" onclick="javascript:location.href='https://theologosgmbh.de/contact'">
+                    <button class="reservation-btn" onclick="window.location.href='https://theologosgmbh.de/contact'">
                         <div class="btn-content">
                             <i class="fas fa-calendar-check"></i>
                             <span>Reservieren</span>
@@ -180,9 +179,20 @@
 
     <section class="menu-nav-section">
         <div class="container">
-            <div class="menu-nav-header">
+            <div class="menu-nav-header"><br><br>
                 <h1 class="menu-title">Unsere Speisekarten</h1>
                 <p class="menu-subtitle">Entdecken Sie die Vielfalt der authentischen griechischen Küche</p>
+            </div>
+            
+            <div class="pdf-download-section">
+                <a href="/assets/main-menu.pdf" class="pdf-download-btn" target="_blank">
+                    <i class="fas fa-download"></i>
+                    <span>Speisekarte PDF</span>
+                </a>
+                <a href="/assets/tageskarte.pdf" class="pdf-download-btn" target="_blank">
+                    <i class="fas fa-download"></i>
+                    <span>Tageskarte PDF</span>
+                </a>
             </div>
             
             <div class="menu-nav-tabs">
@@ -190,10 +200,10 @@
                     <i class="fas fa-utensils"></i>
                     <span>Hauptspeisekarte</span>
                 </button>
-                <button class="menu-tab" data-menu="spezialkarte">
+              <!--  <button class="menu-tab" data-menu="spezialkarte">
                     <i class="fas fa-crown"></i>
                     <span>Spezialkarte</span>
-                </button>
+                </button>-->
                 <button class="menu-tab" data-menu="tageskarte">
                     <i class="fas fa-calendar-day"></i>
                     <span>Tageskarte</span>
@@ -230,45 +240,2868 @@
         </div>
     </section>
 
-    <section class="menu-filters-section">
-        <div class="container">
-            <div class="menu-filters">
-                <div class="filter-group">
-                    <button class="filter-btn active" data-filter="all">
-                        <i class="fas fa-list"></i>
-                        <span>Alle</span>
-                    </button>
-                    <button class="filter-btn" data-filter="vegetarian">
-                        <i class="fas fa-leaf"></i>
-                        <span>Vegetarisch</span>
-                    </button>
-                    <button class="filter-btn" data-filter="vegan">
-                        <i class="fas fa-seedling"></i>
-                        <span>Vegan</span>
-                    </button>
-                </div>
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="menu-search" placeholder="Gericht suchen...">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <main class="menu-content">
         <div class="container">
+            <!-- HAUPTSPEISEKARTE -->
             <section id="hauptspeisekarte" class="menu-section active">
-                <div class="menu-categories" id="hauptspeisekarte-content">
+                <h2 class="category-title">Signature Drinks</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/ouzo-spritz.png" alt="Ouzo Spritz" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Ouzo Spritz
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Ouzo, Tonie & Zitrone</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Süßungsmittel</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/aperol-spritz.png" alt="Aperol Spritz" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Aperol Spritz
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Aperol, Prosecco & Mineralwasser</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">Süßungsmittel</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/hugo.png" alt="Hugo" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Hugo
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Holunderblütensirup, Prosecco & Mineralwasser</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">Süßungsmittel</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/limoncello.png" alt="Limoncello Spritz" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Limoncello Spritz
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Limoncello, Prosecco & Soda</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/rosato.png" alt="Rosato Spritz" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Rosato Spritz
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Ramazotti Rosato, Prosecco, frischer Basilikum & Limette</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/lillet.png" alt="Hugo" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Lillet Wild Berry
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Holunderblütensirup, Prosecco & Mineralwasser</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">Süßungsmittel</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/limo.png" alt="Hausgemachte Limonade" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Hausgemachte Limonade
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Sprite, frische Limes & Minze</p>
+                        <div class="dish-price">7€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Süßungsmittel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/rhararberspritz.png" alt="Rhabarber Spritz" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Rhabarber Spritz
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Aperol, Rhabarbernektar, Prosecco & Mineralwasser</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Süßungsmittel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="true">
+                    <div class="dish-image">
+                        <img src="/images/prosecco.png" alt="Prosecco" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Prosecco
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                <span class="diet-badge vegan" title="Vegan"><i class="fas fa-seedling"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Valdobbadiene Prosecco aus Venetien</p>
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Weine</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Hauswein">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Hauswein
+                            
+                        </h3>
+                        <p class="dish-description">weiss, rosé, rot</p>
+                        <p class="dish-description">0,2l / 0,75l</p>
+                        <div class="dish-price">7€ / 24€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Sulfite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Imiglykos">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Imiglykos
+                            
+                        </h3>
+                        <p class="dish-description">weiss, rot</p>
+                        <p class="dish-description">0,2l / 0,75l</p>
+                        <div class="dish-price">8€ / 25€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Sulfite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Retsina">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Retsina
+                            
+                        </h3>
+                        <p class="dish-description">geharzt</p>
+                        <p class="dish-description">0,2l / 0,5l</p>
+                        <div class="dish-price">7€ /15€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Sulfite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lyraraki">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Lyraraki
+                            
+                        </h3>
+                        <p class="dish-description">Authentische Weine aus seltenen Rebsorten, frisch & Ausdruck - stark direkt aus dem Herzen Kretas</p>
+                        <p class="dish-description">0,2l / 0,75l</p>
+                        <div class="dish-price">10€ /31€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Sulfite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Kotsifali">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Kotsifali
+                            
+                        </h3>
+                        <p class="dish-description">Kretischer Rotwein mit Charakter - fruchtig, mediterraner Seele</p>
+                        <p class="dish-description">0,75l</p>
+                        <div class="dish-price">29€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Sulfite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lugana">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Lugana
+                            
+                        </h3>
+                        <p class="dish-description">Frischer Weisswein vom Gardasee. Elegant fruchtig, mit feiner Mineralität</p>
+                        <p class="dish-description">0,2l / 0,75l</p>
+                        <div class="dish-price">9€ / 29€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Sulfite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Chardonnay">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Chardonnay
+                            
+                        </h3>
+                        <p class="dish-description">Ein internationaler Weisswein Klassiker mit einer Frucht, lebendiger Säure und cremiger Textur</p>
+                        <p class="dish-description">0,75l</p>
+                        <div class="dish-price">29€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                <span class="ingredient-label">Sulfite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Vorspeisen</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="images/p2.png" alt="Tzatziki">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Tzatziki
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Griechischer Joghurt mit Knoblauch, Gurke, Kräutern & bestem Olivenöl</p>
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Rote Beete">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Rote Beete
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Fein marinierte Rote Beete mit Olivenöl und Knoblauch, dazu ein leichter Joghurt-Dip</p>
+                        <div class="dish-price">7€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/dip-trio.png" alt="Dip-Trio">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Dip-Trio
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Tzatziki, Feta-Creme & Taramas (feine Creme aus Fischrogen)</p>
+                        <div class="dish-price">10€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">aufgetaute Fischprodukte</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Soja</span>
+                                <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Melitzanes & Kolokithia">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Melitzanes & Kolokithia
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Zart gebratene Auberginen und Zucchini, serviert mit Knoblauchdip und hausgemachtem Tzatziki - leicht und aromatisch.</p>
+                        <div class="dish-price">12€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Milch</span>
+                                <span class="ingredient-label">Schalenfrüchte</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/peperoni.png" alt="Heiße Peperoni vom Rost" style="scale: 1.1;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Heiße Peperoni vom Rost
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Knackig gegrillt, leicht pikant & mit hausgemachter Knoblauchsauce</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Antioxidationsmittel</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/feta-fournou.png" alt="Feta Fournou" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Feta Fournou
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                            </div>
+                        </h3>
+                        <p class="dish-description">Im Ofen überbackener Feta mit frischen Kräutern & Oregano.</p>
+                        <div class="dish-price">14€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Antioxidationsmittel</span>
+                                <span class="ingredient-label">Schwefeldioxide</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Calamari-Ringe">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Calamari-Ringe
+                        </h3>
+                        <p class="dish-description">Zart & knusprig - frisch zubereitete Calamari-Ringe und Tzatziki dazu</p>
+                        <div class="dish-price">14€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">aufgetaute Fischprodukte</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Fisch</span>
+                                <span class="ingredient-label">Schalenfrüchte</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Oktopus">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Oktopus Gegrillt
+                           
+                        </h3>
+                        <p class="dish-description">Gegrillter Oktopus, serviert mit Wildkräutersalat & feinstem Olivenöl</p>
+                        <div class="dish-price">22€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">aufgetaute Fischprodukte</span>
+                                <span class="ingredient-label">Weichtiere</span>
+                    
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Helios Vorspeise">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Helios Vorspeise
+                           
+                        </h3>
+                        <p class="dish-description">Unser Vorspeisen-Klassiker, bunt auf einem Teller - Ideal zum Teilen</p>
+                        <div class="dish-price">22€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Antioxidationsmittel</span>
+                                <span class="ingredient-label">Süßungsmittel</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Soja</span>
+                                <span class="ingredient-label">Milch</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Suppen</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Tomatensuppe">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Tomatensuppe
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                        </h3>
+                        <p class="dish-description">Mit mediterranen Kräutern</p>
+                        <div class="dish-price">7€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Tomatensuppe">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Fasolada
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                        </h3>
+                        <p class="dish-description">Traditionelle griechische Bohnensuppe</p>
+                        <div class="dish-price">7€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Antioxidationsmittel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Salate</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Choriatiki">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Choriatiki
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                        </h3>
+                        <p class="dish-description">Klassischer Bauernsalat mit Tomaten, Gurke, Paprika, Zwiebeln, Kalamata - Oliven & Feta</p>
+                        <div class="dish-price">16€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">Antioxidationsmittel</span>
+                                <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Aegean Salat">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Aegean Salat
+                            
+                        </h3>
+                        <p class="dish-description">Gegrillter Lammspieß und Fetakäse gebacken auf Salat der Saison</p>
+                        <div class="dish-price">25€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">aromatisierte Kräuter</span>
+                                <span class="ingredient-label">aufgetaute Fleischprodukte</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Sesamsamen</span>
+                                <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Rote Beete Salat">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Rote Beete Salat
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Rote Beete und Fetakäse gebacken auf Salat der Saison</p>
+                        <div class="dish-price">19€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">aromatisierte Kräuter</span>
+                                <span class="ingredient-label">Milch</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <h2 class="category-title">Fische</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Calamari">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Calamari
+                            
+                        </h3>
+                        <p class="dish-description">Gebratene Calamari dazu Rosmarinkartoffeln, Tzatziki und frisches Gemüse</p>
+                        <div class="dish-price">23€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">aufgetaute Fischprodukte</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Weichtiere</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Zanderfilet">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Zanderfilet
+                            
+                        </h3>
+                        <p class="dish-description">Feines Zanderfilet, frisch gebraten, dazu frisches Gemüse und Rosmarinkartoffeln</p>
+                        <div class="dish-price">26€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">aufgetaute Fischprodukte</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Weichtiere</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/fischplatte.png" alt="Meeresgenuss à la Marta" style="scale: 1.5;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Meeresgenuss à la Marta
+                            
+                        </h3>
+                        <p class="dish-description">Calamari, Zander & Garnelen - gegrillt und liebevoll angerichtet, dazu Rosmarinkartoffeln und frisches Gemüse; Ideal zum Teilen</p>
+                        <div class="dish-price">32€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">aufgetaute Fischprodukte</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Weichtiere</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Vegetarisch</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Gemüse-Kritharaki">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Gemüse-Kritharaki
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Herzhafter Gemüseeintopf mit Kritharaki, geschmortem Gemüse, Kräutern, Tomatensauce & Fetakäse</p>
+                        <div class="dish-price">18€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Bauernpfanne Hellas">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Bauernpfanne Hellas
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Bunte Gemüsepfanne mit Gigantes Bohnen, Auberginen, Zucchini, Pilzen und Feta - wie bei Yiayia zu Hause</p>
+                        <div class="dish-price">19€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Farbstoffe</span>
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Burger-Laune</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Theo's Classic Burger">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Theo's Classic Burger
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Mediterraner Burger mit Hacksteak Schwein & Rindfleisch, dazu Bacon, Burgersoße und Salat im Mehrkornbrot mit Pommes</p>
+                        <div class="dish-price">18€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Eier</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Crunchy Chicken Burger">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Crunchy Chicken Burger
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Saftiges Hähnchen in knuspriger Panko - Panade, dazu Bacon, Burgersoße und Salat im Mehrkornbrot mit Pommes</p>
+                        <div class="dish-price">19€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Eier</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Unsere Klassiker</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Gyros">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Gyros
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Mit Knoblauchkartoffeln und Tzatziki</p>
+                         <p class="dish-description">Normale Portion / Kleine Portion</p>
+                        <div class="dish-price">20€ / 16€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                              
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/souvlaki.png" alt="Souvlaki" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Souvlaki
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Mit Knoblauchkartoffeln und Tzatziki</p>
+                        <p class="dish-description">Normale Portion / Kleine Portion</p>
+                        <div class="dish-price">23€ / 17€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                              
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/bifteki.png" alt="Bifteki Hausart" style="scale: 1.5;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Bifteki "Hausart"
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Mit Rosmarinkartoffeln und Tzatziki</p>
+                        <p class="dish-description">Normale Portion / Kleine Portion</p>
+                        <div class="dish-price">22€ / 17€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                              
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Hähnchenfilet">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Hähnchenfilet
+                            
+                        </h3>
+                        <p class="dish-description">Mit griechischen Nudeln und Tzatziki</p>
+                        <div class="dish-price">23€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                           
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Chasapis Piato">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Chasapis Piato
+                            
+                        </h3>
+                        <p class="dish-description">Gyros, Bifteki gefüllt mit Fetakäse, dazu Kritharaki & Tzatziki</p>
+                        <div class="dish-price">24€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                           
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Pyrà Piato">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Pyrà Piato
+                            
+                        </h3>
+                        <p class="dish-description">Gyros, Souvlaki, Sutzukaki, dazu Knoblauchkartoffeln & Tzatziki</p>
+                        <div class="dish-price">25€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                           
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Potsdamer Piato">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Potsdamer Piato
+                            
+                        </h3>
+                        <p class="dish-description">Gyros, Lammsteak, Hähnchenbrustfilet dazu Knoblauchkartoffeln & Tzatziki</p>
+                        <div class="dish-price">26€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                           
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lampis Piato">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Lampis Piato
+                            
+                        </h3>
+                        <p class="dish-description">Gyros, Kalbsleber, Hähnchenbrustfilet dazu Rosmarinkartoffeln & Tzatziki</p>
+                        <div class="dish-price">26€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                           
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">überbackenes</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Gyros Überbacken">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Gyros Überbacken
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Überzogen mit Metaxasauce und Edamerkäse - serviert mit Knoblauchkartoffeln</p>
+                        <div class="dish-price">24€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Bifteki Überbacken">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Bifteki Überbacken
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Überzogen mit Metaxasauce und Edamerkäse - serviert mit Knoblauchkartoffeln</p>
+                        <div class="dish-price">25€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Hähnchenbrustfilet Überbacken">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Hähnchenbrustfilet Überbacken
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Überzogen mit Metaxasauce und Edamerkäse - serviert mit Knoblauchkartoffeln</p>
+                        <div class="dish-price">25€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Authentische griechische Küche</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Stifado">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Stifado
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Zartes Lammfleisch, langsam im eigenen Saft geschmort, mit aromatischen Zwiebeln & feinen Rosmarinkartoffeln</p>
+                        <div class="dish-price">29€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                 <span class="ingredient-label">aufgetaute Fleischprodukte</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lamm mit Kritharaki">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Lamm mit Kritharaki
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Zartes Lammfleisch, langsam im eigenen Saft geschmort, mit griechischen Reisnudeln und Käse überbacken</p>
+                        <div class="dish-price">28€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                 <span class="ingredient-label">aufgetaute Fleischprodukte</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lamm mit Riesenbohnen">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Lamm mit Riesenbohnen
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Zartes Lammfleisch, langsam im eigenen Saft geschmort, mit griechischen Riesenbohnen und Käse überbacken</p>
+                        <div class="dish-price">28€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">Konservierungsstoffe</span>
+                                 <span class="ingredient-label">aufgetaute Fleischprodukte</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lammkarree">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Lammkarree
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Zartes Lammfleisch aus Neuseeland, serviert mit aromatischen Kräutern, Rosmarinkartoffeln und Tzatziki.</p>
+                         <p class="dish-description">Jedes Weitere Stück 8€</p>
+                        <div class="dish-price">29€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">aufgetaute Fleischprodukte</span>
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/mousaka.png" alt="Mousaka" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Mousaka
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Hausgemachter Auflauf mit Auberginen, Kartoffelscheiben und Hackfleisch, bedeckt mit Béchamelsauce und Käse</p>
+                         
+                        <div class="dish-price">22€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Kindergerichte</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Schnitzel">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Schnitzel
+                           
+                            
+                        </h3>
+                        <p class="dish-description">mit Pommes</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                 <span class="ingredient-label">glutenhaltig</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Mini Gyros">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Mini Gyros
+                           
+                            
+                        </h3>
+                        <p class="dish-description">mit Pommes</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                 <span class="ingredient-label">glutenhaltig</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Chicken Nuggets">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Chicken Nuggets
+                           
+                            
+                        </h3>
+                        <p class="dish-description">Frisch und hausgemacht - mit Pommes</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                 <span class="ingredient-label">glutenhaltig</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Beilagen</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Pommes Frites">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Pommes Frites
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description"></p>
+                        <div class="dish-price">5€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">glutenhaltig</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Knoblauchkartoffeln">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Knoblauchkartoffeln
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description"></p>
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">glutenhaltig</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Kritharaki">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Kritharaki
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description"></p>
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Rosmarinkartoffeln">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Rosmarinkartoffeln
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description"></p>
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">glutenhaltig</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Dessert</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/galakto.png" alt="Galaktoboureko" style="scale: 1.5;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Galaktoboureko
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">griechischer Grießauflauf im Filoteig, Goldbraun gebacken, mit feinem Zimtsirup</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                  <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Joghurt & Honig">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Joghurt & Honig
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Cremiger griechischer Joghurt mit Honig, knackigen Wallnüssen & frischen Früchten</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Walnuss</span>
+                                  <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Eisbecher</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Gemischtes Eis">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Gemischtes Eis
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Drei Kugeln Eis nach Wahl</p>
+                        <p class="dish-description">Mit Sahne +1€</p>
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/himbeercup.png" alt="Himbeer-Cup" style="scale: 1.4;">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Himbeer-Cup
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Drei Kugeln Eis mit heißen Himbeeren & Sahne</p>
+                       
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Früchtebecher">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Früchtebecher
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Drei Kugeln Eis mit frischen Früchten & Sahne</p>
+                       
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt=" Pinocchio-Cup">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Pinocchio-Cup
+                           <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                                
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Zwei Kugeln Eis mit Smarties</p>
+                       
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  <span class="ingredient-label">Milch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Kaffee & Tee</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Espresso">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Espresso
+                           
+                        </h3>
+                       
+                        <div class="dish-price">3€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">koffeinhaltig</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Tasse Kaffee">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Tasse Kaffee
+                           
+                        </h3>
+                       
+                        <div class="dish-price">3,50€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">koffeinhaltig</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Cappuccino">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Cappuccino
+                           
+                        </h3>
+                       
+                        <div class="dish-price">4€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">koffeinhaltig</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Ellinikos (Mocca)">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Ellinikos (Mocca)
+                           
+                        </h3>
+                       
+                        <div class="dish-price">3€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">koffeinhaltig</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Tee">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Tee
+                           
+                        </h3>
+                       <p class="dish-description">verschiedene Sorten</p>
+                        <div class="dish-price">3€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">koffeinhaltig</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Spirituosen</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Ouzo on the rocks">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Ouzo on the rocks
+                           
+                        </h3>
+                       
+                        <div class="dish-price">4€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Tsipouro">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                         Tsipouro
+                           
+                        </h3>
+                       
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Masticha">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                         Masticha
+                           
+                        </h3>
+                       
+                        <div class="dish-price">7€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Metaxa">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                         Metaxa
+                           
+                        </h3>
+                       <p class="dish-description">Grande Fine - Collector's Edition</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Amareo Mediterraneo">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                         Amareo Mediterraneo
+                           
+                        </h3>
+                      
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Ouzo Plomari">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Ouzo Plomari
+                           
+                        </h3>
+                      
+                        <div class="dish-price">13€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="category-title">Alkoholfrei</h2>
+                
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Wasser">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Wasser 
+                           
+                        </h3>
+                       <p class="dish-description">0,25l / 0,75l - Sprudel oder Still</p>
+                        <div class="dish-price">3€ / 7€</div>
+                       
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Cola">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Cola (Zero)
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Süßungsmittel</span>
+                                 <span class="ingredient-label">Aspartam</span>
+                                <span class="ingredient-label">koffeinhaltig</span>
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Fanta">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Fanta
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Süßungsmittel</span>
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Sprite">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Sprite
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Süßungsmittel</span>
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                  <span class="ingredient-label">Konservierungsstoffe</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Apfelsaft">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Apfelsaft
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                  <span class="ingredient-label">flüssiges Eiweiß</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Johannisbeersaft">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Johannisbeersaft
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                  <span class="ingredient-label">flüssiges Eiweiß</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Rhabarbersaft">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Rhabarbersaft
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                  <span class="ingredient-label">flüssiges Eiweiß</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Kiba">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Kiba (Kirsch-Banane)
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                  <span class="ingredient-label">flüssiges Eiweiß</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Apfelschorle">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Apfelschorle
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                       
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Johannisbeerschorle">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Johannisbeerschorle
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                       
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Rhabarberschorle">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Rhabarberschorle
+                           
+                        </h3>
+                      
+                        <div class="dish-price">4,80€</div>
+                       
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Tonic Water">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Tonic Water
+                           
+                        </h3>
+                      
+                        <div class="dish-price">3,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                  <span class="ingredient-label">Antioxidationsmittel</span>
+                                  <span class="ingredient-label">Phosphate</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Ginger Ale">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                       Ginger Ale
+                           
+                        </h3>
+                      
+                        <div class="dish-price">3,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                  <span class="ingredient-label">Konservierungsstoffe</span>
+                                  <span class="ingredient-label">chininhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Bitter Lemon">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                       Bitter Lemon
+                           
+                        </h3>
+                      
+                        <div class="dish-price">3,80€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                
+                                  <span class="ingredient-label">Konservierungsstoffe</span>
+                                  <span class="ingredient-label">chininhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Bier</h2>
+                
+               
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Pils vom Fass">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Pils vom Fass
+                           
+                        </h3>
+                      
+                        <div class="dish-price">5€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Radler">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Radler
+                           
+                        </h3>
+                      
+                        <div class="dish-price">5€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Helles vom Fass">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Helles vom Fass
+                           
+                        </h3>
+                      
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Weizenbier vom Fass">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Weizenbier vom Fass
+                           
+                        </h3>
+                      
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Dunkel Weizen">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Dunkel Weizen
+                           
+                        </h3>
+                      
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Kristall Weizen">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Kristall Weizen
+                           
+                        </h3>
+                      
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Weizen Alkoholfrei">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Weizen Alkoholfrei
+                           
+                        </h3>
+                      
+                        <div class="dish-price">6€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Pils Alkoholfrei">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Pils Alkoholfrei
+                           
+                        </h3>
+                      
+                        <div class="dish-price">5€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Schwefeldioxide</span>
+                                 <span class="ingredient-label">glutenhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <h2 class="category-title">Longdrinks</h2>
+                
+               
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Gin Tonic">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Gin Tonic
+                           
+                        </h3>
+                       <p class="dish-description">Hendrick's & Tonic</p>
+                        <div class="dish-price">12€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                 <span class="ingredient-label">Konservierungsstoffe</span>
+                                  <span class="ingredient-label">chininhaltig</span>
+                                
+                                 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Cuba Libre">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Cuba Libre
+                           
+                        </h3>
+                       <p class="dish-description">Rum & Cola</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                 <span class="ingredient-label">Konservierungsstoffe</span>
+                                  <span class="ingredient-label">Geschmacksverstärker</span>
+                                   <span class="ingredient-label">Süßungsmittel</span>
+                                    <span class="ingredient-label">koffeinhaltig</span>
+                                
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Ouzo Lemon">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Ouzo Lemon
+                           
+                        </h3>
+                       <p class="dish-description">Ouzo, Zitrone & Minze</p>
+                        <div class="dish-price">8€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                 <span class="ingredient-label">Farbstoffe</span>
+                                 <span class="ingredient-label">Konservierungsstoffe</span>
+                                  <span class="ingredient-label">Süßungsmittel</span>
+                                  
+                                
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Vodka Orange">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Vodka Orange
+                           
+                        </h3>
+                       <p class="dish-description">Vodka & Orangensaft</p>
+                        <div class="dish-price">9€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                   <span class="ingredient-label">Farbstoffe</span>
+                                 <span class="ingredient-label">Konservierungsstoffe</span>
+                                  <span class="ingredient-label">Geschmacksverstärker</span>
+                                   <span class="ingredient-label">Süßungsmittel</span>
+                                    <span class="ingredient-label">koffeinhaltig</span>
+                                  
+                                
+                                  
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-
+<!--
+           
             <section id="spezialkarte" class="menu-section">
-                <div class="menu-categories" id="spezialkarte-content">
+                <h2 class="category-title">Special Menu / Spezialkarte</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=2" alt="Soon Available">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Soon available / Bald verfügbar
+                        </h3>
+                        <p class="dish-description">Exquisite selection of our finest dishes / Exquisite Auswahl unserer besten Gerichte</p>
+                        <div class="dish-price">/</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-
+-->
+            <!-- TAGESKARTE -->
             <section id="tageskarte" class="menu-section">
-                <div class="menu-categories" id="tageskarte-content">
+                <h2 class="category-title">Tageskarte (12:00 - 16:00 Uhr)</h2>
+                
+                <div class="dish-item" data-vegetarian="false" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Saganaki">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Saganaki
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                               
+                            </div>
+                            
+                        </h3>
+                        <p class="dish-description">Griechischer Fetakäse, in der Pfanne goldbraun gebraten - serviert mit Preiselbeeren</p>
+                        <div class="dish-price">14€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                <span class="ingredient-label">Milch</span>
+                                <span class="ingredient-label">Eier</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Manitaria">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Manitaria
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                               
+                            </div>
+                        </h3>
+                        <p class="dish-description">Gefüllte Champignons mit Babyspinat und Fetakäse überbacken - mediterran & vegetarisch</p>
+                        <div class="dish-price">13€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Ziegenkäse">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Ziegenkäse
+                            <div class="diet-badges">
+                                <span class="diet-badge vegetarian" title="Vegetarisch"><i class="fas fa-leaf"></i></span>
+                               
+                            </div>
+                        </h3>
+                        <p class="dish-description">Im Blätterteig mit Honig und Sesam verfeinert</p>
+                        <div class="dish-price">14€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Eier</span>
+                                  <span class="ingredient-label">Milch</span>
+                                   <span class="ingredient-label">Sesamsamen</span>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Caesar Salad">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                            Caesar Salad
+                          
+                        </h3>
+                        <p class="dish-description">Frischer Salat der Saison mit cremigem Caesardressing, gebratenem Hähnchenbrustfilet & goldenen Brotwürfeln</p>
+                        <div class="dish-price">18€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Eier</span>
+                                  <span class="ingredient-label">Milch</span>
+                                  <span class="ingredient-label">Fisch</span>
+                                  <span class="ingredient-label">Konservierungsstoffe</span>
+                                   
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Schnitzel Wiener Art">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Schnitzel Wiener Art
+                          
+                        </h3>
+                        <p class="dish-description">Schweinefleisch paniert - dazu Pommes Frites</p>
+                        <div class="dish-price">18€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                 <span class="ingredient-label">Eier</span>
+                                  <span class="ingredient-label">Milch</span>
+                                  <span class="ingredient-label">Farbstoffe</span>
+                                 
+                                   
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Kalbsleber">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                           Kalbsleber
+                          
+                        </h3>
+                        <p class="dish-description">gegrillte Kalbsleber mit gerösteten Zwiebeln, dazu Rosmarinkartoffeln und Apfelscheiben</p>
+                        <div class="dish-price">26€</div>
+                       
+                    </div>
+                </div>
+
+                <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lammplatte Theo & Logos">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                        Lammplatte Theo & Logos
+                          
+                        </h3>
+                        <p class="dish-description">Zarter Lammspieß und zwei Lammkronen, serviert mit Rosmarinkartoffeln, Tzatziki & Kräutern</p>
+                        <div class="dish-price">35€</div>
+                        <button class="ingredients-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="ingredients-content">
+                            <div class="ingredients-labels">
+                                <span class="ingredient-label">glutenhaltig</span>
+                                
+                                  <span class="ingredient-label">Milch</span>
+                                  
+                                 
+                                   
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="dish-item" data-vegetarian="true" data-vegan="false">
+                    <div class="dish-image">
+                        <img src="/images/na.png" alt="Lachsfilet">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">
+                       Lachsfilet
+                          
+                        </h3>
+                        <p class="dish-description">Gegrilltes Lachsfilet mit Rosmarinkartoffeln, frischem Gemüse und Zironen & Knoblauchsauce</p>
+                        <div class="dish-price">28€</div>
+                       
+                    </div>
                 </div>
             </section>
         </div>
@@ -278,7 +3111,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer-bg">
             <div class="bg-pattern"></div>
             <div class="bg-decoration"></div>
@@ -389,7 +3222,7 @@
             
             <div class="footer-bottom">
                 <div class="footer-legal">
-                    <a href="https://theologosgmbh.de/imprint" class="legal-link">
+                    <a href="https://theologosgmbh.de/imprint" class="legal-link active">
                         <i class="fas fa-info-circle"></i>
                         <span>Impressum</span>
                     </a>
@@ -419,8 +3252,12 @@
         </div>
     </footer>
 
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="/js/main.js"></script>
-    <script src="/js/menu.js"></script>
+    <script src="/js/imprint.js"></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXNBE56ZSR"></script>
 <script>
@@ -430,6 +3267,8 @@
 
   gtag('config', 'G-BXNBE56ZSR');
 </script>
+
+    <script src="/js/menu-2.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
-                 
