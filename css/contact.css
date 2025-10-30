@@ -159,7 +159,7 @@
 }
 
 .map-actions .btn-primary {
-    background: linear-gradient(135deg, #1B365D 0%, #2A4A73 100%);
+    background: linear-gradient(135deg, var(--deep-blue) 0%, var(--deep-blue) 100%);
     color: white;
 }
 
@@ -169,7 +169,7 @@
 }
 
 .map-actions .btn-primary:hover {
-    background: linear-gradient(135deg, #0F2847 0%, #1B365D 100%);
+    background: linear-gradient(135deg, var(--deep-blue) 0%, var(--deep-blue) 100%);
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(27, 54, 93, 0.3);
 }

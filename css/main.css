@@ -252,7 +252,6 @@ h1, h2, h3, h4, h5, h6 {
 .cookie-btn:hover {
     border-color: var(--primary-gold);
     color: var(--primary-gold);
-    transform: translateY(-1px);
 }
 
 .cookie-btn.all {
@@ -1156,7 +1155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
-    padding: var(--space-4xl) 0;
+    padding: var(--space-3xl) 0;
     background: var(--white);
     position: relative;
 }
@@ -1197,7 +1196,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-block:hover {
     transform: translateX(8px);
-    box-shadow: var(--shadow-lg);
 }
 
 .text-block:hover::before {
@@ -1282,7 +1280,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .philosophy-item:hover {
-    transform: translateX(4px);
     box-shadow: var(--shadow-sm);
 }
 
@@ -1409,11 +1406,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition-normal);
     position: relative;
     cursor: pointer;
-}
-
-.menu-category-card:hover {
-    transform: translateY(-12px);
-    box-shadow: var(--shadow-2xl);
 }
 
 .menu-category-card.featured {
@@ -2045,11 +2037,11 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
     transition: var(--transition-normal);
-    transform: perspective(1000px) rotateY(-5deg);
+    transform: perspective(1000px) rotateY(0deg);
 }
 
 .voucher-card:hover {
-    transform: perspective(1000px) rotateY(0deg) scale(1.02);
+    transform: perspective(1000px) rotateY(0deg);
     box-shadow: var(--shadow-2xl);
 }
 
@@ -2199,6 +2191,7 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--cream);
     border-radius: var(--radius-2xl);
     padding: var(--space-2xl);
+     border: 2px solid var(--primary-gold);
 }
 
 .options-header {
@@ -2342,19 +2335,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .method-card {
-    background: var(--white);
+    background: var(--cream);
     border-radius: var(--radius-2xl);
     padding: var(--space-2xl);
-    box-shadow: var(--shadow-lg);
     transition: var(--transition-normal);
     position: relative;
     overflow: hidden;
 }
 
-.method-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-2xl);
-}
 
 .method-card.online {
     border-top: 4px solid var(--primary-gold);
@@ -2571,22 +2559,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(0);
     transition: var(--transition-normal);
     border-radius: var(--radius-lg);
-}
-
-.btn-pulse {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(184, 134, 11, 0.3);
-    border-radius: var(--radius-lg);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 1; }
-    100% { transform: scale(1.1); opacity: 0; }
 }
 
 .phone-btn:hover {
