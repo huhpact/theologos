@@ -41,18 +41,17 @@ class GreekEveningPopup {
                 </button>
                 
                 <div class="popup-badge">
-                    <i class="fas fa-music"></i>
+                    <i class="fa-solid fa-champagne-glasses"></i>
                 </div>
                 
                 <div class="popup-content">
-                    <h3 class="popup-title">Griechischer Abend</h3>
+                    <h3 class="popup-title">Silvester-Party</h3>
                     <div class="popup-date">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>14. November 2025</span>
+                        <span>31. Dezember 2025</span>
                     </div>
                     <p class="popup-description">
-                        Erleben Sie einen unvergesslichen Abend mit authentischer griechischer Küche, 
-                        traditioneller Live-Musik und mediterraner Atmosphäre.
+                        Feiern Sie den Jahreswechsel mit uns! Genießen Sie ein festliches Abendessen und Live-Musik. Sichern Sie sich jetzt Ihren Platz für eine unvergessliche Silvester-Party!
                     </p>
                     
                     <button class="popup-cta" onclick="window.location.href='/contact.html#reservation'">
@@ -323,11 +322,11 @@ class GreekEveningPopup {
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-SUMMARY:Griechischer Abend bei Theo & Logos
-DTSTART:20251114T180000
-DTEND:20251114T220000
+SUMMARY:Silvester-Party bei Theo & Logos
+DTSTART:20251231T190000
+DTEND:20260101T000000
 LOCATION:Potsdamer Str. 37, 14469 Potsdam
-DESCRIPTION:Erleben Sie einen unvergesslichen Abend mit authentischer griechischer Küche, traditioneller Live-Musik und mediterraner Atmosphäre.
+DESCRIPTION:  Feiern Sie den Jahreswechsel mit uns! Genießen Sie ein festliches Abendessen und Live-Musik. Sichern Sie sich jetzt Ihren Platz für eine unvergessliche Silvester-Party.
 END:VEVENT
 END:VCALENDAR
         `.trim();
@@ -336,7 +335,7 @@ END:VCALENDAR
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = "griechischer-abend.ics";
+        a.download = "silvester-party.ics";
         a.click();
         URL.revokeObjectURL(url);
     }
@@ -344,5 +343,5 @@ END:VCALENDAR
 
 document.addEventListener('DOMContentLoaded', () => {
     new GreekEveningPopup();
-    console.log('🎵 Greek Evening Popup initialized');
+    console.log('New Year Popup initialized');
 });
