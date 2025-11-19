@@ -3842,3 +3842,312 @@ h1, h2, h3, h4, h5, h6 {
 .img__credit:hover {
 	transform: scale(1.1);
 }
+
+.opening-hours-notice {
+    padding: var(--space-3xl) 0;
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+}
+
+.opening-hours-notice::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 2px 2px, rgba(184, 134, 11, 0.03) 1px, transparent 0);
+    background-size: 30px 30px;
+    pointer-events: none;
+}
+
+.notice-card {
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.notice-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+}
+
+.notice-icon-bg {
+    display: none;
+}
+
+.notice-icon {
+    font-size: 2rem;
+    color: var(--primary-gold);
+}
+
+.notice-content {
+    text-align: center;
+    padding: 0 var(--space-lg);
+}
+
+.notice-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xl);
+}
+
+.title-highlight {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--deep-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.title-sub-h {
+    font-family: var(--font-heading);
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    color: var(--primary-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.notice-message {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notice-message p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--charcoal);
+    margin-bottom: var(--space-md);
+}
+
+.greeting {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--deep-blue);
+    margin-bottom: var(--space-lg) !important;
+}
+
+.special-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-xl) 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-box {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    position: relative;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-md);
+    border: none;
+}
+
+.info-box.open {
+    background: linear-gradient(135deg, rgba(56, 161, 105, 0.08) 0%, rgba(56, 161, 105, 0.03) 100%);
+}
+
+.info-box.closed {
+    background: linear-gradient(135deg, rgba(229, 62, 62, 0.08) 0%, rgba(229, 62, 62, 0.03) 100%);
+}
+
+.info-box:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--success);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto var(--space-md);
+    box-shadow: 0 4px 12px rgba(56, 161, 105, 0.3);
+    transition: var(--transition-normal);
+}
+
+.info-box:hover .info-icon {
+    transform: scale(1.05);
+}
+
+.info-box.closed .info-icon {
+    background: var(--error);
+    box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+}
+
+.info-text h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--deep-blue);
+    margin-bottom: var(--space-sm);
+    text-align: center;
+    font-weight: 700;
+}
+
+.info-text p {
+    font-size: 1rem;
+    color: var(--medium-gray);
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.info-text strong {
+    color: var(--success);
+    font-weight: 700;
+}
+
+.info-box.closed .info-text strong {
+    color: var(--error);
+}
+
+.closing-message {
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    color: var(--deep-blue) !important;
+    margin-top: var(--space-xl) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.signature {
+    font-family: var(--font-heading);
+    font-size: 1.125rem !important;
+    color: var(--primary-gold) !important;
+    font-weight: 600 !important;
+    margin-top: var(--space-md) !important;
+    margin-bottom: 0 !important;
+}
+
+.notice-decoration {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .opening-hours-notice {
+        padding: var(--space-2xl) 0;
+    }
+
+    .special-info {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .opening-hours-notice {
+        padding: var(--space-2xl) 0;
+    }
+
+    .notice-content {
+        padding: 0 var(--space-md);
+    }
+
+    .notice-icon {
+        font-size: 1.75rem;
+    }
+
+    .notice-title {
+        margin-bottom: var(--space-lg);
+    }
+
+    .special-info {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+        margin: var(--space-lg) 0;
+    }
+
+    .info-box {
+        padding: var(--space-lg);
+    }
+
+    .info-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    .notice-message p {
+        font-size: 1rem;
+    }
+
+    .greeting {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .opening-hours-notice {
+        padding: var(--space-xl) 0;
+    }
+
+    .notice-content {
+        padding: 0 var(--space-sm);
+    }
+
+    .notice-icon {
+        font-size: 1.5rem;
+    }
+
+    .notice-title {
+        margin-bottom: var(--space-md);
+    }
+
+    .special-info {
+        gap: var(--space-sm);
+        margin: var(--space-md) 0;
+    }
+
+    .info-box {
+        padding: var(--space-md);
+    }
+
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.125rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    .info-text h3 {
+        font-size: 1.125rem;
+    }
+
+    .info-text p {
+        font-size: 0.95rem;
+    }
+
+    .notice-message p {
+        font-size: 0.95rem;
+    }
+
+    .greeting {
+        font-size: 1rem;
+    }
+
+    .closing-message {
+        font-size: 1rem !important;
+    }
+
+    .signature {
+        font-size: 1rem !important;
+    }
+}
