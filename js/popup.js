@@ -41,18 +41,17 @@ class GreekEveningPopup {
                 </button>
                 
                 <div class="popup-badge">
-                    <i class="fa-solid fa-champagne-glasses"></i>
+                   <i class="fa-solid fa-gifts"></i>
                 </div>
                 
                 <div class="popup-content">
-                    <h3 class="popup-title">Silvester-Party</h3>
+                    <h3 class="popup-title">Weihnachten bei Theo & Logos</h3>
                     <div class="popup-date">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>31. Dezember 2025</span>
+                        <span>25. Dezember 2025</span>
                     </div>
                     <p class="popup-description">
-                        Feiern Sie den Jahreswechsel mit uns! Genießen Sie ein festliches Abendessen und Live-Musik. Sichern Sie sich jetzt Ihren Platz für eine unvergessliche Silvester-Party!
-                    </p>
+                        Weihnachten steht vor der Tür und die gemütliche Zeit beginnt. Wenn ihr noch nichts vorhabt, kommt vorbei und verbringt entspannte Stunden bei uns. Wir sorgen für gutes Essen, eine warme Atmosphäre und echte Weihnachtsstimmung. 
                     
                     <button class="popup-cta" onclick="window.location.href='/contact.html#reservation'">
                         <div class="btn-content">
@@ -322,11 +321,11 @@ class GreekEveningPopup {
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-SUMMARY:Silvester-Party bei Theo & Logos
-DTSTART:20251231T190000
+SUMMARY:Weihnachten bei Theo & Logos
+DTSTART:20251225T190000
 DTEND:20260101T000000
 LOCATION:Potsdamer Str. 37, 14469 Potsdam
-DESCRIPTION:  Feiern Sie den Jahreswechsel mit uns! Genießen Sie ein festliches Abendessen und Live-Musik. Sichern Sie sich jetzt Ihren Platz für eine unvergessliche Silvester-Party.
+DESCRIPTION: Weihnachten steht vor der Tür und die gemütliche Zeit beginnt. Wenn ihr noch nichts vorhabt, kommt vorbei und verbringt entspannte Stunden bei uns. Wir sorgen für gutes Essen, eine warme Atmosphäre und echte Weihnachtsstimmung. 
 END:VEVENT
 END:VCALENDAR
         `.trim();
@@ -335,7 +334,7 @@ END:VCALENDAR
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = "silvester-party.ics";
+        a.download = "weihnachten.ics";
         a.click();
         URL.revokeObjectURL(url);
     }
