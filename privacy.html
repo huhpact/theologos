@@ -25,7 +25,6 @@
      crossorigin="anonymous"></script> -->
     
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/privacy.css">
 </head>
 <body>
     <div id="cookie-banner" class="cookie-banner">
@@ -178,342 +177,312 @@
             </div>
         </nav>
     </header>
+    <style>
+        .privacy-page {
+            min-height: 100vh;
+            padding-top: 100px;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+        }
 
-    <section class="page-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="header-icon">
-                    <i class="fas fa-shield-alt"></i>
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-3xl) var(--space-lg);
+        }
+
+        .privacy-header {
+            margin-bottom: var(--space-3xl);
+            padding-bottom: var(--space-lg);
+            border-bottom: 3px solid var(--primary-gold);
+        }
+
+        .privacy-header h1 {
+            font-family: 'Skranji', cursive;
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            margin: 0;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .privacy-header h1 i {
+            color: var(--primary-gold);
+        }
+
+        .privacy-section {
+            margin-bottom: var(--space-2xl);
+        }
+
+        .section-title {
+            font-family: 'Skranji', cursive;
+            font-size: 1.5rem;
+            color: var(--deep-blue);
+            margin-bottom: var(--space-md);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .section-title i {
+            color: var(--primary-gold);
+            font-size: 1.25rem;
+        }
+
+        .privacy-section h3 {
+            font-family: 'Skranji', cursive;
+            font-size: 1.15rem;
+            color: var(--royal-blue);
+            font-weight: 700;
+            margin: var(--space-lg) 0 var(--space-sm) 0;
+        }
+
+        .privacy-section p {
+            color: var(--medium-gray);
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+        }
+
+        .privacy-section a {
+            color: var(--primary-gold);
+            text-decoration: underline;
+            transition: var(--transition-fast);
+        }
+
+        .privacy-section a:hover {
+            color: var(--dark-gold);
+        }
+
+        .privacy-list {
+            margin: var(--space-md) 0;
+            padding-left: var(--space-xl);
+            list-style: none;
+        }
+
+        .privacy-list li {
+            color: var(--medium-gray);
+            line-height: 1.8;
+            margin-bottom: var(--space-xs);
+            position: relative;
+            padding-left: var(--space-md);
+        }
+
+        .privacy-list li::before {
+            content: "▸";
+            color: var(--primary-gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .company-info {
+            margin: var(--space-lg) 0;
+            padding: var(--space-md) 0;
+        }
+
+        .company-info p {
+            margin: var(--space-xs) 0;
+        }
+
+        address {
+            font-style: normal;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .timestamp {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-lg);
+            border-top: 2px solid var(--primary-gold);
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .privacy-page {
+                padding-top: 80px;
+            }
+
+            .privacy-container {
+                padding: var(--space-2xl) var(--space-md);
+            }
+
+            .privacy-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .section-title {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-page">
+        <div class="privacy-container">
+            <div class="privacy-header">
+                <h1><i class="fas fa-shield-alt"></i> Datenschutzerklärung</h1>
+            </div>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-user-tie"></i> 1. Verantwortlicher</h2>
+                <p>Verantwortlicher für die Datenverarbeitung auf dieser Website ist:</p>
+
+                <div class="company-info">
+                    <p><strong>Theologos GmbH</strong></p>
+                    <address>
+                        Lindenstraße 10<br>
+                        14974 Ludwigsfelde<br>
+                        Deutschland
+                    </address>
+                    <p>Telefon: <a href="tel:03315506743">0331 550 67 43</a></p>
+                    <p>E-Mail: <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a></p>
                 </div>
-                <h1 class="page-title">Datenschutzerklärung</h1>
-                <p class="page-subtitle">Informationen zum Umgang mit Ihren personenbezogenen Daten</p>
+
+                <p>Der Verantwortliche entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.).</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> 2. Allgemeine Hinweise zur Datenerfassung</h2>
+
+                <h3>Welche Daten erfassen wir?</h3>
+                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+                <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+
+                <h3>Wie erfassen wir Ihre Daten?</h3>
+                <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+                <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-cookie-bite"></i> 3. Cookies</h2>
+                <p>Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert.</p>
+
+                <h3>Cookie-Kategorien</h3>
+                <p><strong>Notwendige Cookies:</strong> Diese Cookies sind für das Funktionieren der Website erforderlich und können nicht deaktiviert werden.</p>
+                <p><strong>Analytische Cookies:</strong> Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren.</p>
+                <p><strong>Marketing-Cookies:</strong> Diese Cookies werden verwendet, um Besuchern auf Webseiten zu folgen.</p>
+
+                <p>Sie haben jederzeit die Möglichkeit, Ihre Cookie-Einstellungen zu ändern. Klicken Sie dazu auf den Link "Cookie-Einstellungen" im Footer unserer Website.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-server"></i> 4. Server-Log-Files</h2>
+                <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+
+                <ul class="privacy-list">
+                    <li>Browsertyp und Browserversion</li>
+                    <li>verwendetes Betriebssystem</li>
+                    <li>Referrer URL</li>
+                    <li>Hostname des zugreifenden Rechners</li>
+                    <li>Uhrzeit der Serveranfrage</li>
+                    <li>IP-Adresse</li>
+                </ul>
+
+                <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> 5. Kontaktformular und E-Mail-Kontakt</h2>
+                <p>Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
+
+                <h3>Verarbeitete Daten</h3>
+                <p>Bei der Nutzung des Kontaktformulars verarbeiten wir folgende Daten:</p>
+                <ul class="privacy-list">
+                    <li>Name und Vorname</li>
+                    <li>E-Mail-Adresse</li>
+                    <li>Telefonnummer (optional)</li>
+                    <li>Nachrichteninhalt</li>
+                    <li>Zeitpunkt der Anfrage</li>
+                </ul>
+
+                <p>Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-newspaper"></i> 6. Newsletter</h2>
+                <p>Wenn Sie den auf der Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und mit dem Empfang des Newsletters einverstanden sind.</p>
+
+                <h3>Double-Opt-In-Verfahren</h3>
+                <p>Die Anmeldung zu unserem Newsletter erfolgt in einem sog. Double-Opt-In-Verfahren. Das heißt, Sie erhalten nach der Anmeldung eine E-Mail, in der Sie um die Bestätigung Ihrer Anmeldung gebeten werden.</p>
+
+                <p>Sie können Ihre Einwilligung zum Empfang des Newsletters jederzeit widerrufen. Einen entsprechenden Link finden Sie in jeder Newsletter-E-Mail. Außerdem können Sie sich jederzeit über das Kontaktformular auf unserer Website vom Newsletter abmelden.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-chart-line"></i> 7. Google Analytics</h2>
+                <p>Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland.</p>
+
+                <p>Google Analytics verwendet Cookies, die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</p>
+
+                <p>Die Nutzung von Google Analytics erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der Analyse des Nutzerverhaltens, um sowohl sein Webangebot als auch seine Werbung zu optimieren.</p>
+
+                <h3>IP-Anonymisierung</h3>
+                <p>Wir haben auf dieser Website die Funktion IP-Anonymisierung aktiviert. Dadurch wird Ihre IP-Adresse von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übermittlung in die USA gekürzt.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-map-marked-alt"></i> 8. Google Maps</h2>
+                <p>Diese Seite nutzt über eine API den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland.</p>
+
+                <p>Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</p>
+
+                <p>Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-share-alt"></i> 9. Social Media</h2>
+                <p>Unsere Website enthält Links zu sozialen Netzwerken wie Facebook, Instagram und TikTok. Diese Links sind als einfache Verlinkungen realisiert und übertragen keine Daten, bis Sie aktiv darauf klicken.</p>
+
+                <p>Wenn Sie auf einen unserer Social-Media-Links klicken, werden Sie zur entsprechenden Plattform weitergeleitet. Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+
+                <p>Wir haben keinen Einfluss auf die Datenverarbeitung durch diese Anbieter. Informieren Sie sich daher bitte direkt bei den Anbietern über deren Datenschutzpraktiken.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-balance-scale"></i> 10. Ihre Rechte</h2>
+                <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
+
+                <ul class="privacy-list">
+                    <li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO)</li>
+                    <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li>
+                    <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li>
+                    <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+                    <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+                    <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO)</li>
+                    <li><strong>Recht auf Widerruf der Einwilligung</strong> (Art. 7 Abs. 3 DSGVO)</li>
+                </ul>
+
+                <p>Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
+            </section>
+
+            <section class="privacy-section">
+                <h2 class="section-title"><i class="fas fa-phone"></i> 11. Kontakt in Datenschutzangelegenheiten</h2>
+                <p>Für Fragen zum Datenschutz wenden Sie sich bitte an:</p>
+
+                <div class="company-info">
+                    <p><strong>Datenschutzbeauftragter</strong></p>
+                    <address>
+                        Theologos GmbH<br>
+                        Lindenstraße 10<br>
+                        14974 Ludwigsfelde<br>
+                        Deutschland
+                    </address>
+                    <p>Telefon: <a href="tel:03315506743">0331 550 67 43</a></p>
+                    <p>E-Mail: <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a></p>
+                </div>
+            </section>
+
+            <div class="timestamp">
+                <p>Stand: 01. August 2025</p>
             </div>
         </div>
-    </section>
-
-    <main class="privacy-content">
-        <div class="container">
-            <div class="privacy-grid">
-                <aside class="privacy-toc fade-in-up">
-                    <div class="toc-header">
-                        <div class="toc-icon">
-                            <i class="fas fa-list"></i>
-                        </div>
-                        <h2>Inhaltsverzeichnis</h2>
-                    </div>
-                    <ul class="toc-list">
-                        <li><a href="#verantwortlicher" class="toc-link">Verantwortlicher</a></li>
-                        <li><a href="#datenerfassung" class="toc-link">Datenerfassung</a></li>
-                        <li><a href="#cookies" class="toc-link">Cookies</a></li>
-                        <li><a href="#server-log-files" class="toc-link">Server-Log-Files</a></li>
-                        <li><a href="#kontaktformular" class="toc-link">Kontaktformular</a></li>
-                        <li><a href="#newsletter" class="toc-link">Newsletter</a></li>
-                        <li><a href="#google-analytics" class="toc-link">Google Analytics</a></li>
-                        <li><a href="#google-maps" class="toc-link">Google Maps</a></li>
-                        <li><a href="#social-media" class="toc-link">Social Media</a></li>
-                        <li><a href="#ihre-rechte" class="toc-link">Ihre Rechte</a></li>
-                        <li><a href="#kontakt" class="toc-link">Kontakt</a></li>
-                    </ul>
-                </aside>
-
-                <div class="privacy-text">
-                    <section id="verantwortlicher" class="privacy-section fade-in-up">
-                        <h2>1. Verantwortlicher</h2>
-                        <div class="privacy-subsection">
-                            <p>Verantwortlicher für die Datenverarbeitung auf dieser Website ist:</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-building"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Theologos GmbH</h4>
-                                    <p>
-                                        Lindenstraße 10<br>
-                                        14974 Ludwigsfelde<br>
-                                        Deutschland<br><br>
-                                        Telefon: <a href="tel:03315506743">0331 550 67 43</a><br>
-                                        E-Mail: <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a>
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <p>Der Verantwortliche entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.).</p>
-                        </div>
-                    </section>
-
-                    <section id="datenerfassung" class="privacy-section fade-in-up">
-                        <h2>2. Allgemeine Hinweise zur Datenerfassung</h2>
-                        <div class="privacy-subsection">
-                            <h3>Welche Daten erfassen wir?</h3>
-                            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Automatische Datenerfassung</h4>
-                                    <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
-                                </div>
-                            </div>
-                            
-                            <h3>Wie erfassen wir Ihre Daten?</h3>
-                            <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
-                            <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).</p>
-                        </div>
-                    </section>
-
-                    <section id="cookies" class="privacy-section fade-in-up">
-                        <h2>3. Cookies</h2>
-                        <div class="privacy-subsection">
-                            <p>Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert.</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-cookie-bite"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Cookie-Kategorien</h4>
-                                    <p><strong>Notwendige Cookies:</strong> Diese Cookies sind für das Funktionieren der Website erforderlich und können nicht deaktiviert werden.</p>
-                                    <p><strong>Analytische Cookies:</strong> Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren.</p>
-                                    <p><strong>Marketing-Cookies:</strong> Diese Cookies werden verwendet, um Besuchern auf Webseiten zu folgen.</p>
-                                </div>
-                            </div>
-                            
-                            <p>Sie haben jederzeit die Möglichkeit, Ihre Cookie-Einstellungen zu ändern. Klicken Sie dazu auf den Link "Cookie-Einstellungen" im Footer unserer Website.</p>
-                        </div>
-                    </section>
-
-                    <section id="server-log-files" class="privacy-section fade-in-up">
-                        <h2>4. Server-Log-Files</h2>
-                        <div class="privacy-subsection">
-                            <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
-                            
-                            <ul class="privacy-list">
-                                <li>Browsertyp und Browserversion</li>
-                                <li>verwendetes Betriebssystem</li>
-                                <li>Referrer URL</li>
-                                <li>Hostname des zugreifenden Rechners</li>
-                                <li>Uhrzeit der Serveranfrage</li>
-                                <li>IP-Adresse</li>
-                            </ul>
-                            
-                            <div class="legal-notice">
-                                <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="kontaktformular" class="privacy-section fade-in-up">
-                        <h2>5. Kontaktformular und E-Mail-Kontakt</h2>
-                        <div class="privacy-subsection">
-                            <p>Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Verarbeitete Daten</h4>
-                                    <p>Bei der Nutzung des Kontaktformulars verarbeiten wir folgende Daten:</p>
-                                    <ul>
-                                        <li>Name und Vorname</li>
-                                        <li>E-Mail-Adresse</li>
-                                        <li>Telefonnummer (optional)</li>
-                                        <li>Nachrichteninhalt</li>
-                                        <li>Zeitpunkt der Anfrage</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <p>Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist.</p>
-                        </div>
-                    </section>
-
-                    <section id="newsletter" class="privacy-section fade-in-up">
-                        <h2>6. Newsletter</h2>
-                        <div class="privacy-subsection">
-                            <p>Wenn Sie den auf der Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und mit dem Empfang des Newsletters einverstanden sind.</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-newspaper"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Double-Opt-In-Verfahren</h4>
-                                    <p>Die Anmeldung zu unserem Newsletter erfolgt in einem sog. Double-Opt-In-Verfahren. Das heißt, Sie erhalten nach der Anmeldung eine E-Mail, in der Sie um die Bestätigung Ihrer Anmeldung gebeten werden.</p>
-                                </div>
-                            </div>
-                            
-                            <p>Sie können Ihre Einwilligung zum Empfang des Newsletters jederzeit widerrufen. Einen entsprechenden Link finden Sie in jeder Newsletter-E-Mail. Außerdem können Sie sich jederzeit über das Kontaktformular auf unserer Website vom Newsletter abmelden.</p>
-                        </div>
-                    </section>
-
-                    <section id="google-analytics" class="privacy-section fade-in-up">
-                        <h2>7. Google Analytics</h2>
-                        <div class="privacy-subsection">
-                            <p>Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland.</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Datenverarbeitung</h4>
-                                    <p>Google Analytics verwendet Cookies, die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</p>
-                                </div>
-                            </div>
-                            
-                            <p>Die Nutzung von Google Analytics erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der Analyse des Nutzerverhaltens, um sowohl sein Webangebot als auch seine Werbung zu optimieren.</p>
-                            
-                            <div class="legal-notice">
-                                <p><strong>IP-Anonymisierung:</strong> Wir haben auf dieser Website die Funktion IP-Anonymisierung aktiviert. Dadurch wird Ihre IP-Adresse von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übermittlung in die USA gekürzt.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="google-maps" class="privacy-section fade-in-up">
-                        <h2>8. Google Maps</h2>
-                        <div class="privacy-subsection">
-                            <p>Diese Seite nutzt über eine API den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland.</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-map-marked-alt"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Datenübertragung</h4>
-                                    <p>Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</p>
-                                </div>
-                            </div>
-                            
-                            <p>Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
-                        </div>
-                    </section>
-
-                    <section id="social-media" class="privacy-section fade-in-up">
-                        <h2>9. Social Media</h2>
-                        <div class="privacy-subsection">
-                            <p>Unsere Website enthält Links zu sozialen Netzwerken wie Facebook, Instagram und TikTok. Diese Links sind als einfache Verlinkungen realisiert und übertragen keine Daten, bis Sie aktiv darauf klicken.</p>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-share-alt"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Externe Links</h4>
-                                    <p>Wenn Sie auf einen unserer Social-Media-Links klicken, werden Sie zur entsprechenden Plattform weitergeleitet. Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
-                                </div>
-                            </div>
-                            
-                            <p>Wir haben keinen Einfluss auf die Datenverarbeitung durch diese Anbieter. Informieren Sie sich daher bitte direkt bei den Anbietern über deren Datenschutzpraktiken.</p>
-                        </div>
-                    </section>
-
-                    <section id="ihre-rechte" class="privacy-section fade-in-up">
-                        <h2>10. Ihre Rechte</h2>
-                        <div class="privacy-subsection">
-                            <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
-                            
-                            <ul class="privacy-list">
-                                <li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO)</li>
-                                <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li>
-                                <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li>
-                                <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
-                                <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
-                                <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO)</li>
-                                <li><strong>Recht auf Widerruf der Einwilligung</strong> (Art. 7 Abs. 3 DSGVO)</li>
-                            </ul>
-                            
-                            <div class="privacy-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-user-shield"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Beschwerderecht</h4>
-                                    <p>Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="kontakt" class="privacy-section fade-in-up">
-                        <h2>11. Kontakt in Datenschutzangelegenheiten</h2>
-                        <div class="privacy-subsection">
-                            <p>Für Fragen zum Datenschutz wenden Sie sich bitte an:</p>
-                            
-                            <div class="contact-info-card">
-                                <div class="company-details">
-                                    <h4>Datenschutzbeauftragter</h4>
-                                    <address>
-                                        Theologos GmbH<br>
-                                        Lindenstraße 10<br>
-                                        14974 Ludwigsfelde<br>
-                                        Deutschland
-                                    </address>
-                                    <div class="contact-details">
-                                        <div class="contact-item">
-                                            <i class="fas fa-phone"></i>
-                                            <a href="tel:03315506743">0331 550 67 43</a>
-                                        </div>
-                                        <div class="contact-item">
-                                            <i class="fas fa-envelope"></i>
-                                            <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="source-section">
-                                <p>Stand: 01. August 2025</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="quick-links">
-                <div class="quick-link-card fade-in-up">
-                    <div class="card-icon">
-                        <i class="fas fa-cookie-bite"></i>
-                    </div>
-                    <h3>Cookie-Richtlinie</h3>
-                    <p>Detaillierte Informationen über die Verwendung von Cookies auf unserer Website.</p>
-                    <a href="https://theologosgmbh.de/cookies" class="card-btn">
-                        <span>Cookie-Richtlinie lesen</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="quick-link-card fade-in-up">
-                    <div class="card-icon">
-                        <i class="fas fa-info-circle"></i>
-                    </div>
-                    <h3>Impressum</h3>
-                    <p>Rechtliche Informationen und Kontaktdaten des Websitebetreibers.</p>
-                    <a href="https://theologosgmbh.de/imprint" class="card-btn">
-                        <span>Zum Impressum</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="quick-link-card fade-in-up">
-                    <div class="card-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Zurück zur Website</h3>
-                    <p>Entdecken Sie unser Restaurant und unsere Küche.</p>
-                    <a href="https://theologosgmbh.de/" class="card-btn">
-                        <span>Zur Startseite</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
+    </div>
+ <footer class="footer">
         <div class="footer-bg">
             <div class="bg-pattern"></div>
             <div class="bg-decoration"></div>

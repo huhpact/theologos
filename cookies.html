@@ -25,7 +25,6 @@
      crossorigin="anonymous"></script> -->
     
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/cookies.css">
 </head>
 <body>
     <div id="cookie-banner" class="cookie-banner">
@@ -178,363 +177,737 @@
             </div>
         </nav>
     </header>
+    <style>
+        .cookies-page {
+            min-height: 100vh;
+            padding-top: 100px;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+        }
 
-    <section class="page-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="header-icon">
-                    <i class="fas fa-cookie-bite"></i>
-                </div>
-                <h1 class="page-title">Cookie-Richtlinie</h1>
-                <p class="page-subtitle">Informationen zur Verwendung von Cookies auf unserer Website</p>
+        .cookies-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-3xl) var(--space-lg);
+        }
+
+        .cookies-header {
+            margin-bottom: var(--space-3xl);
+            padding-bottom: var(--space-lg);
+            border-bottom: 3px solid var(--primary-gold);
+            text-align: center;
+        }
+
+        .cookies-header h1 {
+            font-family: 'Skranji', cursive;
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            margin: 0;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-md);
+        }
+
+        .cookies-header h1 i {
+            color: var(--primary-gold);
+        }
+
+        .cookie-section {
+            margin-bottom: var(--space-3xl);
+        }
+
+        .cookie-section h2 {
+            font-family: 'Skranji', cursive;
+            font-size: 1.75rem;
+            color: var(--deep-blue);
+            margin-bottom: var(--space-lg);
+            font-weight: 700;
+        }
+
+        .cookie-section h3 {
+            font-family: 'Skranji', cursive;
+            font-size: 1.25rem;
+            color: var(--royal-blue);
+            font-weight: 700;
+            margin: var(--space-lg) 0 var(--space-sm) 0;
+        }
+
+        .cookie-section h4 {
+            font-family: 'Skranji', cursive;
+            font-size: 1.1rem;
+            color: var(--royal-blue);
+            font-weight: 700;
+            margin: var(--space-md) 0 var(--space-sm) 0;
+        }
+
+        .cookie-section p {
+            color: var(--medium-gray);
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+        }
+
+        .cookie-section a {
+            color: var(--primary-gold);
+            text-decoration: underline;
+            transition: var(--transition-fast);
+        }
+
+        .cookie-section a:hover {
+            color: var(--dark-gold);
+        }
+
+        .cookie-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            margin: var(--space-lg) 0;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            gap: var(--space-md);
+            border-left: 4px solid var(--primary-gold);
+        }
+
+        .card-icon {
+            flex-shrink: 0;
+        }
+
+        .card-icon i {
+            font-size: 2rem;
+            color: var(--primary-gold);
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .cookie-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-lg) 0;
+        }
+
+        .cookie-type {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--primary-gold);
+        }
+
+        .type-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .type-icon {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-gold), var(--light-gold));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .type-icon i {
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+
+        .type-item {
+            padding: var(--space-md);
+            background: var(--cream);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-sm);
+        }
+
+        .type-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cookie-table-container {
+            overflow-x: auto;
+            margin: var(--space-lg) 0;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+        }
+
+        .cookie-table thead {
+            background: linear-gradient(135deg, var(--deep-blue), var(--navy-blue));
+        }
+
+        .cookie-table thead th {
+            color: var(--white);
+            font-family: 'Skranji', cursive;
+            font-weight: 700;
+            padding: var(--space-md);
+            text-align: left;
+        }
+
+        .cookie-table tbody tr {
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .cookie-table tbody tr:hover {
+            background: var(--cream);
+        }
+
+        .cookie-table tbody td {
+            padding: var(--space-md);
+            color: var(--medium-gray);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .tag.essential {
+            background: var(--deep-blue);
+            color: var(--white);
+        }
+
+        .tag.statistics {
+            background: var(--primary-gold);
+            color: var(--white);
+        }
+
+        .tag.functional {
+            background: var(--royal-blue);
+            color: var(--white);
+        }
+
+        .legal-notice {
+            background: var(--cream);
+            border-left: 4px solid var(--primary-gold);
+            padding: var(--space-md);
+            margin: var(--space-lg) 0;
+            border-radius: var(--radius-md);
+        }
+
+        .legal-notice p {
+            margin: 0;
+        }
+
+        .management-options {
+            margin: var(--space-lg) 0;
+        }
+
+        .management-option {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            margin-bottom: var(--space-lg);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            gap: var(--space-md);
+            border-left: 4px solid var(--primary-gold);
+        }
+
+        .option-icon {
+            flex-shrink: 0;
+        }
+
+        .option-icon i {
+            font-size: 2rem;
+            color: var(--primary-gold);
+        }
+
+        .option-content {
+            flex: 1;
+        }
+
+        .browser-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+
+        .browser-links a {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm) var(--space-md);
+            background: var(--cream);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--deep-blue);
+            transition: var(--transition-fast);
+            border: 2px solid transparent;
+        }
+
+        .browser-links a:hover {
+            background: var(--primary-gold);
+            color: var(--white);
+            border-color: var(--dark-gold);
+        }
+
+        .browser-links a i {
+            font-size: 1.25rem;
+        }
+
+        .consent-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-lg) 0;
+        }
+
+        .consent-option {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--primary-gold);
+        }
+
+        .option-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .option-header .option-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+        }
+
+        .option-header .option-icon.essential {
+            background: linear-gradient(135deg, var(--deep-blue), var(--navy-blue));
+        }
+
+        .option-header .option-icon.statistics {
+            background: linear-gradient(135deg, var(--primary-gold), var(--light-gold));
+        }
+
+        .option-header .option-icon.all {
+            background: linear-gradient(135deg, var(--royal-blue), var(--deep-blue));
+        }
+
+        .option-header .option-icon i {
+            font-size: 1.5rem;
+        }
+
+        .contact-info-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            margin: var(--space-lg) 0;
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--primary-gold);
+        }
+
+        .company-details h4 {
+            font-family: 'Skranji', cursive;
+            font-size: 1.5rem;
+            color: var(--deep-blue);
+            margin-bottom: var(--space-md);
+        }
+
+        address {
+            font-style: normal;
+            color: var(--medium-gray);
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .contact-item i {
+            color: var(--primary-gold);
+            width: 20px;
+        }
+
+        .contact-item a {
+            color: var(--deep-blue);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-gold);
+        }
+
+        .source-section {
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-lg);
+            border-top: 2px solid var(--primary-gold);
+            text-align: center;
+        }
+
+        .source-section p {
+            color: var(--medium-gray);
+            font-style: italic;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cookies-page {
+                padding-top: 80px;
+            }
+
+            .cookies-container {
+                padding: var(--space-2xl) var(--space-md);
+            }
+
+            .cookies-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .cookie-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .cookie-types {
+                grid-template-columns: 1fr;
+            }
+
+            .consent-options {
+                grid-template-columns: 1fr;
+            }
+
+            .cookie-card,
+            .management-option {
+                flex-direction: column;
+            }
+        }
+    </style>
+<body>
+    <div class="cookies-page">
+        <div class="cookies-container">
+            <div class="cookies-header">
+                <h1><i class="fas fa-cookie-bite"></i> Cookie-Richtlinie</h1>
+            </div>
+
+            <div class="cookie-text">
+                <section id="was-sind-cookies" class="cookie-section fade-in-up">
+                    <h2>Was sind Cookies?</h2>
+                    <div class="cookie-subsection">
+                        <p>Cookies sind kleine Textdateien, die auf Ihrem Computer oder mobilen Gerät gespeichert werden, wenn Sie unsere Website besuchen. Sie ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen und bieten Ihnen ein besseres Nutzungserlebnis.</p>
+
+                        <div class="cookie-card">
+                            <div class="card-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Wie funktionieren Cookies?</h4>
+                                <p>Cookies werden auf Ihrem Gerät gespeichert und enthalten Informationen, die bei Ihrem nächsten Besuch abgerufen werden können. Sie helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, und ermöglichen bestimmte Funktionen wie das Speichern von Einstellungen oder das Anmelden in geschützten Bereichen.</p>
+                            </div>
+                        </div>
+
+                        <p>Cookies richten auf Ihrem Endgerät keinen Schaden an, enthalten keine Viren oder andere Schadsoftware und nehmen nur minimalen Speicherplatz in Anspruch. Die meisten Browser akzeptieren Cookies automatisch, Sie können jedoch Ihre Browser-Einstellungen anpassen, um Cookies zu blockieren oder zu löschen.</p>
+                    </div>
+                </section>
+
+                <section id="arten-von-cookies" class="cookie-section fade-in-up">
+                    <h2>Arten von Cookies</h2>
+                    <div class="cookie-subsection">
+                        <p>Je nach Lebensdauer und Funktion unterscheiden wir verschiedene Arten von Cookies:</p>
+
+                        <div class="cookie-types">
+                            <div class="cookie-type">
+                                <div class="type-header">
+                                    <div class="type-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <h3>Nach Lebensdauer</h3>
+                                </div>
+                                <div class="type-content">
+                                    <div class="type-item">
+                                        <h4>Session-Cookies</h4>
+                                        <p>Temporäre Cookies, die nur während Ihrer Browsersitzung existieren und beim Schließen des Browsers gelöscht werden.</p>
+                                    </div>
+                                    <div class="type-item">
+                                        <h4>Permanente Cookies</h4>
+                                        <p>Bleiben auf Ihrem Gerät gespeichert, bis sie entweder ablaufen oder manuell gelöscht werden. Sie helfen dabei, Sie bei wiederholten Besuchen zu erkennen.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cookie-type">
+                                <div class="type-header">
+                                    <div class="type-icon">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <h3>Nach Herkunft</h3>
+                                </div>
+                                <div class="type-content">
+                                    <div class="type-item">
+                                        <h4>First-Party-Cookies</h4>
+                                        <p>Von unserer Website gesetzt und nur von uns ausgelesen.</p>
+                                    </div>
+                                    <div class="type-item">
+                                        <h4>Third-Party-Cookies</h4>
+                                        <p>Von Drittanbietern gesetzt, z.B. für Analyse- oder Werbezwecke.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cookie-type">
+                                <div class="type-header">
+                                    <div class="type-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <h3>Nach Funktion</h3>
+                                </div>
+                                <div class="type-content">
+                                    <div class="type-item">
+                                        <h4>Notwendige Cookies</h4>
+                                        <p>Essenziell für die Grundfunktionen der Website.</p>
+                                    </div>
+                                    <div class="type-item">
+                                        <h4>Präferenz-Cookies</h4>
+                                        <p>Speichern Ihre Einstellungen und Präferenzen.</p>
+                                    </div>
+                                    <div class="type-item">
+                                        <h4>Statistik-Cookies</h4>
+                                        <p>Sammeln anonymisierte Daten für statistische Auswertungen.</p>
+                                    </div>
+                                    <div class="type-item">
+                                        <h4>Marketing-Cookies</h4>
+                                        <p>Verfolgen Besucher über Websites hinweg, um relevante Werbung anzuzeigen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="verwendete-cookies" class="cookie-section fade-in-up">
+                    <h2>Verwendete Cookies</h2>
+                    <div class="cookie-subsection">
+                        <p>Auf unserer Website verwenden wir folgende Cookies:</p>
+
+                        <div class="cookie-table-container">
+                            <table class="cookie-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Anbieter</th>
+                                        <th>Zweck</th>
+                                        <th>Speicherdauer</th>
+                                        <th>Kategorie</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>theologos_session</td>
+                                        <td>Theo & Logos</td>
+                                        <td>Speichert Ihre Sitzungsinformationen während des Besuchs</td>
+                                        <td>Session</td>
+                                        <td><span class="tag essential">Notwendig</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>theologos_cookie_consent</td>
+                                        <td>Theo & Logos</td>
+                                        <td>Speichert Ihre Cookie-Einstellungen</td>
+                                        <td>1 Jahr</td>
+                                        <td><span class="tag essential">Notwendig</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>_ga</td>
+                                        <td>Google Analytics</td>
+                                        <td>Wird verwendet, um Benutzer zu unterscheiden</td>
+                                        <td>2 Jahre</td>
+                                        <td><span class="tag statistics">Statistik</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>_gid</td>
+                                        <td>Google Analytics</td>
+                                        <td>Wird verwendet, um Benutzer zu unterscheiden</td>
+                                        <td>24 Stunden</td>
+                                        <td><span class="tag statistics">Statistik</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>_gat</td>
+                                        <td>Google Analytics</td>
+                                        <td>Wird verwendet, um die Anforderungsrate zu drosseln</td>
+                                        <td>1 Minute</td>
+                                        <td><span class="tag statistics">Statistik</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>NID</td>
+                                        <td>Google Maps</td>
+                                        <td>Speichert Präferenzen und Informationen für Google Maps</td>
+                                        <td>6 Monate</td>
+                                        <td><span class="tag functional">Funktional</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="legal-notice">
+                            <p><strong>Hinweis zu Google-Diensten:</strong> Wir nutzen Google Fonts und Google Maps auf unserer Website. Dabei werden Daten an Google übertragen. Google verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework" (DPF). Weitere Informationen finden Sie in unserer <a href="/datenschutz.html">Datenschutzerklärung</a>.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="cookie-verwaltung" class="cookie-section fade-in-up">
+                    <h2>Cookie-Verwaltung</h2>
+                    <div class="cookie-subsection">
+                        <p>Sie haben verschiedene Möglichkeiten, Cookies zu verwalten:</p>
+
+                        <div class="management-options">
+                            <div class="management-option">
+                                <div class="option-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="option-content">
+                                    <h3>Über Ihren Browser</h3>
+                                    <p>Die meisten Browser erlauben es Ihnen, Cookies zu kontrollieren. Hier finden Sie Anleitungen für gängige Browser:</p>
+                                    <div class="browser-links">
+                                        <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-chrome"></i>
+                                            <span>Chrome</span>
+                                        </a>
+                                        <a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-firefox-browser"></i>
+                                            <span>Firefox</span>
+                                        </a>
+                                        <a href="https://support.apple.com/de-de/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-safari"></i>
+                                            <span>Safari</span>
+                                        </a>
+                                        <a href="https://support.microsoft.com/de-de/microsoft-edge/cookies-in-microsoft-edge-löschen-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-edge"></i>
+                                            <span>Edge</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cookie-card">
+                            <div class="card-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Wichtiger Hinweis</h4>
+                                <p>Bitte beachten Sie, dass das Deaktivieren von Cookies die Funktionalität unserer Website einschränken kann. Bestimmte Funktionen stehen möglicherweise nicht zur Verfügung, wenn Sie Cookies ablehnen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="einwilligung" class="cookie-section fade-in-up">
+                    <h2>Ihre Einwilligung</h2>
+                    <div class="cookie-subsection">
+                        <p>Beim ersten Besuch unserer Website werden Sie über die Verwendung von Cookies informiert und um Ihre Einwilligung gebeten. Sie können zwischen folgenden Optionen wählen:</p>
+
+                        <div class="consent-options">
+                            <div class="consent-option">
+                                <div class="option-header">
+                                    <div class="option-icon essential">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <h3>Nur erforderliche Cookies</h3>
+                                </div>
+                                <p>Akzeptiert nur technisch notwendige Cookies, die für die Grundfunktionen der Website unerlässlich sind.</p>
+                            </div>
+
+                            <div class="consent-option">
+                                <div class="option-header">
+                                    <div class="option-icon statistics">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h3>Erforderliche & Statistik-Cookies</h3>
+                                </div>
+                                <p>Akzeptiert zusätzlich Cookies für anonymisierte Statistiken zur Verbesserung unserer Website.</p>
+                            </div>
+
+                            <div class="consent-option">
+                                <div class="option-header">
+                                    <div class="option-icon all">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                    <h3>Alle Cookies akzeptieren</h3>
+                                </div>
+                                <p>Akzeptiert alle Cookies, einschließlich solcher für Funktionalität, Statistik und Marketing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="kontakt" class="cookie-section fade-in-up">
+                    <h2>Kontakt</h2>
+                    <div class="cookie-subsection">
+                        <p>Wenn Sie Fragen zu unserer Cookie-Richtlinie haben, können Sie uns gerne kontaktieren:</p>
+
+                        <div class="contact-info-card">
+                            <div class="company-details">
+                                <h4>Theologos GmbH</h4>
+                                <address>
+                                    Lindenstraße 10<br>
+                                    14974 Ludwigsfelde<br>
+                                    Deutschland
+                                </address>
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <a href="tel:03315506743">0331 550 67 43</a>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="source-section">
+                            <p>Letzte Aktualisierung: 01. August 2025</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
-
-    <main class="cookie-content">
-        <div class="container">
-            <div class="cookie-grid">
-                <aside class="cookie-toc fade-in-up">
-                    <div class="toc-header">
-                        <div class="toc-icon">
-                            <i class="fas fa-list"></i>
-                        </div>
-                        <h2>Inhaltsverzeichnis</h2>
-                    </div>
-                    <ul class="toc-list">
-                        <li><a href="#was-sind-cookies" class="toc-link">Was sind Cookies?</a></li>
-                        <li><a href="#arten-von-cookies" class="toc-link">Arten von Cookies</a></li>
-                        <li><a href="#verwendete-cookies" class="toc-link">Verwendete Cookies</a></li>
-                        <li><a href="#cookie-verwaltung" class="toc-link">Cookie-Verwaltung</a></li>
-                        <li><a href="#einwilligung" class="toc-link">Ihre Einwilligung</a></li>
-                        <li><a href="#kontakt" class="toc-link">Kontakt</a></li>
-                    </ul>
-                </aside>
-
-                <div class="cookie-text">
-                    <section id="was-sind-cookies" class="cookie-section fade-in-up">
-                        <h2>Was sind Cookies?</h2>
-                        <div class="cookie-subsection">
-                            <p>Cookies sind kleine Textdateien, die auf Ihrem Computer oder mobilen Gerät gespeichert werden, wenn Sie unsere Website besuchen. Sie ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen und bieten Ihnen ein besseres Nutzungserlebnis.</p>
-                            
-                            <div class="cookie-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-info-circle"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Wie funktionieren Cookies?</h4>
-                                    <p>Cookies werden auf Ihrem Gerät gespeichert und enthalten Informationen, die bei Ihrem nächsten Besuch abgerufen werden können. Sie helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, und ermöglichen bestimmte Funktionen wie das Speichern von Einstellungen oder das Anmelden in geschützten Bereichen.</p>
-                                </div>
-                            </div>
-                            
-                            <p>Cookies richten auf Ihrem Endgerät keinen Schaden an, enthalten keine Viren oder andere Schadsoftware und nehmen nur minimalen Speicherplatz in Anspruch. Die meisten Browser akzeptieren Cookies automatisch, Sie können jedoch Ihre Browser-Einstellungen anpassen, um Cookies zu blockieren oder zu löschen.</p>
-                        </div>
-                    </section>
-
-                    <section id="arten-von-cookies" class="cookie-section fade-in-up">
-                        <h2>Arten von Cookies</h2>
-                        <div class="cookie-subsection">
-                            <p>Je nach Lebensdauer und Funktion unterscheiden wir verschiedene Arten von Cookies:</p>
-                            
-                            <div class="cookie-types">
-                                <div class="cookie-type">
-                                    <div class="type-header">
-                                        <div class="type-icon">
-                                            <i class="fas fa-clock"></i>
-                                        </div>
-                                        <h3>Nach Lebensdauer</h3>
-                                    </div>
-                                    <div class="type-content">
-                                        <div class="type-item">
-                                            <h4>Session-Cookies</h4>
-                                            <p>Temporäre Cookies, die nur während Ihrer Browsersitzung existieren und beim Schließen des Browsers gelöscht werden.</p>
-                                        </div>
-                                        <div class="type-item">
-                                            <h4>Permanente Cookies</h4>
-                                            <p>Bleiben auf Ihrem Gerät gespeichert, bis sie entweder ablaufen oder manuell gelöscht werden. Sie helfen dabei, Sie bei wiederholten Besuchen zu erkennen.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="cookie-type">
-                                    <div class="type-header">
-                                        <div class="type-icon">
-                                            <i class="fas fa-tasks"></i>
-                                        </div>
-                                        <h3>Nach Herkunft</h3>
-                                    </div>
-                                    <div class="type-content">
-                                        <div class="type-item">
-                                            <h4>First-Party-Cookies</h4>
-                                            <p>Von unserer Website gesetzt und nur von uns ausgelesen.</p>
-                                        </div>
-                                        <div class="type-item">
-                                            <h4>Third-Party-Cookies</h4>
-                                            <p>Von Drittanbietern gesetzt, z.B. für Analyse- oder Werbezwecke.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="cookie-type">
-                                    <div class="type-header">
-                                        <div class="type-icon">
-                                            <i class="fas fa-cogs"></i>
-                                        </div>
-                                        <h3>Nach Funktion</h3>
-                                    </div>
-                                    <div class="type-content">
-                                        <div class="type-item">
-                                            <h4>Notwendige Cookies</h4>
-                                            <p>Essenziell für die Grundfunktionen der Website.</p>
-                                        </div>
-                                        <div class="type-item">
-                                            <h4>Präferenz-Cookies</h4>
-                                            <p>Speichern Ihre Einstellungen und Präferenzen.</p>
-                                        </div>
-                                        <div class="type-item">
-                                            <h4>Statistik-Cookies</h4>
-                                            <p>Sammeln anonymisierte Daten für statistische Auswertungen.</p>
-                                        </div>
-                                        <div class="type-item">
-                                            <h4>Marketing-Cookies</h4>
-                                            <p>Verfolgen Besucher über Websites hinweg, um relevante Werbung anzuzeigen.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="verwendete-cookies" class="cookie-section fade-in-up">
-                        <h2>Verwendete Cookies</h2>
-                        <div class="cookie-subsection">
-                            <p>Auf unserer Website verwenden wir folgende Cookies:</p>
-                            
-                            <div class="cookie-table-container">
-                                <table class="cookie-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Anbieter</th>
-                                            <th>Zweck</th>
-                                            <th>Speicherdauer</th>
-                                            <th>Kategorie</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>theologos_session</td>
-                                            <td>Theo & Logos</td>
-                                            <td>Speichert Ihre Sitzungsinformationen während des Besuchs</td>
-                                            <td>Session</td>
-                                            <td><span class="tag essential">Notwendig</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>theologos_cookie_consent</td>
-                                            <td>Theo & Logos</td>
-                                            <td>Speichert Ihre Cookie-Einstellungen</td>
-                                            <td>1 Jahr</td>
-                                            <td><span class="tag essential">Notwendig</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>_ga</td>
-                                            <td>Google Analytics</td>
-                                            <td>Wird verwendet, um Benutzer zu unterscheiden</td>
-                                            <td>2 Jahre</td>
-                                            <td><span class="tag statistics">Statistik</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>_gid</td>
-                                            <td>Google Analytics</td>
-                                            <td>Wird verwendet, um Benutzer zu unterscheiden</td>
-                                            <td>24 Stunden</td>
-                                            <td><span class="tag statistics">Statistik</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>_gat</td>
-                                            <td>Google Analytics</td>
-                                            <td>Wird verwendet, um die Anforderungsrate zu drosseln</td>
-                                            <td>1 Minute</td>
-                                            <td><span class="tag statistics">Statistik</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>NID</td>
-                                            <td>Google Maps</td>
-                                            <td>Speichert Präferenzen und Informationen für Google Maps</td>
-                                            <td>6 Monate</td>
-                                            <td><span class="tag functional">Funktional</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <div class="legal-notice">
-                                <p><strong>Hinweis zu Google-Diensten:</strong> Wir nutzen Google Fonts und Google Maps auf unserer Website. Dabei werden Daten an Google übertragen. Google verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework" (DPF). Weitere Informationen finden Sie in unserer <a href="/privacy.html">Datenschutzerklärung</a>.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="cookie-verwaltung" class="cookie-section fade-in-up">
-                        <h2>Cookie-Verwaltung</h2>
-                        <div class="cookie-subsection">
-                            <p>Sie haben verschiedene Möglichkeiten, Cookies zu verwalten:</p>
-                            
-                            <div class="management-options">
-                                <div class="management-option">
-                                    <div class="option-icon">
-                                        <i class="fas fa-globe"></i>
-                                    </div>
-                                    <div class="option-content">
-                                        <h3>Über Ihren Browser</h3>
-                                        <p>Die meisten Browser erlauben es Ihnen, Cookies zu kontrollieren. Hier finden Sie Anleitungen für gängige Browser:</p>
-                                        <div class="browser-links">
-                                            <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">
-                                                <i class="fab fa-chrome"></i>
-                                                <span>Chrome</span>
-                                            </a>
-                                            <a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" target="_blank" rel="noopener noreferrer">
-                                                <i class="fab fa-firefox-browser"></i>
-                                                <span>Firefox</span>
-                                            </a>
-                                            <a href="https://support.apple.com/de-de/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">
-                                                <i class="fab fa-safari"></i>
-                                                <span>Safari</span>
-                                            </a>
-                                            <a href="https://support.microsoft.com/de-de/microsoft-edge/cookies-in-microsoft-edge-löschen-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">
-                                                <i class="fab fa-edge"></i>
-                                                <span>Edge</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="cookie-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                </div>
-                                <div class="card-content">
-                                    <h4>Wichtiger Hinweis</h4>
-                                    <p>Bitte beachten Sie, dass das Deaktivieren von Cookies die Funktionalität unserer Website einschränken kann. Bestimmte Funktionen stehen möglicherweise nicht zur Verfügung, wenn Sie Cookies ablehnen.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="einwilligung" class="cookie-section fade-in-up">
-                        <h2>Ihre Einwilligung</h2>
-                        <div class="cookie-subsection">
-                            <p>Beim ersten Besuch unserer Website werden Sie über die Verwendung von Cookies informiert und um Ihre Einwilligung gebeten. Sie können zwischen folgenden Optionen wählen:</p>
-                            
-                            <div class="consent-options">
-                                <div class="consent-option">
-                                    <div class="option-header">
-                                        <div class="option-icon essential">
-                                            <i class="fas fa-check"></i>
-                                        </div>
-                                        <h3>Nur erforderliche Cookies</h3>
-                                    </div>
-                                    <p>Akzeptiert nur technisch notwendige Cookies, die für die Grundfunktionen der Website unerlässlich sind.</p>
-                                </div>
-                                
-                                <div class="consent-option">
-                                    <div class="option-header">
-                                        <div class="option-icon statistics">
-                                            <i class="fas fa-chart-line"></i>
-                                        </div>
-                                        <h3>Erforderliche & Statistik-Cookies</h3>
-                                    </div>
-                                    <p>Akzeptiert zusätzlich Cookies für anonymisierte Statistiken zur Verbesserung unserer Website.</p>
-                                </div>
-                                
-                                <div class="consent-option">
-                                    <div class="option-header">
-                                        <div class="option-icon all">
-                                            <i class="fas fa-thumbs-up"></i>
-                                        </div>
-                                        <h3>Alle Cookies akzeptieren</h3>
-                                    </div>
-                                    <p>Akzeptiert alle Cookies, einschließlich solcher für Funktionalität, Statistik und Marketing.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="kontakt" class="cookie-section fade-in-up">
-                        <h2>Kontakt</h2>
-                        <div class="cookie-subsection">
-                            <p>Wenn Sie Fragen zu unserer Cookie-Richtlinie haben, können Sie uns gerne kontaktieren:</p>
-                            
-                            <div class="contact-info-card">
-                                <div class="company-details">
-                                    <h4>Theo & Logos</h4>
-                                    <address>
-                                        Potsdamer Str. 37<br>
-                                        14469 Potsdam<br>
-                                        Deutschland
-                                    </address>
-                                    <div class="contact-details">
-                                        <div class="contact-item">
-                                            <i class="fas fa-phone"></i>
-                                            <a href="tel:03315506743">0331 550 67 43</a>
-                                        </div>
-                                        <div class="contact-item">
-                                            <i class="fas fa-envelope"></i>
-                                            <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="source-section">
-                                <p>Letzte Aktualisierung: 01. August 2025</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="quick-links">
-                <div class="quick-link-card fade-in-up">
-                    <div class="card-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Datenschutzerklärung</h3>
-                    <p>Erfahren Sie mehr über den Umgang mit Ihren persönlichen Daten auf unserer Website.</p>
-                    <a href="https://theologosgmbh.de/privacy" class="card-btn">
-                        <span>Datenschutzerklärung lesen</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="quick-link-card fade-in-up">
-                    <div class="card-icon">
-                        <i class="fas fa-info-circle"></i>
-                    </div>
-                    <h3>Impressum</h3>
-                    <p>Rechtliche Informationen und Kontaktdaten des Websitebetreibers.</p>
-                    <a href="https://theologosgmbh.de/imprint" class="card-btn">
-                        <span>Zum Impressum</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="quick-link-card fade-in-up">
-                    <div class="card-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Zurück zur Website</h3>
-                    <p>Entdecken Sie unser Restaurant und unsere Küche.</p>
-                    <a href="https://theologosgmbh.de/" class="card-btn">
-                        <span>Zur Startseite</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
+    </div>
+ <footer class="footer">
         <div class="footer-bg">
             <div class="bg-pattern"></div>
             <div class="bg-decoration"></div>
@@ -582,7 +955,7 @@
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="item-text">
-                                <a href="tel:03315506743">0331 550 67 43</a>
+                                <a href="tel:03315506743" style="color: var(--light-gray); ">0331 550 67 43</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -590,7 +963,7 @@
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="item-text">
-                                <a href="mailto:info@knossos-palast-potsdam.de">info@knossos-palast-potsdam.de</a>
+                                <a href="mailto:info@knossos-palast-potsdam.de" style="color: var(--light-gray); ">info@knossos-palast-potsdam.de</a>
                             </div>
                         </div>
                     </div>

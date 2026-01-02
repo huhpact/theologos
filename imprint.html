@@ -23,8 +23,6 @@
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2572135815183857"
      crossorigin="anonymous"></script> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <link rel="stylesheet" href="/css/imprint.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -179,187 +177,274 @@
         </nav>
     </header>
 
-    <section class="page-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="header-icon">
-                    <i class="fas fa-info-circle"></i>
-                </div>
-                <h1 class="page-title">Impressum</h1>
-                <p class="page-subtitle">Rechtliche Informationen und Kontaktdaten</p>
+
+    <style>
+        .imprint-page {
+            min-height: 100vh;
+            padding-top: 100px;
+            background: var(--cream);
+        }
+
+        .imprint-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-3xl) var(--space-lg);
+        }
+
+        .imprint-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .imprint-header h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--deep-blue);
+            margin-bottom: var(--space-md);
+        }
+
+        .header-line {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+            margin: 0 auto;
+        }
+
+        .imprint-section {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            margin-bottom: var(--space-lg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+        }
+
+        .imprint-section:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--deep-blue);
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+            color: var(--white);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.125rem;
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: var(--space-md);
+            padding: var(--space-sm) 0;
+            align-items: start;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+
+        .info-value {
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+
+        .info-value a {
+            color: var(--deep-blue);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        .info-value a:hover {
+            color: var(--primary-gold);
+        }
+
+        .disclaimer-section {
+            margin-bottom: var(--space-lg);
+        }
+
+        .disclaimer-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .disclaimer-section h3 {
+            font-family: var(--font-primary);
+            font-size: 1.125rem;
+            color: var(--deep-blue);
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        .disclaimer-section p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .imprint-page {
+                padding-top: 80px;
+            }
+
+            .imprint-container {
+                padding: var(--space-2xl) var(--space-md);
+            }
+
+            .imprint-section {
+                padding: var(--space-lg);
+            }
+
+            .info-row {
+                grid-template-columns: 1fr;
+                gap: var(--space-xs);
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="imprint-page">
+        <div class="imprint-container">
+            <div class="imprint-header">
+                <h1>Impressum</h1>
+                <div class="header-line"></div>
             </div>
-        </div>
-    </section>
 
-    <main class="imprint-content">
-        <div class="container">
-            <div class="content-grid">
-                <section class="info-section fade-in-up">
-                    <div class="section-header">
-                        <div class="section-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h2>Angaben gemäß § 5 TMG</h2>
+            <section class="imprint-section">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-building"></i>
                     </div>
-                    <div class="info-card">
-                        <div class="info-item">
-                            <div class="item-label">Firmenname:</div>
-                            <div class="item-value">Theologos GmbH</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="item-label">Geschäftsführer:</div>
-                            <div class="item-value">Jani Lacaj</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="item-label">Anschrift:</div>
-                            <div class="item-value">
-                                Lindenstraße 10<br>
-                                14974 Ludwigsfelde<br>
-                                Deutschland
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="info-section fade-in-up">
-                    <div class="section-header">
-                        <div class="section-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h2>Kontakt</h2>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-item">
-                            <div class="item-label">Telefon:</div>
-                            <div class="item-value">
-                                <a href="tel:03315506743">0331 550 67 43</a>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="item-label">E-Mail:</div>
-                            <div class="item-value">
-                                <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="item-label">Website:</div>
-                            <div class="item-value">
-                                <a href="https://theologosgmbh.de" target="_blank">theologosgmbh.de</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="info-section fade-in-up">
-                    <div class="section-header">
-                        <div class="section-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h2>Registereintrag</h2>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-item">
-                            <div class="item-label">Handelsregister:</div>
-                            <div class="item-value">Amtsgericht Potsdam</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="item-label">Umsatzsteuer-ID:</div>
-                            <div class="item-value">DE319017411</div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="info-section fade-in-up">
-                    <div class="section-header">
-                        <div class="section-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h2>Haftungsausschluss</h2>
-                    </div>
-                    <div class="disclaimer-card">
-                        <div class="disclaimer-section">
-                            <h3>Haftung für Inhalte</h3>
-                            <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
-                        </div>
-                        
-                        <div class="disclaimer-section">
-                            <h3>Haftung für Links</h3>
-                            <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
-                        </div>
-                        
-                        <div class="disclaimer-section">
-                            <h3>Urheberrecht</h3>
-                            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="info-section fade-in-up">
-                    <div class="section-header">
-                        <div class="section-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <h2>Online-Streitbeilegung</h2>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-item">
-                            <div class="item-label">EU-Streitschlichtung:</div>
-                            <div class="item-value">
-                                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:<br>
-                                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="item-label">Verbraucherschlichtung:</div>
-                            <div class="item-value">
-                                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="quick-actions fade-in-up">
-                <div class="action-card">
-                    <div class="action-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Fragen zum Impressum?</h3>
-                    <p>Kontaktieren Sie uns bei rechtlichen Fragen oder Anmerkungen</p>
-                    <a href="mailto:info@knossos-palast-potsdam.de" class="action-btn">
-                        <span>E-Mail senden</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    Angaben gemäß § 5 TMG
+                </h2>
+                <div class="info-row">
+                    <div class="info-label">Firmenname:</div>
+                    <div class="info-value">Theologos GmbH</div>
                 </div>
-                
-                <div class="action-card">
-                    <div class="action-icon">
+                <div class="info-row">
+                    <div class="info-label">Geschäftsführer:</div>
+                    <div class="info-value">Jani Lacaj</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Anschrift:</div>
+                    <div class="info-value">
+                        Lindenstraße 10<br>
+                        14974 Ludwigsfelde<br>
+                        Deutschland
+                    </div>
+                </div>
+            </section>
+
+            <section class="imprint-section">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    Kontakt
+                </h2>
+                <div class="info-row">
+                    <div class="info-label">Telefon:</div>
+                    <div class="info-value">
+                        <a href="tel:03315506743">0331 550 67 43</a>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">E-Mail:</div>
+                    <div class="info-value">
+                        <a href="mailto:lacaj@theologosgmbh.de">lacaj@theologosgmbh.de</a>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Website:</div>
+                    <div class="info-value">
+                        <a href="https://theologosgmbh.de" target="_blank">theologosgmbh.de</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="imprint-section">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    Registereintrag
+                </h2>
+                <div class="info-row">
+                    <div class="info-label">Handelsregister:</div>
+                    <div class="info-value">Amtsgericht Potsdam</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Umsatzsteuer-ID:</div>
+                    <div class="info-value">DE319017411</div>
+                </div>
+            </section>
+
+            <section class="imprint-section">
+                <h2 class="section-title">
+                    <div class="section-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Datenschutz</h3>
-                    <p>Informationen zum Umgang mit Ihren persönlichen Daten</p>
-                    <a href="/privacy.html" class="action-btn">
-                        <span>Datenschutzerklärung</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    Haftungsausschluss
+                </h2>
+                <div class="disclaimer-section">
+                    <h3>Haftung für Inhalte</h3>
+                    <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
                 </div>
-                
-                <div class="action-card">
-                    <div class="action-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Zurück zur Website</h3>
-                    <p>Entdecken Sie unser Restaurant und unsere Küche</p>
-                    <a href="/index.html" class="action-btn">
-                        <span>Zur Startseite</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
 
-    <footer class="footer">
+                <div class="disclaimer-section">
+                    <h3>Haftung für Links</h3>
+                    <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+                </div>
+
+                <div class="disclaimer-section">
+                    <h3>Urheberrecht</h3>
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                </div>
+            </section>
+
+            <section class="imprint-section">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    Online-Streitbeilegung
+                </h2>
+                <div class="info-row">
+                    <div class="info-label">EU-Streitschlichtung:</div>
+                    <div class="info-value">
+                        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:<br>
+                        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Verbraucherschlichtung:</div>
+                    <div class="info-value">
+                        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+ <footer class="footer">
         <div class="footer-bg">
             <div class="bg-pattern"></div>
             <div class="bg-decoration"></div>
@@ -503,9 +588,6 @@
     <button class="back-to-top" id="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </button>
-
-    <script src="/js/main.js"></script>
-    <script src="/js/imprint.js"></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXNBE56ZSR"></script>
 <script>
@@ -517,3 +599,4 @@
 </script>
 </body>
 </html>
+
