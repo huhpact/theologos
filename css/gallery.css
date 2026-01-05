@@ -1820,8 +1820,8 @@
 }
 
 .credit {
-	font-family: "Roboto Mono", monospace;
-	font-size: 13px;
+	font-family: sans-serif;
+	font-size: 14px;
 	color: white;
 	display: flex;
 	align-items: center;
@@ -1835,9 +1835,9 @@
 }
 
 .img__credit {
-	height: 20px;
+	height: 60px;
 	margin-left: 5px;
-	transition: var(--transition-smooth);
+	transition: 0.3s ease;
 }
 
 .img__credit:hover {
