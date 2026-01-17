@@ -41,17 +41,17 @@ class GreekEveningPopup {
                 </button>
                 
                 <div class="popup-badge">
-                   <i class="fa-solid fa-gifts"></i>
+                   <i class="fa-solid fa-music"></i>
                 </div>
                 
                 <div class="popup-content">
-                    <h3 class="popup-title">Weihnachten bei Theo & Logos</h3>
+                    <h3 class="popup-title">Live-Musik bei Theo & Logos</h3>
                     <div class="popup-date">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>25. Dezember 2025</span>
+                        <span>06. Februar 2026</span>
                     </div>
                     <p class="popup-description">
-                        Weihnachten steht vor der Tür und die gemütliche Zeit beginnt. Wenn ihr noch nichts vorhabt, kommt vorbei und verbringt entspannte Stunden bei uns. Wir sorgen für gutes Essen, eine warme Atmosphäre und echte Weihnachtsstimmung. 
+                        Genießt einen unvergesslichen Abend mit traditioneller griechischer Musik und köstlichen Speisen. Lasst euch von den Klängen verzaubern und erlebt die authentische Atmosphäre Griechenlands direkt bei uns im Restaurant. 
                     
                     <button class="popup-cta" onclick="window.location.href='/contact.html#reservation'">
                         <div class="btn-content">
@@ -321,11 +321,11 @@ class GreekEveningPopup {
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-SUMMARY:Weihnachten bei Theo & Logos
-DTSTART:20251225T190000
-DTEND:20260101T000000
+SUMMARY:Live-Musik bei Theo & Logos
+DTSTART:20260206T190000
+DTEND:20260206T220000
 LOCATION:Potsdamer Str. 37, 14469 Potsdam
-DESCRIPTION: Weihnachten steht vor der Tür und die gemütliche Zeit beginnt. Wenn ihr noch nichts vorhabt, kommt vorbei und verbringt entspannte Stunden bei uns. Wir sorgen für gutes Essen, eine warme Atmosphäre und echte Weihnachtsstimmung. 
+DESCRIPTION: Genießt einen unvergesslichen Abend mit traditioneller griechischer Musik und köstlichen Speisen. Lasst euch von den Klängen verzaubern und erlebt die authentische Atmosphäre Griechenlands direkt bei uns im Restaurant. 
 END:VEVENT
 END:VCALENDAR
         `.trim();
