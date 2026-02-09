@@ -416,6 +416,8 @@ body {
 
 
 .dish-image {
+    width: 350px;
+    height: 350px;
     overflow: hidden;
     position: relative;
     flex-shrink: 0;
