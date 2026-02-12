@@ -295,7 +295,7 @@ class AnimationController {
     addAnimationClasses() {
         const sections = document.querySelectorAll('section');
         sections.forEach((section, sectionIndex) => {
-            const elements = section.querySelectorAll('h2, h3, h4, p, .btn-primary, .btn-secondary, .menu-category-card, .gallery-item, .stat-item, .info-card, .text-block');
+            const elements = section.querySelectorAll('h2, h3, h4, .btn-primary, .btn-secondary, .gallery-item');
             elements.forEach((element, elementIndex) => {
                 const animationClass = this.getAnimationClass(sectionIndex, elementIndex);
                 element.classList.add(animationClass);
@@ -305,7 +305,7 @@ class AnimationController {
     }
 
     getAnimationClass(sectionIndex, elementIndex) {
-        const animations = ['fade-in', 'slide-in-left', 'slide-in-right', 'scale-in', 'rotate-in', 'flip-in'];
+        const animations = ['fade-in', 'slide-in-left', 'slide-in-right', 'scale-in'];
         return animations[(sectionIndex + elementIndex) % animations.length];
     }
 
