@@ -45,13 +45,13 @@ class GreekEveningPopup {
                 </div>
                 
                 <div class="popup-content">
-                    <h3 class="popup-title">Live-Musik bei Theo & Logos</h3>
+                    <h3 class="popup-title">Schlagerparty mit der Pegasus Diskothek</h3>
                     <div class="popup-date">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>06. Februar 2026</span>
+                        <span>13. März 2026</span>
                     </div>
                     <p class="popup-description">
-                        Genießt einen unvergesslichen Abend mit traditioneller griechischer Musik und köstlichen Speisen. Lasst euch von den Klängen verzaubern und erlebt die authentische Atmosphäre Griechenlands direkt bei uns im Restaurant. 
+                        Genießt einen unvergesslichen Abend mit Schlagermusik und köstlichen Speisen. Eintritt: 10€ pro Person.
                     
                     <button class="popup-cta" onclick="window.location.href='/contact.html#reservation'">
                         <div class="btn-content">
@@ -321,11 +321,11 @@ class GreekEveningPopup {
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-SUMMARY:Live-Musik bei Theo & Logos
-DTSTART:20260206T190000
-DTEND:20260206T220000
+SUMMARY:Schlagerparty bei Theo & Logos
+DTSTART:20260313T180000
+DTEND:20260313T220000
 LOCATION:Potsdamer Str. 37, 14469 Potsdam
-DESCRIPTION: Genießt einen unvergesslichen Abend mit traditioneller griechischer Musik und köstlichen Speisen. Lasst euch von den Klängen verzaubern und erlebt die authentische Atmosphäre Griechenlands direkt bei uns im Restaurant. 
+DESCRIPTION: Genießt einen unvergesslichen Abend mit Schlagermusik und köstlichen Speisen. Eintritt: 10€ pro Person.
 END:VEVENT
 END:VCALENDAR
         `.trim();
@@ -334,7 +334,7 @@ END:VCALENDAR
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = "weihnachten.ics";
+        a.download = "schlagerparty.ics";
         a.click();
         URL.revokeObjectURL(url);
     }
