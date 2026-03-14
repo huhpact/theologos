@@ -45,13 +45,13 @@ class GreekEveningPopup {
                 </div>
                 
                 <div class="popup-content">
-                    <h3 class="popup-title">Schlagerparty mit der Pegasus Diskothek</h3>
+                    <h3 class="popup-title">Party Night 80s-90s</h3>
                     <div class="popup-date">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>13. März 2026</span>
+                        <span>11. April 2026</span>
                     </div>
                     <p class="popup-description">
-                        Genießt einen unvergesslichen Abend mit Schlagermusik und köstlichen Speisen. Eintritt: 10€ pro Person.
+                        Genießt einen unvergesslichen Abend mit 80s und 90s und köstlichen Speisen. Eintritt: 10€ pro Person.
                     
                     <button class="popup-cta" onclick="window.location.href='/contact.html#reservation'">
                         <div class="btn-content">
@@ -321,11 +321,11 @@ class GreekEveningPopup {
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-SUMMARY:Schlagerparty bei Theo & Logos
-DTSTART:20260313T180000
-DTEND:20260313T220000
+SUMMARY:Party night 80s und 90s
+DTSTART:20260411T180000
+DTEND:20260411T220000
 LOCATION:Potsdamer Str. 37, 14469 Potsdam
-DESCRIPTION: Genießt einen unvergesslichen Abend mit Schlagermusik und köstlichen Speisen. Eintritt: 10€ pro Person.
+DESCRIPTION: Genießt einen unvergesslichen Abend mit 80s und 90s und köstlichen Speisen. Eintritt: 10€ pro Person.
 END:VEVENT
 END:VCALENDAR
         `.trim();
