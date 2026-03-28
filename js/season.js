@@ -114,7 +114,7 @@ class SeasonalDisplay {
         const easter = this.calculateEaster(this.currentYear);
         
         const palmSunday = new Date(easter);
-        palmSunday.setDate(easter.getDate() - 7);
+        palmSunday.setDate(easter.getDate() - 2);
         
         const easterMonday = new Date(easter);
         easterMonday.setDate(easter.getDate() + 1);
