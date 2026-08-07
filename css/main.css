@@ -121,6 +121,34 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-md);
 }
 
+.section-badge.minimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    background: none;
+    color: var(--primary-gold);
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    box-shadow: none;
+}
+
+.section-badge.minimal::before,
+.section-badge.minimal::after {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--primary-gold);
+    opacity: 0.5;
+}
+
+.section-badge.minimal i {
+    display: none;
+}
+
 .section-title {
     font-size: clamp(2rem, 4.5vw, 3rem);
     color: var(--deep-blue);
@@ -1169,122 +1197,94 @@ h1, h2, h3, h4, h5, h6 {
 .text-blocks {
     display: flex;
     flex-direction: column;
-    gap: var(--space-xl);
+    gap: var(--space-2xl);
     margin-bottom: var(--space-2xl);
 }
 
 .text-block {
-    background: var(--cream);
-    border-radius: var(--radius-xl);
-    padding: var(--space-xl);
     position: relative;
-    overflow: hidden;
-    transition: var(--transition-normal);
-}
-
-.text-block::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--primary-gold), var(--dark-gold));
-    transition: var(--transition-normal);
+    padding-left: var(--space-lg);
+    border-left: 2px solid var(--light-gray);
+    transition: border-color var(--transition-normal);
 }
 
 .text-block:hover {
-    transform: translateX(8px);
-}
-
-.text-block:hover::before {
-    width: 6px;
+    border-left-color: var(--primary-gold);
 }
 
 .block-header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: var(--space-md);
-    margin-bottom: var(--space-lg);
-    position: relative;
+    margin-bottom: var(--space-md);
 }
 
 .block-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
-    color: var(--white);
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    flex-shrink: 0;
-    box-shadow: var(--shadow-md);
+    display: none;
 }
 
 .block-header h3 {
     font-family: var(--font-heading);
     color: var(--deep-blue);
-    font-size: 1.75rem;
+    font-size: 1.375rem;
     margin: 0;
+    letter-spacing: 0.3px;
 }
 
 .block-accent {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary-gold), transparent);
+    display: none;
 }
 
 .block-content {
-    padding-left: calc(60px + var(--space-md));
+    padding-left: 0;
+    max-width: 62ch;
 }
 
 .lead-text {
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 500;
     color: var(--deep-blue);
     margin-bottom: var(--space-md);
-    line-height: 1.7;
+    line-height: 1.6;
+    font-family: var(--font-heading);
 }
 
 .block-content p {
-    color: var(--medium-gray);
-    line-height: 1.8;
+    color: var(--dark-gray);
+    line-height: 1.85;
     margin-bottom: var(--space-md);
+    font-size: 1.0625rem;
 }
 
 .philosophy-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-sm);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs) var(--space-lg);
     margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--light-gray);
 }
 
 .philosophy-item {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
-    padding: var(--space-sm) var(--space-md);
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    font-size: 0.95rem;
-    color: var(--charcoal);
-    box-shadow: var(--shadow-xs);
-    transition: var(--transition-fast);
+    gap: var(--space-xs);
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    box-shadow: none;
+    transition: color var(--transition-fast);
 }
 
 .philosophy-item:hover {
-    box-shadow: var(--shadow-sm);
+    color: var(--deep-blue);
 }
 
 .philosophy-item i {
     color: var(--primary-gold);
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .about-visual {
@@ -2327,75 +2327,79 @@ h1, h2, h3, h4, h5, h6 {
 .reservation-methods {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-3xl);
+    gap: var(--space-xl);
+    align-items: start;
 }
 
 .method-card {
-    background: var(--cream);
-    border-radius: var(--radius-2xl);
-    padding: var(--space-2xl);
-    transition: var(--transition-normal);
-    position: relative;
-    overflow: hidden;
-}
-
-
-.method-card.online {
-    border-top: 3px solid var(--primary-gold);
-}
-
-.method-card.phone {
-    border-top: 3px solid var(--deep-blue);
-}
-
-.method-card .card-header {
-    background: transparent;
-    color: inherit;
-    padding: 0;
-    margin-bottom: var(--space-xl);
-    border-bottom: 1px solid var(--light-gray);
-    padding-bottom: var(--space-lg);
-}
-
-.method-card .header-icon {
-    width: 56px;
-    height: 56px;
-    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
-    color: var(--white);
+    background: var(--white);
     border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.375rem;
-    margin-bottom: var(--space-lg);
+    padding: var(--space-xl);
+    transition: box-shadow var(--transition-normal);
+    position: relative;
     box-shadow: var(--shadow-sm);
 }
 
+.method-card.online {
+    border-top: 2px solid var(--primary-gold);
+}
+
+.method-card.phone {
+    border-top: 2px solid var(--deep-blue);
+}
+
+.method-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    margin-bottom: var(--space-lg);
+}
+
+.method-card .header-icon {
+    width: 40px;
+    height: 40px;
+    background: none;
+    color: var(--primary-gold);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    box-shadow: none;
+    flex-shrink: 0;
+}
+
 .method-card.phone .header-icon {
-    background: linear-gradient(135deg, var(--deep-blue), var(--navy-blue));
+    background: none;
+    color: var(--deep-blue);
 }
 
 .method-card .header-content h3 {
     font-family: var(--font-heading);
-    font-size: 1.75rem;
+    font-size: 1.375rem;
     color: var(--deep-blue);
-    margin-bottom: var(--space-sm);
+    margin-bottom: 2px;
 }
 
 .method-card .header-content p {
     color: var(--medium-gray);
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0;
 }
 
-.header-decoration {
-    position: absolute;
-    top: 0;
-    right: var(--space-lg);
-    width: 40px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary-gold), transparent);
-    opacity: 0.6;
+.method-card .header-decoration {
+    display: none;
+}
+
+.knossos-reservation-container {
+    background: var(--cream);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--light-gray);
+    margin: 0 -0.5rem;
 }
 
 .reservation-widget {
@@ -2462,13 +2466,13 @@ h1, h2, h3, h4, h5, h6 {
 .phone-content {
     display: flex;
     flex-direction: column;
-    gap: var(--space-xl);
+    gap: var(--space-lg);
 }
 
-.contact-info {
+.phone-content .contact-info {
     display: flex;
     flex-direction: column;
-    gap: var(--space-lg);
+    gap: var(--space-sm);
 }
 
 .phone-number,
@@ -2476,32 +2480,35 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     gap: var(--space-md);
-    padding: var(--space-lg);
-    background: var(--cream);
-    border-radius: var(--radius-lg);
-    border-left: 3px solid var(--primary-gold);
+    padding: var(--space-md) 0;
+    background: none;
+    border-radius: 0;
+    border-left: none;
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .phone-hours {
-    border-left-color: var(--deep-blue);
+    border-left-color: transparent;
+    border-bottom: none;
 }
 
 .number-icon,
 .hours-icon {
-    width: 50px;
-    height: 50px;
-    background: var(--primary-gold);
-    color: var(--white);
-    border-radius: var(--radius-lg);
+    width: 36px;
+    height: 36px;
+    background: none;
+    color: var(--primary-gold);
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     flex-shrink: 0;
 }
 
 .hours-icon {
-    background: var(--deep-blue);
+    background: none;
+    color: var(--deep-blue);
 }
 
 .number-text,
@@ -2512,19 +2519,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .number,
 .time {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 600;
     color: var(--deep-blue);
-    margin-bottom: var(--space-xs);
+    margin-bottom: 2px;
 }
 
 .label {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: var(--medium-gray);
+}
+
+.phone-cta-row {
+    display: flex;
+    gap: var(--space-sm);
 }
 
 .phone-cta {
     text-align: center;
+    flex: 1;
 }
 
 .phone-btn {
@@ -2532,68 +2545,71 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--deep-blue);
     color: var(--white);
     border: none;
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg) var(--space-2xl);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-lg);
     font-family: var(--font-primary);
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition-normal);
     overflow: hidden;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    gap: var(--space-sm);
+    width: 100%;
+}
+
+.phone-btn .btn-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
 }
 
 .phone-btn .btn-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
-    transform: scale(0);
-    transition: var(--transition-normal);
-    border-radius: var(--radius-lg);
+    display: none;
 }
 
 .phone-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
-.phone-btn:hover .btn-bg {
-    transform: scale(1);
+a.phone-btn[href^="https://wa.me"] {
+    background: var(--charcoal);
 }
 
 .phone-benefits {
     display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
+    flex-wrap: wrap;
+    gap: var(--space-xs) var(--space-md);
+    margin-top: var(--space-xs);
 }
 
 .benefit-item {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
-    padding: var(--space-sm) var(--space-md);
-    background: var(--white);
-    border-radius: var(--radius-md);
-    font-size: 0.95rem;
-    color: var(--charcoal);
-    box-shadow: var(--shadow-xs);
-    transition: var(--transition-fast);
+    gap: 6px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    font-size: 0.85rem;
+    color: var(--medium-gray);
+    box-shadow: none;
+    transition: none;
 }
 
 .benefit-item:hover {
-    transform: translateX(4px);
-    box-shadow: var(--shadow-sm);
+    transform: none;
+    box-shadow: none;
 }
 
 .benefit-item i {
     color: var(--primary-gold);
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .contact {
@@ -3321,11 +3337,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .philosophy-grid {
-        gap: var(--space-xs);
+        gap: var(--space-xs) var(--space-md);
     }
     
     .text-blocks {
-        gap: var(--space-lg);
+        gap: var(--space-xl);
     }
     
     .visual-composition,
@@ -3396,22 +3412,19 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .text-block {
-        padding: var(--space-lg);
+        padding-left: var(--space-md);
     }
     
     .block-content {
         padding-left: 0;
-        margin-top: var(--space-md);
     }
     
     .block-header {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--space-sm);
+        margin-bottom: var(--space-sm);
     }
     
-    .block-accent {
-        display: none;
+    .lead-text {
+        font-size: 1.125rem;
     }
     
     .voucher-card {
@@ -3429,8 +3442,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .phone-number,
     .phone-hours {
-        flex-direction: column;
-        text-align: center;
         gap: var(--space-sm);
     }
     
@@ -3452,21 +3463,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.reservation-methods {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xl);
-}
-
-.method-card.online {
-    width: 100%;
-    order: 1;
-}
-
-.method-card.phone {
-    width: 100%;
-    order: 2;
-}
 .knossos-form-wrapper {
     background: var(--white);
     border-radius: var(--radius-xl);
@@ -3524,63 +3520,9 @@ h1, h2, h3, h4, h5, h6 {
     resize: vertical;
 }
 
-.method-card.phone {
-    background: var(--cream);
-    border-radius: var(--radius-xl);
-    padding: var(--space-xl);
-    margin-top: var(--space-lg);
-}
-
-.phone-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-xl);
-    align-items: start;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-}
-
-.phone-number,
-.phone-hours {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-md);
-    background: var(--white);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-}
-
-.phone-cta {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    align-items: center;
-    justify-content: center;
-}
-
-.phone-benefits {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-    margin-top: var(--space-md);
-}
-
 .knossos-form-submit.loading {
     opacity: 0.7;
     cursor: not-allowed;
-}
-
-@media (max-width: 1024px) {
-    .phone-content {
-        grid-template-columns: 1fr;
-        gap: var(--space-lg);
-        text-align: center;
-    }
 }
 
 @media (max-width: 768px) {
@@ -3618,16 +3560,18 @@ h1, h2, h3, h4, h5, h6 {
         padding: var(--space-md);
     }
     
-    .contact-info {
-        gap: var(--space-sm);
+    .phone-content .contact-info {
+        gap: var(--space-xs);
     }
     
     .phone-number,
     .phone-hours {
+        text-align: left;
+        padding: var(--space-sm) 0;
+    }
+
+    .phone-cta-row {
         flex-direction: column;
-        text-align: center;
-        gap: var(--space-sm);
-        padding: var(--space-sm);
     }
     
     .method-card {
@@ -3635,7 +3579,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .method-card.phone {
-        padding: var(--space-md);
+        padding: var(--space-lg);
     }
 }
 
@@ -3676,26 +3620,15 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .method-card.phone {
-        padding: var(--space-sm);
-    }
-    
-    .phone-number,
-    .phone-hours {
-        padding: var(--space-xs);
+        padding: var(--space-md);
     }
     
     .number-icon,
     .hours-icon {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
         font-size: 1rem;
     }
-}
-
-.reservation .reservation-methods {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xl);
 }
 
 .error-message {
