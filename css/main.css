@@ -4294,3 +4294,137 @@ a.phone-btn[href^="https://wa.me"] {
         font-size: 1.5rem;
     }
 }
+
+/* Holiday banner (unter dem Hero) */
+.holiday-banner {
+    background: linear-gradient(135deg, var(--deep-blue), var(--royal-blue));
+    padding: var(--space-lg) 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid var(--light-gold);
+}
+
+.holiday-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.holiday-banner-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+}
+
+.holiday-banner-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--light-gold);
+}
+
+.holiday-banner-title i {
+    font-size: 1.5rem;
+}
+
+.holiday-banner-title h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    color: var(--light-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.holiday-items {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.holiday-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(218, 165, 32, 0.6);
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm) var(--space-lg);
+    color: var(--white);
+    text-align: left;
+}
+
+.holiday-item.closed {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.holiday-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    background: var(--success);
+    color: var(--white);
+}
+
+.holiday-item.closed .holiday-icon {
+    background: var(--error);
+}
+
+.holiday-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+}
+
+.holiday-text strong {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--light-gold);
+}
+
+.holiday-text span {
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .holiday-banner-inner {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .holiday-banner-title {
+        text-align: center;
+    }
+
+    .holiday-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .holiday-item {
+        width: 100%;
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .holiday-text span {
+        font-size: 0.95rem;
+    }
+}
