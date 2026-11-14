@@ -4428,3 +4428,36 @@ a.phone-btn[href^="https://wa.me"] {
         font-size: 0.95rem;
     }
 }
+
+/* Hinweis über dem Reservierungswidget */
+.reservation-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin: 0 0 var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: #FFF8E1;
+    border: 1px solid var(--primary-gold);
+    border-left: 4px solid var(--primary-gold);
+    border-radius: var(--radius-md);
+    color: var(--black);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.reservation-notice i {
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    color: var(--dark-gold);
+    font-size: 1.1rem;
+}
+
+.reservation-notice p {
+    margin: 0;
+}
+
+.reservation-notice a {
+    color: var(--deep-blue);
+    font-weight: 600;
+    white-space: nowrap;
+}
